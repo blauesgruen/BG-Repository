@@ -49,7 +49,7 @@ jobs:
 
       - name: Build repository metadata
         shell: pwsh
-        run: .\scripts\build-repository.ps1
+        run: .\scripts\build-repository.ps1 -SkipRepositoryZip
 
       - name: Commit updated repository files
         shell: pwsh

@@ -218,11 +218,21 @@ function New-Feed($Feed, [string]$FeedDir) {
     }
 
     $addonsPath = Join-Path $FeedDir 'addons.xml'
+    $previousMd5 = if (Test-Path $addonsPath) {
+        (Get-FileHash -Algorithm MD5 $addonsPath).Hash.ToLowerInvariant()
+    }
+    else {
+        $null
+    }
+
     Save-XmlDocument $outDoc $addonsPath
 
     $md5 = (Get-FileHash -Algorithm MD5 $addonsPath).Hash.ToLowerInvariant()
     Write-Utf8NoBom (Join-Path $FeedDir 'addons.xml.md5') $md5
-    Write-GzipCopy $addonsPath (Join-Path $FeedDir 'addons.xml.gz')
+    $gzipPath = Join-Path $FeedDir 'addons.xml.gz'
+    if (($previousMd5 -ne $md5) -or -not (Test-Path $gzipPath)) {
+        Write-GzipCopy $addonsPath $gzipPath
+    }
 
     foreach ($zipFile in $zipFiles) {
         $sha256 = (Get-FileHash -Algorithm SHA256 $zipFile.FullName).Hash.ToLowerInvariant()
@@ -234,6 +244,13 @@ $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 
 $repositoryDir = Join-Path $projectRoot ([string]$config.repository.id)
+$repositoryAddonXml = Join-Path $repositoryDir 'addon.xml'
+$previousRepositoryAddonHash = if (Test-Path $repositoryAddonXml) {
+    (Get-FileHash -Algorithm SHA256 $repositoryAddonXml).Hash.ToLowerInvariant()
+}
+else {
+    $null
+}
 New-RepositoryAddonXml $config $repositoryDir
 
 foreach ($feed in $config.feeds) {
@@ -243,10 +260,16 @@ foreach ($feed in $config.feeds) {
 
 if (-not $SkipRepositoryZip) {
     $repositoryZip = Join-Path $repositoryDir "$($config.repository.id)-$($config.repository.version).zip"
-    if (Test-Path $repositoryZip) {
-        Remove-Item -Force $repositoryZip
+    $repositoryAddonHash = (Get-FileHash -Algorithm SHA256 $repositoryAddonXml).Hash.ToLowerInvariant()
+    if ((-not (Test-Path $repositoryZip)) -or ($previousRepositoryAddonHash -ne $repositoryAddonHash)) {
+        if (Test-Path $repositoryZip) {
+            Remove-Item -Force $repositoryZip
+        }
+        Compress-Archive -Path $repositoryDir -DestinationPath $repositoryZip -CompressionLevel Optimal
     }
-    Compress-Archive -Path $repositoryDir -DestinationPath $repositoryZip -CompressionLevel Optimal
+    elseif (Test-Path $repositoryZip) {
+        Write-Host "Repository add-on zip is already current."
+    }
 }
 
 Write-Host "Repository metadata generated."

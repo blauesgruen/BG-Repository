@@ -1,0 +1,34 @@
+{
+  "repository": {
+    "id": "repository.bg",
+    "name": "BG-Repository",
+    "version": "0.1.0",
+    "providerName": "blauesgruen",
+    "baseUrl": "https://blauesgruen.github.io/BG-Repository",
+    "summary": {
+      "en_GB": "Install and update add-ons from BG-Repository.",
+      "de_DE": "Add-ons aus dem BG-Repository installieren und aktualisieren."
+    },
+    "description": {
+      "en_GB": "Kodi repository for selected add-ons and platform-specific packages.",
+      "de_DE": "Kodi-Repository fuer ausgewaehlte Add-ons und plattformspezifische Pakete."
+    },
+    "license": "GPL-2.0-or-later",
+    "source": "https://github.com/blauesgruen/BG-Repository"
+  },
+  "hashes": "sha256",
+  "feeds": [
+    {
+      "name": "Omega",
+      "path": "omega",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
+      "name": "Piers",
+      "path": "piers",
+      "minversion": "22.0.0",
+      "maxversion": "22.9.9"
+    }
+  ]
+}

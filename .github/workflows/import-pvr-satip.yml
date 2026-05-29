@@ -1,0 +1,66 @@
+name: Import pvr.satip release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: pvr.satip release tag to import, for example v0.1.1-omega
+        required: true
+  repository_dispatch:
+    types:
+      - pvr-satip-release
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Resolve release tag
+        shell: pwsh
+        run: |
+          $releaseTag = '${{ github.event.client_payload.release_tag }}'
+          if ([string]::IsNullOrWhiteSpace($releaseTag)) {
+            $releaseTag = '${{ inputs.release_tag }}'
+          }
+          if ([string]::IsNullOrWhiteSpace($releaseTag)) {
+            throw 'No release tag was provided.'
+          }
+          "RELEASE_TAG=$releaseTag" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Import pvr.satip assets
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.PVR_RELEASE_TOKEN }}
+        run: |
+          if ([string]::IsNullOrWhiteSpace($env:GH_TOKEN)) {
+            throw 'Missing repository secret PVR_RELEASE_TOKEN. It must be able to read blauesgruen/pvr.satip releases.'
+          }
+          .\scripts\import-github-release.ps1 -Repository blauesgruen/pvr.satip -ReleaseTag $env:RELEASE_TAG -FeedPath omega
+
+      - name: Validate repository
+        shell: pwsh
+        run: .\scripts\validate-repository.ps1
+
+      - name: Build repository metadata
+        shell: pwsh
+        run: .\scripts\build-repository.ps1
+
+      - name: Commit updated repository files
+        shell: pwsh
+        run: |
+          $repoConfig = Get-Content -Raw repo.config.json | ConvertFrom-Json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add omega piers $repoConfig.repository.id
+          if (git diff --cached --quiet) {
+            Write-Host 'No repository changes to commit.'
+            exit 0
+          }
+          git commit -m "Update pvr.satip $env:RELEASE_TAG"
+          git push

@@ -75,9 +75,14 @@ CoreELEC Amlogic-ng:  linux-armv7
 
 Der Plattformwert darf nicht leer sein.
 
-Das generische Linux-Paket mit `<platform>linux</platform>` soll vorerst nicht
-in denselben Feed wie die CoreELEC-ARM-Pakete. CoreELEC kann sonst das breite
-Linux-Paket matchen und das falsche Binary installieren.
+BG-Repository erzeugt fuer CoreELEC Amlogic-ng zusaetzlich ein
+Kompatibilitaetspaket mit `<platform>linux</platform>` aus dem `linux-armv7`-ZIP.
+Das ist noetig, weil der CoreELEC/Kodi-Repository-Browser beim Anzeigen des
+Repos offenbar das breite `linux` matcht, nicht `linux-armv7`.
+
+Ein echtes Linux-x86_64-ZIP darf deshalb nicht als generisches
+`<platform>linux</platform>` in denselben Feed importiert werden, sonst kann
+CoreELEC wieder das falsche Binary installieren.
 
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 

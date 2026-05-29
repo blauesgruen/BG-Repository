@@ -1,0 +1,730 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Hungarian <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/hu_hu/>\n"
+"Language: hu_hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Hely"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Helyi elérési út (beleértve a helyi hálózatot is)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Távoli útvonal (Internet cím)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Általános"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Csatorna kezdő száma"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Csak szám csatorna sorrendben M3U-ban"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG beállítások"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Idő eltolást minden csatornán alkalmazni"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG idő eltolás"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "A TV-csatornákat csak csoportosan töltse be"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "TV csoportok"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Csatorna logó"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Rádiócsoportok"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "TV csoport mód"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Rádiócsoport mód"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Minden csoport"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Néhány csoport"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Egyéni csoportok"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "TV-csoportok száma"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV Logo opciók"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Csatorna logó az XMLTV-ről"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Mellőzés"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "M3U előnyben részesítése"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "XMLTV előnyben részesítése"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "TV csoport 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "TV csoport 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "TV csoport 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "TV csoport 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "TV csoport 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Műfajok"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Használja az XMLTV műfaji szövegét a műfajok feltérképezésekor"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Műfajok útja"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Műfajok URL-je"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Egyéni TV-csoportok fájlja"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "1. rádiócsoport"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "2. rádiócsoport"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "3. rádiócsoport"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "4-es rádiócsoport"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "5. rádiócsoport"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Haladó"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Multicast relé (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "A csoportos adatfolyam URL-címeinek átalakítása"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Továbbító hosztnév vagy IP-cím"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Relé port"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Adatfolyam"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Az inputstream.adaptive használata az m3u8 (HLS) adatfolyamokhoz"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Ha lehetséges, használja az FFmpeg http újracsatlakozási opciókat"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "User-Agent"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Bemeneti adatfolyam neve"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME típus"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Csatorna alapértelmezett beállításai"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Rádiócsoportok száma"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Egyéni rádiócsoportok fájlja"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "A rádiócsatornákat csak csoportosan töltse be"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Csoportok"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "A kis- és nagybetűk figyelmen kívül hagyása az EPG csatornaazonosítóknál"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U indítási ellenőrzés"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Időtúllépés az ellenőrzéshez"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Időköz az ellenőrzéshez"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Rádió"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Bemeneti adatfolyam hiba"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "A %s bővítmény nincs telepítve."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "A %s kiegészítő nincs engedélyezve."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "A kiegészítő működéséhez szükséges általános beállítások."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "A csatornák számozásának kezdő száma. Csak akkor használatos, ha a [B]Háttércsatorna-számok használata[/B] a PVR-beállításokból engedélyezve van, és a csatornaszám nem szerepel az M3U fájlban."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Figyelmen kívül hagyja a 'tvg-chno' címkéket, és csak a csatornákat számozza meg az M3U-ban a \"Csatorna indítása száma\"-val kezdődő sorrend szerint."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Csak a csoportokhoz tartozó (azaz [B]group-title[/B] attribútummal rendelkező) TV-csatornák töltődnek be az M3U fájlból."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Válasszon a következő három mód közül: [B]Minden csoport[/B] Az összes TV-csoport betöltése az M3U fájlból; [B]Néhány csoport[/B] Csak a következő opciókban megadott csoportokat töltse be; [B]Egyéni csoportok[/B] Olyan csoportok készletének betöltése az M3U fájlból, amelyek nevei egy XML-fájlból lettek betöltve."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Ha az előző opció „Egyes csoportok”-ra volt állítva, meg kell adnia az M3U fájlból betöltendő TV-csoportot. Kérjük, vegye figyelembe, hogy ez a csoportnév, ahogyan azt a csoportcím attribútum mutatja (azaz „UK (TV)”). Ez a beállítás megkülönbözteti a kis- és nagybetűket."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Ha az előző beállítás „Egyes csoportok”-ra volt állítva, meg kell adnia egy rádiócsoportot, amelyet le kell tölteni az M3U fájlból. Kérjük, vegye figyelembe, hogy ez a csoportnév, ahogyan a csoportcím attribútuma látható (azaz „UK (Radio)”). Ez a beállítás megkülönbözteti a kis- és nagybetűket."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Az egyéni TV-csoportok betöltéséhez használt fájl. Az alapértelmezett fájl a `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Az egyéni rádiócsoportok betöltéséhez használt fájl. Az alapértelmezett fájl a `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "A betöltendő tévécsoportok száma, ha a `Some groups` a kiválasztott mód. Legfeljebb 5 választható. Ha több mint 5-re van szükség, az „Egyéni csoportok” módot kell helyette használni."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "A betöltendő rádiócsoportok száma, ha `Some groups` a kiválasztott mód. Legfeljebb 5 választható. Ha több mint 5-re van szükség, az „Egyéni csoportok” módot kell helyette használni."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Csak azok a rádiócsatornák töltődnek be az M3U fájlból, amelyek csoportokhoz tartoznak (azaz [B]group-title[/B] attribútummal rendelkeznek)."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Az EPG-vel kapcsolatos beállítások. Vegye figyelembe, hogy a Kodi csak akkor tölti be az EPG-adatokat, amikor szükséges. A kiegészítő kényszeríti az EPG-adatok betöltését, függetlenül attól, hogy a Kodi kéri-e vagy sem, ha engedélyezve van a felzárkózás, vagy szükség van XMLTV-logókra."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Állítsa be az EPG időket ezzel az értékkel, -12 óra és +14 óra között."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Felülírja-e az időeltolást az összes csatornánál a `EPG time shift` segítségével. Ha nincs engedélyezve, a `EPG time shift` plusz az egyéni időeltolás csatornánként (ha elérhető) kerül felhasználásra."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Hagyja figyelmen kívül a kis- és nagybetűket az EPG csatornaazonosítók (más néven tvg-id) esetén, amikor a csatornákat EPG-bejegyzésekkel egyezteti. Ha le van tiltva, csak a kis- és nagybetűk megkülönböztetése használható."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Érvényes M3U-fájl keresésekor a várakozási idő hossza a kísérlet időzítéséig."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Érvényes M3U-fájl keresésekor a várakozási idő hossza a próbálkozások között. Ne feledje, hogy a rendszer csak az indításkor ellenőrzi az érvényes fájlt, és ha egy érvényes fájlt talál, minden ellenőrzés leáll."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "A csatornalogókhoz kapcsolódó beállítások."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "A csatornalogók kezelésének preferenciája. A lehetőségek a következők: [B]Ignore[/B] - Ne használjon XMLTV-fájlból származó csatornalogókat; [B]Preferálja az M3U-t[/B] - Használja az M3U csatorna logóját, ha elérhető, ellenkező esetben használja az XMLTV logót; [B]Az XMLTV előnyben részesítése[/B] - Ha elérhető, használja az XMLTV-fájl csatornalogóját, ellenkező esetben használja az M3U logót."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Ha engedélyezve van, és műfajleképezési fájlt használnak a műfajtípus és az altípus lekéréséhez, használja az EPG műfaji szövegét (vagyis a „kategória” szövegét) a műfajhoz a kodi alapértelmezett szövege helyett."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Válassza ki, hol találja meg a műfajok XML-forrását. A lehetőségek a következők: [B]Helyi elérési út[/B] - Egy műfaji XML-fájl elérési útja, legyen az az eszközön vagy a helyi hálózaton; [B]Távoli elérési út[/B] – A műfajok XML-fájljának helyét meghatározó URL."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Ha a hely [B]Helyi elérési út[/B], ennek a beállításnak érvényes elérési utat kell tartalmaznia."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Ha a hely [B]Távoli elérési út[/B], ennek a beállításnak érvényes URL-t kell tartalmaznia."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Speciális beállítások, beleértve a multicast reléket, a streaming tulajdonságokat stb."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "A multicast (UDP/RTP) adatfolyamok nem működnek jól Wifi-hálózatokon. A csoportos küldés továbbítja az adatfolyamot UDP/RTP csoportos küldésről HTTP-re. Ennek az opciónak az engedélyezése a multicast stream URL-eket az M3U fájlból HTTP-címekké alakítja át, így azok a helyi hálózat „udpxy” közvetítőjén keresztül érhetők el. Például. az UDP multicast adatfolyam URL-je, mint például az „udp://@239.239.3.38:5239”, a következőre alakul át: „http://192.168.1.1:4000/udp/239.239.3.38:5239”."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "A csoportos küldés közvetítőjének (udpxy) gazdagépneve vagy IP-címe a helyi hálózaton."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "A csoportos küldés továbbítójának (udpxy) portja a helyi hálózaton."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Használja az inputstream.adaptive fájlt az ffmpeg libavformátuma helyett az m3u8 (HLS) adatfolyamokhoz."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Vegye figyelembe, hogy ez csak azokra a http/https adatfolyamokra vonatkozik, amelyeket libavformat (pl. M3u8/HLS) dolgoz fel. A libavformat használata megadható egy M3U fájlban, ha a `inputstream` tulajdonságot `inputstream.ffmpeg` értékre állítja be a kodi belső megvalósításához, vagy `inputstream.ffmpegdirect`-t a kiegészítő verzióhoz. Azaz. a következő sor hozzáadása: `#KODIPROP:inputstream=inputstream.ffmpeg`. Ha ez az opció nincs engedélyezve, akkor is engedélyezhető adatfolyamonként/csatornánként egy kodi tulajdonság hozzáadásával, azaz: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Használja ezt a User-Agentet, ha nincs megadva tulajdonságként vagy a csatorna adatfolyam URL-jének részeként."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Használja ezt a bemeneti adatfolyamot alapértelmezettként, ha a csatorna nem rendelkezik tulajdonságként (KODIPROP). Használja körültekintően, mert ez letiltja a kiegészítő alapértelmezett adatfolyam-ellenőrzési viselkedésének használatát. Vegye figyelembe, hogy a `inputstream.ffmpegdirect` esetén, ha a `mimetype` és a `inputstream.ffmpegdirect.manifest_type` is nincs beállítva, az adatfolyam-ellenőrzés akkor is megtörténik, ha szükséges."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Használja ezt a MIME-típust alapértelmezettként, ha a csatorna nem rendelkezik tulajdonságként (KODIPROP). Használja körültekintően, mert ez letiltja a kiegészítő alapértelmezett adatfolyam-ellenőrzési viselkedésének használatát."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Csatornacsoportok testreszabásának beállításai."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "SAT>IP automatikus konfiguráció engedélyezése"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Automatikusan fedezze fel a SAT>IP szervereket, és oldja fel a csatorna-, EPG- és logóforrásokat."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Kiválasztva a SAT>IP-kiszolgáló gazdagépe vagy URL-címe"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Megjeleníti az aktuálisan kiválasztott SAT>IP szervert. Manuálisan is beírható."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Inkább a FRITZ!Box HD lejátszási listát"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Előnyben részesítse a /dvb/m3u/tvhd.m3u fájlt az SD/alapértelmezett lejátszási listákkal szemben, ha elérhető."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP-felderítés időtúllépése"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Mennyi ideig futhat az SSDP-felderítés az eddig talált legjobb eredmény felhasználása előtt."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX másodperc"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "Az SSDP M-SEARCH kérésekhez használt MX érték."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Az embléma alap URL-jének felülbírálása"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Opcionális logó alap URL-címe akkor használatos, ha az emblémák nincsenek beágyazva a lejátszási listába/EPG-be."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "SAT>IP EPG gyorsítótár törlése"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Törli a gyorsítótárazott SAT>IP EPG adatokat. Friss adatok töltődnek be a következő Kodi EPG-frissítéskor."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Törli most a SAT>IP EPG gyorsítótárat?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG gyorsítótár törölve. Az újratöltéshez frissítse a Kodi EPG-t."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "A Kodi újratölti a SAT>IP EPG-adatokat. Ez eltarthat egy ideig."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG újratöltés kész."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "A logó ellenőrzéséhez használja a FRITZ!Box bejelentkezést"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Ha engedélyezve van, a logó URL-címe helyi bejelentkezési munkamenetet használ a FRITZ!Boxhoz."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box felhasználónév"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "A helyi FRITZ!Box bejelentkezéshez használt felhasználónév a védett csatornalogók eléréséhez."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRITZ!Box jelszó"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "A helyi FRITZ!Box bejelentkezéshez használt jelszó. Csak a memóriában használható SID létrehozásához."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Keresse meg és válassza ki a SAT>IP-kiszolgálót"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Megnyitja a kiszolgálófelderítést, és lehetővé teszi az észlelt SAT>IP kiszolgálók egyikének kiválasztását. Az eredményt az alábbi mezőbe írjuk."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Válassza a SAT>IP szerver lehetőséget"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Nem található SAT>IP szerver a helyi hálózatban."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Kiválasztott szerver: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "SAT>IP szerverek keresése a helyi hálózatban..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Szkennelési felület: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Jelenlegi szerver: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Jelenlegi"
+
+msgctxt "#30934"
+msgid ""
+msgstr "A kiválasztott SAT>IP szerver nem menthető."
+
+msgctxt "#30935"
+msgid ""
+msgstr "A FRITZ!Box bejelentkezés sikerült a következőhöz: {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "A FRITZ!Box bejelentkezés sikertelen a következőhöz: {host}: {error}"

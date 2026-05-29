@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Dutch <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/nl_nl/>\n"
+"Language: nl_nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Locatie"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Lokaal pad (inclusief lokaal netwerk)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "remote pad (Internet adres)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Algemeen"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Begin kanaal nummer"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Nummer enkel per kanaalvolgorde in M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG-instellingen"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Pas tijdsverschuiving toe op alle kanalen"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG tijdsverschuiving"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Laad tv-kanalen alleen in groepen"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "TV-groepen"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Kanaallogo's"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Radiogroepen"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "TV-groepmodus"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Radiogroepmodus"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Alle groepen"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Sommige groepen"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Aangepaste groepen"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Aantal tv-groepen"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV logo-opties"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Kanalenlogo's van XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Negeren"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "M3U-voorkeur"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "XMLTV-voorkeur"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "TV-groep 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "TV-groep 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "TV-groep 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "TV-groep 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "TV-groep 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Genres"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Gebruik genretekst uit XMLTV bij het toewijzen van genres"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Genres pad"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Genres-URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Aangepast tv-groepenbestand"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Radiogroep 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Radiogroep 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Radiogroep 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Radiogroep 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Radiogroep 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Geavanceerd"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Multicast-relais (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Transformeer multicast-stream-URL's"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Relay-hostnaam of IP-adres"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Relaispoort"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Streaming"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Gebruik inputstream.adaptive voor m3u8 (HLS)-streams"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Gebruik indien mogelijk FFmpeg http-opties voor opnieuw verbinden"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Gebruiker-agent"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Naam van de invoerstroom"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME-type"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Standaardinstellingen voor kanalen"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Aantal radiogroepen"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Aangepast radiogroepenbestand"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Laad radiokanalen alleen in groepen"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Groepen"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Negeer hoofdletters en kleine letters voor EPG-kanaal-ID's"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U-opstartcontrole"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Time-out voor controle"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Interval voor controle"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Radio"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Invoerstroomfout"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "De add-on %s is niet geïnstalleerd."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "De add-on %s is niet ingeschakeld."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Algemene instellingen die nodig zijn om de add-on te laten functioneren."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Het nummer waarmee de nummering van de kanalen moet worden gestart. Wordt alleen gebruikt als [B]Gebruik backend-kanaalnummers[/B] van de PVR-instellingen is ingeschakeld en er geen kanaalnummer is opgegeven in het M3U-bestand."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Negeer eventuele 'tvg-chno'-tags en nummer kanalen alleen in de volgorde in de M3U, beginnend bij 'Start kanaalnummer'."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Alleen tv-kanalen die tot groepen behoren (dat wil zeggen een kenmerk [B]group-title[/B] hebben) worden uit het M3U-bestand geladen."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Kies uit een van de volgende drie modi: [B]Alle groepen[/B] Laad alle tv-groepen uit het M3U-bestand; [B]Sommige groepen[/B] Laad alleen de groepen die zijn opgegeven in de volgende opties; [B]Aangepaste groepen[/B] Laad een set groepen uit het M3U-bestand waarvan de namen worden geladen uit een XML-bestand."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Als de vorige optie is ingesteld op 'Sommige groepen', moet u een TV-groep opgeven die uit het M3U-bestand moet worden geladen. Houd er rekening mee dat dit de groepsnaam is zoals weergegeven in het groepstitelkenmerk (d.w.z. 'UK (TV)'). Deze instelling is hoofdlettergevoelig."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Als de vorige optie is ingesteld op 'Sommige groepen', moet u een radiogroep opgeven die uit het M3U-bestand moet worden opgehaald. Houd er rekening mee dat dit de groepsnaam is zoals weergegeven in het groepstitelkenmerk (d.w.z. 'UK (Radio)'). Deze instelling is hoofdlettergevoelig."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Het bestand dat wordt gebruikt om de aangepaste tv-groepen te laden. Het standaardbestand is `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Het bestand dat wordt gebruikt om de aangepaste radiogroepen te laden. Het standaardbestand is `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Het aantal tv-groepen dat moet worden geladen wanneer `Some groups` de geselecteerde modus is. Er kunnen maximaal 5 worden gekozen. Als er meer dan 5 nodig zijn, moet in plaats daarvan de modus 'Aangepaste groepen' worden gebruikt."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Het aantal radiogroepen dat moet worden geladen wanneer `Some groups` de geselecteerde modus is. Er kunnen maximaal 5 worden gekozen. Als er meer dan 5 nodig zijn, moet in plaats daarvan de modus 'Aangepaste groepen' worden gebruikt."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Alleen radiokanalen die tot groepen behoren (d.w.z. een attribuut [B]group-title[/B] hebben) worden uit het M3U-bestand geladen."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Instellingen gerelateerd aan de EPG. Houd er rekening mee dat Kodi de EPG-gegevens alleen laadt als dat nodig is. De add-on forceert het laden van de EPG-gegevens, ongeacht of Kodi hierom vraagt ​​of niet, als catchup is ingeschakeld of XMLTV-logo's vereist zijn."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Pas de EPG-tijden aan met deze waarde, van -12 uur tot +14 uur."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Of de timeshift voor alle kanalen met `EPG time shift` al dan niet moet worden overschreven. Indien niet ingeschakeld, wordt `EPG time shift` plus de individuele timeshift per kanaal (indien beschikbaar) gebruikt."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Negeer de gevallen van EPG-kanaal-ID's, ook bekend als tvg-id's, bij het matchen van kanalen met EPG-items. Indien uitgeschakeld, wordt alleen hoofdlettergevoelige matching gebruikt."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Bij het controleren op een geldig M3U-bestand: de tijdsduur die moet worden gewacht voordat de poging wordt beëindigd."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Bij het controleren op een geldig M3U-bestand: de tijd die moet worden gewacht tussen pogingen. Houd er rekening mee dat er alleen bij het opstarten op een geldig bestand wordt gecontroleerd en zodra een geldig bestand wordt gevonden, stoppen alle controles."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Instellingen gerelateerd aan kanaallogo's."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Voorkeur voor het omgaan met kanaallogo's. De opties zijn: [B]Negeren[/B] - Gebruik geen kanaallogo's uit een XMLTV-bestand; [B]Voorkeur voor M3U[/B] - Gebruik het kanaallogo van de M3U, indien beschikbaar, gebruik anders het XMLTV-logo; [B]Voorkeur voor XMLTV[/B] - Gebruik het kanaallogo uit het XMLTV-bestand, indien beschikbaar, gebruik anders het M3U-logo."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Indien ingeschakeld en er wordt een genretoewijzingsbestand gebruikt om een ​​genretype en subtype te verkrijgen, wordt de genretekst van de EPG (d.w.z. 'categorie'-tekst) voor het genre gebruikt in plaats van de standaardkodi-tekst."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Selecteer waar u de XML-bron voor de genres wilt vinden. De opties zijn: [B]Lokaal pad[/B] - Een pad naar een XML-bestand met genres, ongeacht of dit zich op het apparaat of op het lokale netwerk bevindt; [B]Extern pad[/B] - Een URL die de locatie van het XML-bestand met genres specificeert."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Als de locatie [B]Lokaal pad[/B] is, moet deze instelling een geldig pad bevatten."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Als de locatie [B]Remote Path[/B] is, moet deze instelling een geldige URL bevatten."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Geavanceerde instellingen, waaronder multicast-relais, streaming-eigenschappen enz."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Multicast-streams (UDP/RTP) werken niet goed op wifi-netwerken. Een multicast-relay kan de stream converteren van UDP/RTP-multicast naar HTTP. Als u deze optie inschakelt, worden multicast-stream-URL's van het M3U-bestand getransformeerd naar HTTP-adressen, zodat ze toegankelijk zijn via een 'udpxy'-relay op het lokale netwerk. Bijvoorbeeld een UDP multicast-stream-URL zoals 'udp://@239.239.3.38:5239' zou worden omgezet in iets als 'http://192.168.1.1:4000/udp/239.239.3.38:5239'."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "De hostnaam of het IP-adres van de multicast-relay (udpxy) op het lokale netwerk."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "De poort van het multicast-relais (udpxy) op het lokale netwerk."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Gebruik inputstream.adaptive in plaats van het libavformat van ffmpeg voor m3u8 (HLS)-streams."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Let op: dit kan alleen van toepassing zijn op http/https-streams die worden verwerkt door libavformat (bijvoorbeeld M3u8/HLS). Het gebruik van libavformat kan worden opgegeven in een M3U-bestand door de eigenschap `inputstream` in te stellen als `inputstream.ffmpeg` voor de interne implementatie van Kodi of `inputstream.ffmpegdirect` voor de add-onversie. D.w.z. het toevoegen van de regel: `#KODIPROP:inputstream=inputstream.ffmpeg`. Als deze optie niet is ingeschakeld, kan deze nog steeds per stream/kanaal worden ingeschakeld door een kodi-eigenschap toe te voegen, bijvoorbeeld: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Gebruik deze User-Agent als er geen is opgegeven als eigenschap of als onderdeel van de kanaalstream-URL."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Gebruik deze ingangsruimte als standaard als er niet één is opgegeven als eigenschap (KODIPROP) van het kanaal. Wees voorzichtig, want hierdoor wordt elk gebruik van het standaard streaminspectiegedrag van de add-on uitgeschakeld. Houd er rekening mee dat voor `inputstream.ffmpegdirect`, als zowel `mimetype` als `inputstream.ffmpegdirect.manifest_type` zijn uitgeschakeld, er indien nodig nog steeds streaminspectie plaatsvindt."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Gebruik dit MIME-type als standaard als er niet één is opgegeven als eigenschap (KODIPROP) van het kanaal. Wees voorzichtig, want hierdoor wordt elk gebruik van het standaard streaminspectiegedrag van de add-on uitgeschakeld."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Instellingen voor het aanpassen van kanaalgroepen."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Schakel SAT>IP automatische configuratie in"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Ontdek automatisch SAT>IP-servers en los kanaal-, EPG- en logobronnen op."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Geselecteerde SAT>IP-serverhost of URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Toont de momenteel geselecteerde SAT>IP-server. Het kan ook handmatig worden ingevoerd."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Geef de voorkeur aan FRITZ!Box HD-afspeellijst"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Geef de voorkeur aan /dvb/m3u/tvhd.m3u boven SD/standaard afspeellijsten, indien beschikbaar."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP-time-out voor detectie"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Hoe lang SSDP-detectie mag worden uitgevoerd voordat het beste resultaat tot nu toe wordt gebruikt."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX seconden"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "MX-waarde gebruikt voor SSDP M-SEARCH-aanvragen."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Basis-URL van logo overschrijven"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Optionele logobasis-URL die wordt gebruikt wanneer logo's niet zijn ingesloten in afspeellijst/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Wis SAT>IP EPG-cache"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Verwijdert in de cache opgeslagen SAT>IP EPG-gegevens. Nieuwe gegevens worden geladen bij de volgende Kodi EPG-vernieuwing."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "De SAT>IP EPG-cache nu verwijderen?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG-cache gewist. Vernieuw Kodi EPG om opnieuw te laden."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi is bezig met het herladen van SAT>IP EPG-gegevens. Dit kan enige tijd duren."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG herladen voltooid."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Gebruik FRITZ!Box login voor logocontrole"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Indien ingeschakeld, wordt voor logo-URL-controles met de FRITZ!Box gebruik gemaakt van een lokale inlogsessie."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box-gebruikersnaam"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Gebruikersnaam die wordt gebruikt voor lokale FRITZ!Box-aanmelding voor toegang tot beschermde kanaallogo's."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRITZ!Box-wachtwoord"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Wachtwoord gebruikt voor lokale FRITZ!Box-aanmelding. Het wordt alleen in het geheugen gebruikt voor het maken van SID's."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Zoek en selecteer SAT>IP-server"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Opent serverdetectie en laat u een van de gedetecteerde SAT>IP-servers kiezen. Het resultaat wordt in het onderstaande veld geschreven."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Selecteer SAT>IP-server"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Geen SAT>IP-server gevonden in het lokale netwerk."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Geselecteerde server: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Zoeken naar SAT>IP-servers in het lokale netwerk ..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Scaninterface: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Huidige server: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Huidig"
+
+msgctxt "#30934"
+msgid ""
+msgstr "De geselecteerde SAT>IP-server kon niet worden opgeslagen."
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Box-aanmelding gelukt voor {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ!Box-aanmelding mislukt voor {host}: {error}"

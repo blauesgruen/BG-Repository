@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:37+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Ukrainian <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/uk_ua/>\n"
+"Language: uk_ua\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Розташування"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Локальний шлях (включає локальну мережу)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Віддалений шлях (інтернет-адреса)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Загальні"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Початковий номер каналу"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Тільки номер за порядком каналу в M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "Налаштування EPG"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Застосувати зсув часу до всіх каналів"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG зсув часу"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Завантажуйте телеканали лише групами"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Телевізійні групи"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Логотипи каналів"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Радіогрупи"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Режим телевізійної групи"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Режим радіогрупи"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Всі групи"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Деякі групи"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Спеціальні групи"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Кількість телегруп"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "Параметри логотипів XMLTV"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Логотипи каналів від XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Ігнорувати"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Віддавайте перевагу M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Віддавайте перевагу XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Телегрупа 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Телегрупа 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "ТВ група 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Телегрупа 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Телегрупа 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Жанри"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Використовуйте текст жанру з XMLTV під час відображення жанрів"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Шлях жанрів"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Жанри URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Файл власних телевізійних груп"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Радіогрупа 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Радіогрупа 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Радіогрупа 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Радіогрупа 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Радіогрупа 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Додатково"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Багатоадресна ретрансляція (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Перетворення URL-адрес багатоадресного потоку"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Ім'я хоста ретрансляції або IP-адреса"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Релейний порт"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Потокове передавання"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Використовуйте inputstream.adaptive для потоків m3u8 (HLS)."
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Якщо можливо, використовуйте параметри повторного підключення FFmpeg http"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Користувач-Агент"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Назва вхідного потоку"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "Тип MIME"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Стандартні параметри каналу"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Кількість радіогруп"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Файл власних радіогруп"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Завантажуйте радіоканали лише групами"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Групи"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Ігнорувати регістр для ідентифікаторів каналів EPG"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "Перевірка запуску M3U"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Тайм-аут для перевірки"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Інтервал перевірки"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "ТБ"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Радіо"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Помилка вхідного потоку"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "Аддон %s не встановлено."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "Аддон %s не ввімкнено."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Загальні налаштування, необхідні для роботи аддона."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Номер, з якого починається нумерація каналів. Використовується лише тоді, коли ввімкнено [B]Використовувати номери внутрішніх каналів[/B] з налаштувань PVR, а номер каналу не вказано у файлі M3U."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Ігноруйте будь-які теги «tvg-chno» і нумеруйте канали лише в порядку, указаному в M3U, починаючи з «Початковий номер каналу»."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Лише телеканали, які належать до груп (тобто мають атрибут [B]group-title[/B]), будуть завантажені з файлу M3U."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Виберіть один із трьох наведених нижче режимів: [B]Усі групи[/B] Завантажити всі телевізійні групи з файлу M3U; [B]Деякі групи[/B] Завантажувати лише групи, вказані в наступних параметрах; [B]Користувацькі групи[/B] Завантажте набір груп із файлу M3U, імена яких завантажено з файлу XML."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Якщо для попереднього параметра було встановлено значення «Деякі групи», вам потрібно вказати телевізійну групу для завантаження з файлу M3U. Зауважте, що це назва групи, яка вказана в атрибуті заголовка групи (тобто «UK (TV)»). Цей параметр чутливий до регістру."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Якщо для попереднього параметра було встановлено значення «Деякі групи», вам потрібно вказати радіогрупу, яку буде отримано з файлу M3U. Зверніть увагу, що це назва групи, яка вказана в атрибуті назви групи (тобто «Великобританія (радіо)»). Цей параметр чутливий до регістру."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Файл, який використовується для завантаження настроюваних телевізійних груп. Типовим файлом є `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Файл, який використовується для завантаження власних радіогруп. Типовим файлом є `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Кількість телевізійних груп для завантаження, коли вибрано режим `Some groups`. Можна вибрати до 5. Якщо потрібно більше 5, замість цього слід використовувати режим «Користувацькі групи»."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Кількість радіогруп для завантаження, коли вибрано режим `Some groups`. Можна вибрати до 5. Якщо потрібно більше 5, замість цього слід використовувати режим «Користувацькі групи»."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Лише радіоканали, які належать до груп (тобто мають атрибут [B]group-title[/B]), будуть завантажені з файлу M3U."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Налаштування, пов'язані з EPG. Зауважте, що Kodi завантажуватиме дані EPG лише тоді, коли це необхідно. Надбудова примусово завантажуватиме дані EPG незалежно від того, запитує їх Kodi чи ні, якщо ввімкнено наздоганяння або потрібні логотипи XMLTV."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Налаштуйте час EPG за цим значенням від -12 годин до +14 годин."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Чи скасовувати зсув часу для всіх каналів за допомогою `EPG time shift`. Якщо не ввімкнено, буде використано `EPG time shift` плюс індивідуальний часовий зсув для кожного каналу (якщо доступний)."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Ігнорувати регістр для ідентифікаторів каналів EPG, також відомих як tvg-id, під час зіставлення каналів із записами EPG. Якщо вимкнено, використовуватиметься лише регістр."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Під час перевірки дійсного файлу M3U тривалість часу очікування перед тим, як завершити спробу."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Час очікування між спробами під час перевірки дійсного файлу M3U. Зауважте, що дійсний файл перевірятиметься лише під час запуску, і коли дійсний файл знайдено, усі перевірки припиняються."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Налаштування, пов’язані з логотипами каналів."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Налаштування способу обробки логотипів каналів. Варіанти: [B]Ignore[/B] – не використовувати логотипи каналів із файлу XMLTV; [B]Надавайте перевагу M3U[/B] - Використовуйте логотип каналу з M3U, якщо доступний, інакше використовуйте логотип XMLTV; [B]Надавайте перевагу XMLTV[/B] - Використовуйте логотип каналу з файлу XMLTV, якщо доступний, інакше використовуйте логотип M3U."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Якщо ввімкнено, а файл відображення жанру використовується для отримання типу жанру та підтипу, використовуйте текст жанру EPG (тобто текст «категорії») для жанру замість стандартного тексту Kodi."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Виберіть, де знайти XML-ресурс жанрів. Доступні такі параметри: [B]Local path[/B] – шлях до XML-файлу жанрів, незалежно від того, чи він знаходиться на пристрої чи в локальній мережі; [B]Віддалений шлях[/B] – URL-адреса, що вказує розташування XML-файлу жанрів."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Якщо розташування [B]Local Path[/B], це налаштування має містити дійсний шлях."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Якщо розташування [B]Remote Path[/B], цей параметр має містити дійсну URL-адресу."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Розширені параметри, включаючи багатоадресні реле, властивості потокового передавання тощо."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Багатоадресні потоки (UDP/RTP) погано працюють у мережах Wi-Fi. Багатоадресний ретранслятор може перетворювати потік з багатоадресної передачі UDP/RTP на HTTP. Увімкнення цього параметра перетворить URL-адреси багатоадресного потоку з файлу M3U на HTTP-адреси, щоб до них можна було отримати доступ через ретранслятор «udpxy» у локальній мережі. наприклад URL-адреса багатоадресного потоку UDP, наприклад \"udp://@239.239.3.38:5239\", буде перетворена на щось на зразок \"http://192.168.1.1:4000/udp/239.239.3.38:5239\"."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Ім’я хоста або ip-адреса багатоадресного ретранслятора (udpxy) у локальній мережі."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Порт багатоадресної ретрансляції (udpxy) у локальній мережі."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Використовуйте inputstream.adaptive замість libavformat ffmpeg для потоків m3u8 (HLS)."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Зауважте, що це стосується лише потоків http/https, які обробляються libavformat (наприклад, M3u8/HLS). Використання libavformat можна вказати у файлі M3U, встановивши властивість `inputstream` як `inputstream.ffmpeg` для внутрішньої реалізації Kodi або `inputstream.ffmpegdirect` для версії аддона. тобто додавши рядок: `#KODIPROP:inputstream=inputstream.ffmpeg`. Якщо цей параметр не ввімкнено, його все одно можна ввімкнути для кожного потоку/каналу, додавши властивість kodi, наприклад: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Використовуйте цей агент користувача, якщо його не надано як властивість або як частину URL-адреси потоку каналу."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Використовуйте цей вхідний потік як типовий, якщо його не надано як властивість (KODIPROP) каналу. Використовуйте обережно, оскільки це вимкне будь-яке використання стандартної поведінки перевірки потоку аддона. Зауважте, що для `inputstream.ffmpegdirect`, якщо і `mimetype`, і `inputstream.ffmpegdirect.manifest_type` не налаштовані, перевірка потоку все одно відбуватиметься, якщо потрібно."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Використовуйте цей тип MIME як типовий, якщо його не надано як властивість (KODIPROP) каналу. Використовуйте обережно, оскільки це вимкне будь-яке використання стандартної поведінки перевірки потоку аддона."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Параметри налаштування груп каналів."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Увімкніть автоматичне налаштування SAT>IP"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Автоматично виявляти сервери SAT>IP і розпізнавати джерела каналів, EPG і логотипів."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Вибраний хост або URL-адреса сервера SAT>IP"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Показує поточний вибраний сервер SAT>IP. Його також можна ввести вручну."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Віддайте перевагу списку відтворення FRITZ!Box HD"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Віддавати перевагу /dvb/m3u/tvhd.m3u над SD/списками відтворення за замовчуванням, якщо вони доступні."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "Час очікування виявлення SAT>IP"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Скільки часу дозволяється виявлення SSDP перед використанням найкращого знайденого результату."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX секунд"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "Значення MX, що використовується для запитів SSDP M-SEARCH."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Перевизначити базову URL-адресу логотипу"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Додаткова базова URL-адреса логотипу, яка використовується, якщо логотипи не вбудовано в список відтворення/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Очистити кеш EPG SAT>IP"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Видаляє кешовані дані SAT>IP EPG. Свіжі дані завантажуються під час наступного оновлення Kodi EPG."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Видалити зараз кеш EPG SAT>IP?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG кеш очищено. Оновіть Kodi EPG, щоб перезавантажити."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi перезавантажує дані SAT>IP EPG. Це може зайняти деякий час."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "Перезавантаження SAT>IP EPG завершено."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Використовуйте логін FRITZ!Box для перевірки логотипу"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Якщо ввімкнено, URL-адреса логотипу перевіряється на FRITZ!Box за допомогою локального сеансу входу."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "Ім'я користувача FRITZ!Box"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Ім’я користувача, яке використовується для локального входу в FRITZ!Box для доступу до логотипів захищених каналів."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "Пароль FRITZ!Box"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Пароль, який використовується для локального входу в FRITZ!Box. Він використовується лише в пам’яті для створення SID."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Знайдіть і виберіть SAT>IP server"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Відкриває пошук серверів і дозволяє вибрати один із виявлених серверів SAT>IP. Результат записується в поле нижче."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Виберіть SAT>IP server"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "У локальній мережі не знайдено сервера SAT>IP."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Вибраний сервер: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Пошук серверів SAT>IP у локальній мережі..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Інтерфейс сканування: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Поточний сервер: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "поточний"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Вибраний сервер SAT>IP не вдалося зберегти."
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ! Успішний вхід у скриньку для {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ! Помилка входу в ящик для {host}: {error}"

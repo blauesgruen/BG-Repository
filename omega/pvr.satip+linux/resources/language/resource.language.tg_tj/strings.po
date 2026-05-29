@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:37+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Tajik <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/tg_tj/>\n"
+"Language: tg_tj\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Ҷойгиршавӣ"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Роҳи маҳаллӣ (шабакаи маҳаллиро дар бар мегирад)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Роҳи дурдаст (суроғаи интернет)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Умумӣ"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Рақами каналро оғоз кунед"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Танҳо рақам аз рӯи тартиби канал дар M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "Танзимоти EPG"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Ба ҳама каналҳо тағир додани вақтро татбиқ кунед"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "Тағири вақти EPG"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Танҳо каналҳои телевизиониро дар гурӯҳҳо бор кунед"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Гурӯҳҳои телевизионӣ"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Логотипҳои канал"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Гурӯҳҳои радио"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Реҷаи гурӯҳи телевизионӣ"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Реҷаи гурӯҳи радио"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Хамаи гуруххо"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Баъзе гурӯҳҳо"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Гурӯҳҳои фармоишӣ"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Шумораи гуруххои телевизионй"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "Имконоти XMLTV Logos"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Логотипҳои каналҳо аз XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Рад кардан"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "M3U-ро бартарӣ диҳед"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "XMLTV-ро бартарӣ диҳед"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Гурӯҳи телевизионии 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Гурӯҳи телевизионии 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Гурӯҳи телевизионии 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Гурӯҳи телевизионии 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Гурухи телевизионй 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Жанрҳо"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Ҳангоми харитасозии жанрҳо матни жанрро аз XMLTV истифода баред"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Роҳи жанрҳо"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "URL жанрҳо"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Файли гурӯҳҳои телевизионии фармоишӣ"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Гурӯҳи радиои 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Гурӯҳи радиои 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Гурӯҳи радиои 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Гурӯҳи радиои 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Гурӯҳи радиои 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Иловагӣ"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Эстафетаи чандрасонаӣ (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Табдил додани URL-ҳои ҷараёнҳои мултимедиявӣ"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Номи мизбон ё суроғаи IP-ро интиқол диҳед"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Порти реле"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Ҷараён"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Барои ҷараёнҳои m3u8 (HLS) inputstream.adaptive -ро истифода баред"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Агар имконпазир бошад, имконоти аз нав пайваст кардани FFmpeg http-ро истифода баред"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Корбар-Агенти"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Номи ҷараёни воридотӣ"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "Навъи MIME"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Пешфарзҳои канал"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Шумораи гуруххои радио"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Файли гурӯҳҳои Радиои фармоишӣ"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Танҳо каналҳои радиоро дар гурӯҳҳо бор кунед"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Гурӯҳҳо"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Парвандаи барои ID-и каналҳои EPG-ро сарфи назар кунед"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "Санҷиши оғозёбии M3U"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Вақт барои чек"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Фосила барои чек"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "ТВ"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Радио"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Хатогии воридотӣ"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "Иловаи %s насб карда нашудааст."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "Иловаи %s фаъол нест."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Танзимоти умумие, ки барои кор кардани addon заруранд."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Рақаме барои оғоз кардани рақамгузории каналҳо аз. Танҳо вақте истифода мешавад, ки [B]Истифодаи рақамҳои канали пуштибонӣ[/B] аз танзимоти PVR фаъол бошад ва рақами канал дар файли M3U дода нашавад."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Ба ҳама барчаспҳои \"tvg-chno\" аҳамият надиҳед ва танҳо рақами каналҳоро аз рӯи тартиби M3U аз \"Рақами канали оғоз\" оғоз кунед."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Аз файли M3U танҳо каналҳои телевизионие, ки ба гурӯҳҳо тааллуқ доранд (яъне дорои атрибути [B]group-title[/B]) бор карда мешаванд."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Яке аз се намуди зеринро интихоб кунед: [B]Ҳама гурӯҳҳо[/B] Ҳама гурӯҳҳои телевизиониро аз файли M3U бор кунед; [B]Баъзе гурӯҳҳо[/B] Танҳо гурӯҳҳоеро, ки дар имконоти оянда нишон дода шудаанд, бор кунед; [B]Гурӯҳҳои фармоишӣ[/B] Маҷмӯи гурӯҳҳоро аз файли M3U, ки номашон аз файли XML бор карда шудааст, бор кунед."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Агар варианти қаблӣ ба \"Баъзе гурӯҳҳо\" таъин шуда бошад, шумо бояд гурӯҳи телевизиониро, ки аз файли M3U бор карда мешавад, муайян кунед. Лутфан таваҷҷӯҳ намоед, ки ин номи гурӯҳ аст, ки дар атрибути унвони гурӯҳ нишон дода шудааст (масалан, 'UK (TV)'). Ин танзимот ба ҳарфи калон ҳассос аст."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Агар варианти қаблӣ ба 'Баъзе гурӯҳҳо' таъин шуда бошад, шумо бояд гурӯҳи Радиоро муайян кунед, ки аз файли M3U гирифта шавад. Лутфан надоред, ки ин номи гурӯҳ аст, ки дар атрибути унвони гурӯҳ нишон дода шудааст (масалан, 'UK (Radio)'). Ин танзимот ба ҳарфи калон ҳассос аст."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Файл барои бор кардани гурӯҳҳои телевизионии фармоишӣ истифода мешавад. Файли пешфарз `customTVGroups-example.xml` аст."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Файл барои бор кардани гурӯҳҳои фармоишии Радио истифода мешавад. Файли пешфарз `customRadioGroups-example.xml` аст."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Шумораи гурӯҳҳои телевизионӣ барои боркунӣ вақте ки `Some groups` ҳолати интихобшуда аст. То 5 интихоб кардан мумкин аст. Агар зиёда аз 5 лозим бошад, ба ҷои он режими \"Гурӯҳҳои фармоишӣ\" бояд истифода шавад."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Шумораи гурӯҳҳои Радио барои бор кардан, вақте ки `Some groups` ҳолати интихобшуда аст. То 5 интихоб кардан мумкин аст. Агар зиёда аз 5 лозим бошад, ба ҷои он режими \"Гурӯҳҳои фармоишӣ\" бояд истифода шавад."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Аз файли M3U танҳо каналҳои радио, ки ба гурӯҳҳо тааллуқ доранд (яъне дорои атрибути [B]group-title[/B]) бор карда мешаванд."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Танзимоти марбут ба EPG. Дар хотир доред, ки Kodi танҳо маълумоти EPG-ро ҳангоми зарурат бор мекунад. Иловагӣ, новобаста аз он ки Kodi онро талаб мекунад ё не, боркунии маълумоти EPG-ро маҷбур мекунад, агар ё сайд фаъол бошад ё логотипи XMLTV талаб карда шавад."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Вақтҳои EPG-ро бо ин арзиш аз -12 соат то +14 соат танзим кунед."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Новобаста аз он ки тағирёбии вақт барои ҳама каналҳо бо `EPG time shift` бекор карда шавад ё не. Агар фаъол набошад, `EPG time shift` плюс ивази вақт барои як канал (агар мавҷуд бошад) истифода мешавад."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Ҳангоми мувофиқат кардани каналҳо бо вурудоти EPG, парвандаро барои ID-ҳои канали EPG, ки ҳамчун tvg-id маълуманд, сарфи назар кунед. Агар ғайрифаъол карда шавад, танҳо мувофиқати ҳарфҳои калон истифода мешавад."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Ҳангоми тафтиши файли дурусти M3U, дарозии вақт барои интизор шудан пеш аз ба итмом расидани кӯшиш."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Ҳангоми тафтиши файли дурусти M3U, дарозии вақти интизории байни кӯшишҳо. Дар хотир доред, ки файли дуруст танҳо ҳангоми оғозёбӣ тафтиш карда мешавад ва пас аз пайдо шудани файли дуруст ҳама санҷишҳо қатъ мешаванд."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Танзимоти марбут ба логотипи канал."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Афзалият дар бораи тарзи коркарди логотипи канал. Имконот инҳоянд: [B]Игнор кардан[/B] - Логотипҳои каналро аз файли XMLTV истифода набаред; [B]Бартарӣ ба M3U[/B] - Истифодаи логотипи канал аз M3U, агар мавҷуд бошад, дар акси ҳол тамғаи XMLTV-ро истифода баред; [B]Бартарӣ ба XMLTV[/B] - Истифодаи логотипи канал аз файли XMLTV, агар дастрас бошад, дар акси ҳол тамғаи M3U-ро истифода баред."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Агар фаъол бошад ва файли харитасозии жанр барои ба даст овардани навъи жанр истифода мешавад ва зернавъи матни жанри EPG-ро (яъне матни \"категория\") барои жанр ба ҷои матни пешфарзии kodi истифода баред."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Интихоб кунед, ки дар куҷо пайдо кардани манбаи жанрҳои XML. Имкониятҳо инҳоянд: [B]Роҳи маҳаллӣ[/B] - Роҳ ба файли XML жанрҳо, хоҳ он дар дастгоҳ бошад ё шабакаи маҳаллӣ; [B]Рохи дурдаст[/B] - URL, ки макони файли XML-ро муайян мекунад."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Агар макон [B]Роҳи маҳаллӣ[/B] бошад, ин танзимот бояд роҳи дурустро дар бар гирад."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Агар макон [B]Рохи дурдаст[/B] бошад, ин танзимот бояд URL-и дурустро дар бар гирад."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Танзимоти пешрафта, аз ҷумла релеҳои мултипликаторӣ, хосиятҳои ҷараён ва ғайра."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Ҷараёнҳои чандрасонаӣ (UDP/RTP) дар шабакаҳои Wifi хуб кор намекунанд. Эстафетаи чандрасонаӣ метавонад ҷараёнро аз UDP/RTP ба HTTP табдил диҳад. Даргиронидани ин хосият URL-ҳои ҷараёнро аз файли M3U ба суроғаҳои HTTP табдил медиҳад, то онҳо тавассути релеи \"udpxy\" дар шабакаи маҳаллӣ дастрас шаванд. Масалан. URL-и ҷараёни чандрасонаи UDP ба монанди 'udp://@239.239.3.38:5239' ба чизе монанди 'http://192.168.1.1:4000/udp/239.239.3.38:5239' табдил меёбад."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Номи мизбон ё суроғаи IP-и релеи чандрасонаӣ (udpxy) дар шабакаи маҳаллӣ."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Порти релеи бисёрҷанба (udpxy) дар шабакаи маҳаллӣ."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Ба ҷои libavformat ffmpeg барои ҷараёнҳои m3u8 (HLS) inputstream.adaptive -ро истифода баред."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Дар хотир доред, ки ин метавонад танҳо ба ҷараёнҳои http/https, ки аз ҷониби libavformat коркард мешаванд (масалан, M3u8/HLS) татбиқ карда мешавад. Истифодаи libavformat метавонад дар файли M3U бо гузоштани амвол `inputstream` ҳамчун `inputstream.ffmpeg` барои татбиқи дохилии kodi ё `inputstream.ffmpegdirect` барои версияи addon муайян карда шавад. яъне. илова кардани сатр: `#KODIPROP:inputstream=inputstream.ffmpeg`. Агар ин хосият фаъол набошад, он метавонад ба ҳар як ҷараён/канал тавассути илова кардани амволи kodi фаъол карда шавад, яъне: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Ин корбар-Агентро истифода баред, агар он ҳамчун амвол ё қисми URL-и ҷараёни канал мавҷуд набошад."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Ин вуруди вурудро ҳамчун пешфарз истифода баред, агар он ҳамчун моликият (KODIPROP)-и канал мавҷуд набошад. Бо эҳтиёт истифода баред, зеро ин ҳама гуна истифодаи рафтори санҷиши ҷараёни пешфарзии addon-ро ғайрифаъол мекунад. Дар хотир доред, ки барои `inputstream.ffmpegdirect`, агар ҳам `mimetype` ва `inputstream.ffmpegdirect.manifest_type` танзим нашуда бошанд, санҷиши ҷараён ҳанӯз дар ҳолати зарурӣ сурат мегирад."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Ин навъи MIME-ро ҳамчун пешфарз истифода баред, агар он ҳамчун моликият (KODIPROP)-и канал мавҷуд набошад. Бо эҳтиёт истифода баред, зеро ин ҳама гуна истифодаи рафтори санҷиши ҷараёни пешфарзии addon-ро ғайрифаъол мекунад."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Танзимотҳо оид ба танзими гурӯҳҳои канал."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Танзимоти худкори SAT>IP-ро фаъол созед"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Ба таври худкор серверҳои SAT>IP-ро кашф кунед ва манбаъҳои канал, EPG ва логоро ҳал кунед."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Хост сервери SAT>IP ё URL интихобшуда"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Сервери ҳозираи интихобшудаи SAT>IP-ро нишон медиҳад. Онро дастӣ низ ворид кардан мумкин аст."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Ба рӯйхати навозиш FRITZ!Box HD бартарӣ диҳед"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Вақте ки дастрас аст, бартарӣ /dvb/m3u/tvhd.m3u нисбат ба SD/рӯйхати навозишҳои пешфарз."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "Вақти фарогирии кашфи SAT>IP"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "То чӣ андоза кашфи SSDP иҷозат дода мешавад, ки пеш аз истифодаи беҳтарин натиҷае, ки то ҳол пайдо шудааст, иҷро шавад."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "Сонияҳои SAT>IP SSDP MX"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "Арзиши MX барои дархостҳои SSDP M-SEARCH истифода мешавад."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "URL асоси логотипро бекор кунед"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "URL-и асосии логотипи ихтиёрӣ истифода мешавад, вақте ки логотипҳо дар рӯйхати навозиш/EPG ворид карда нашудаанд."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Тоза кардани кэши SAT>IP EPG"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Маълумоти кэшшудаи SAT>IP EPG-ро нест мекунад. Боркунии маълумоти нав дар навсозии навбатии Kodi EPG."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Ҳоло кэши SAT>IP EPG-ро нест кунед?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "Кэши SAT>IP EPG тоза карда шуд. Барои аз нав бор кардан Kodi EPG-ро нав кунед."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi маълумоти SAT> IP EPG-ро дубора бор мекунад. Ин метавонад каме вақт гирад."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "Бозсозии SAT>IP EPG анҷом ёфт."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Барои санҷиши логотип FRITZ!Box-ро истифода баред"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Агар фаъол бошад, URL-и логотип бар зидди FRITZ!Box санҷиши сеанси воридшавии маҳаллиро истифода мебарад."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "Номи корбари FRITZ!Box"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Номи корбар барои воридшавии маҳаллии FRITZ!Box барои дастрасӣ ба логотипи каналҳои ҳифзшуда истифода мешавад."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "Рамзи FRITZ!Box"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Рамз барои воридшавии маҳаллии FRITZ!Box истифода мешавад. Он танҳо барои эҷоди SID дар дохили хотира истифода мешавад."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Пайдо ва интихоб кунед SAT> IP сервер"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Кашфи серверро мекушояд ва ба шумо имкон медиҳад, ки яке аз серверҳои ошкоршудаи SAT>IP-ро интихоб кунед. Натиҷа дар майдони зер навишта мешавад."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Сервери SAT>IP-ро интихоб кунед"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Дар шабакаи маҳаллӣ ягон сервери SAT>IP ёфт нашуд."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Сервери интихобшуда: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Ҷустуҷӯи серверҳои SAT>IP дар шабакаи маҳаллӣ ..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Интерфейси сканкунӣ: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Сервери ҷорӣ: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "ҷорӣ"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Сервери интихобшудаи SAT>IP захира карда нашуд."
+
+msgctxt "#30935"
+msgid ""
+msgstr "Воридшавӣ ба FRITZ!Box барои {host} муваффақ шуд"
+
+msgctxt "#30936"
+msgid ""
+msgstr "Воридшавӣ ба FRITZ!Box барои {host} ноком шуд: {error}"

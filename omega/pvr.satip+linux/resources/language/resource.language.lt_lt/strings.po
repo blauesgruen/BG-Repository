@@ -1,0 +1,729 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Raimondas Dužinskas <raimondas.duzinskas@gmail.com>\n"
+"Language-Team: Lithuanian <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/lt_lt/>\n"
+"Language: lt_lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Vieta"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Lokalus kelias (įskaitant vietinį tinklą)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Nuotolinis kelias (interneto adresas)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Pagrindinis"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Pradinis kanalų numeris"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Numeruoti tik pagal kanalų tvarką M3U faile"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG nustatymai"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Pritaikyti laiko poslinkį visiems kanalams"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG laiko poslinkis"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Įkelti tik kanalusesančius grupėse"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "TV grupės"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Kanalų logotipai"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Radijo grupės"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "TV grupės režimas"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Radijo grupės režimas"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Visos grupės"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Kai kurios grupės"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Savos grupės"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "TV grupių kiekis"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV logotipų parinktys"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Kanalų logotipai iš XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Ignoruoti"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Pirmenybė M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Pirmenybė XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "TV grupė 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "TV grupė 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "TV grupė 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "TV grupė 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "TV grupė 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Žanrai"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Sudarant žanrus naudokite žanro tekstą iš XMLTV"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Žanrų kelias"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Žanrų URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Pasirinktinis TV grupių failas"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Radijo grupė 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Radijo grupė 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Radijo grupė 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Radijo grupė 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Radijo grupė 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Išplėstiniai"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Daugialypės siuntimo relė (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Pakeiskite multicast srauto URL"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Perdavimo prieglobos pavadinimas arba IP adresas"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Relės prievadas"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Transliuojama"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Naudoti inputstream.adaptive m3u8 (HLS) srautams"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Naudoti FFmpeg http pakartotinio prisijungimo parinktis kai įmanoma"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Vartotojo agentas"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Įvesties srauto vardas"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME tipas"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Numatytieji kanalo nustatymai"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Radijo grupių skaičius"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Savas radijo grupių failas"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Radijo kanalus įkelkite tik grupėmis"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Grupės"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Nepaisykite EPG kanalų ID didžiųjų ir mažųjų raidžių"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U paleidimo patikra"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Patikrinimo laikas baigėsi"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Intervalas patikrinimui"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Radijas"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Įvesties srauto klaida"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "%s priedas neįdiegtas."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "%s priedas neįjungtas."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Pagrindiniai nustatymai reikalingi priedo veikimui."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Numeris, nuo kurio pradėti numeruoti kanalus. Naudojamas tik tada, kai įjungta PVR nustatymų funkcija [B]Naudoti užpakalinių kanalų numerius[/B] ir kanalo numeris nepateikiamas M3U faile."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Ignoruoti visas 'tvg-chno' žymas ir numeruoti kanalus tik pagal jų eilės tvarką M3U faile, pradedant nuo 'Pradinio kanalų numerio'."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Iš M3U failo bus įkeliami tik grupėms priklausantys TV kanalai (t. y. turintys atributą [B]group-title[/B])."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Pasirinkite vieną iš šių trijų režimų: [B]Visos grupės[/B] Įkelti visas TV grupes iš M3U failo; [B]Kai kurios grupės[/B] Įkeliamos tik kitose parinktyse nurodytas grupes; [B]Priskirtos grupės[/B] Įkelkite grupių rinkinį iš M3U failo, kurių pavadinimai įkeliami iš XML failo."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Jei ankstesnė parinktis buvo nustatyta į „Kai kurios grupės“, turite nurodyti TV grupę, kuri bus įkelta iš M3U failo. Atminkite, kad tai yra grupės pavadinimas, kaip nurodyta grupės pavadinimo atribute (t. y. „UK (TV)“). Šis nustatymas yra didžiosios ir mažosios raidės."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Jei ankstesnė parinktis buvo nustatyta į „Kai kurios grupės“, turite nurodyti radijo grupę, kuri bus paimta iš M3U failo. Atminkite, kad tai yra grupės pavadinimas, kaip nurodyta grupės pavadinimo atribute (t. y. „UK (Radio)“). Šis nustatymas yra didžiosios ir mažosios raidės."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Failas, naudojamas tinkintoms TV grupėms įkelti. Numatytasis failas yra `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Failas, naudojamas tinkintoms radijo grupėms įkelti. Numatytasis failas yra `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Įkeliamų TV grupių skaičius, kai pasirinktas režimas `Some groups`. Galima pasirinkti iki 5. Jei reikia daugiau nei 5, vietoj to reikia naudoti režimą „Priskirtos grupės“."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Įkeliamų radijo grupių skaičius, kai pasirinktas režimas `Some groups`. Galima pasirinkti iki 5. Jei reikia daugiau nei 5, vietoj to reikia naudoti režimą „Priskirtos grupės“."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Iš M3U failo bus įkeliami tik grupėms priklausantys radijo kanalai (ty turintys atributą [B]group-title[/B])."
+
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Su EPG susiję nustatymai. Atminkite, kad „Kodi“ įkels EPG duomenis tik tada, kai to reikės. Priedas privers įkelti EPG duomenis, neatsižvelgiant į tai, ar „Kodi“ to prašo, ar ne, jei įjungtas gaudymas arba reikalingi XMLTV logotipai."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Sureguliuokite EPG laiką pagal šią vertę nuo -12 valandų iki +14 valandų."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Perrašyti ar ne visų kanalų laiko polinkį 'EPG laiko poslinkio' reikšme. Jei nepasirinkta, bus naudojama 'EPG laiko poslinkio' ir individualaus laiko poslinkio (jei jis nurodytas) suma."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Ignoruokite EPG kanalų ID, taip pat žinomų kaip tvg-id, didžiųjų ir mažųjų raidžių, kai suderinate kanalus su EPG įrašais. Jei išjungta, bus naudojamas tik didžiųjų ir mažųjų raidžių atitikimas."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Tikrinant, ar yra tinkamas M3U failas, laikas, per kurį reikia laukti, kol baigiasi bandymo laikas."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Kai tikrinamas tinkamas M3U failas, laikas, per kurį reikia laukti tarp bandymų. Atminkite, kad galiojantis failas bus tikrinamas tik paleidžiant, o suradus tinkamą failą, visi patikrinimai sustabdomi."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Nustatymai susiję su kanalų logotipais."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Pirmenybė, kaip tvarkyti kanalų logotipus. Galimos šios parinktys: [B]Ignore[/B] – Nenaudokite kanalų logotipų iš XMLTV failo; [B]Pateikite pirmenybę M3U[/B] – naudokite kanalo logotipą iš M3U, jei įmanoma, kitu atveju naudokite XMLTV logotipą; [B]Pateikite pirmenybę XMLTV[/B] – naudokite kanalo logotipą iš XMLTV failo, jei įmanoma, kitu atveju naudokite M3U logotipą."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Jei įjungta, o žanro susiejimo failas naudojamas žanro tipui ir potipiui gauti, naudokite EPG žanro tekstą (t. y. „kategorijos“ tekstą), o ne kodi numatytąjį tekstą."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Pasirinkite, kur rasti žanrų XML šaltinį. Parinktys yra šios: [B]Vietinis kelias[/B] – kelias į žanrų XML failą, nesvarbu, ar jis yra įrenginyje, ar vietiniame tinkle; [B]Nuotolinis kelias[/B] – URL, nurodantis žanrų XML failo vietą."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Jei vieta yra [B]Local Path[/B], šiame nustatyme turi būti nurodytas tinkamas kelias."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Jei vieta yra [B]Nuotolinis kelias[/B], šiame nustatyme turi būti galiojantis URL."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Išplėstiniai nustatymai, įskaitant daugialypės terpės perdavimo reles, srautinio perdavimo ypatybes ir kt."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Daugialypės siuntimo (UDP/RTP) srautai neveikia gerai „Wi-Fi“ tinkluose. Multicast relė gali konvertuoti srautą iš UDP/RTP multicast į HTTP. Įjungus šią parinktį, daugialypės terpės srauto URL iš M3U failo bus pakeisti į HTTP adresus, kad juos būtų galima pasiekti per „udpxy“ relę vietiniame tinkle. Pvz. UDP multicast srauto URL, pvz., „udp://@239.239.3.38:5239“, būtų pakeistas į „http://192.168.1.1:4000/udp/239.239.3.38:5239“."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Daugialypės siuntimo relės (udpxy) pagrindinio kompiuterio pavadinimas arba IP adresas vietiniame tinkle."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Daugialypės siuntimo relės (udpxy) prievadas vietiniame tinkle."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Naudokite inputstream.adaptive vietoj ffmpeg libavformato m3u8 (HLS) srautams."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Atminkite, kad tai gali būti taikoma tik tiems http/https srautams, kurie apdorojami libavformatu (pvz., M3u8/HLS). „Libavformat“ naudojimą galima nurodyti M3U faile, nustatydami ypatybę `inputstream` kaip `inputstream.ffmpeg` vidiniam kodi diegimui arba `inputstream.ffmpegdirect` priedo versijai. T.y. pridedant eilutę: `#KODIPROP:inputstream=inputstream.ffmpeg`. Jei ši parinktis neįjungta, ją vis tiek galima įjungti kiekvienam srautui / kanalui pridedant kodi ypatybę, t. y.: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Naudokite šį naudotojo agentą, jei jis nėra pateiktas kaip nuosavybė arba kaip kanalo srauto URL dalis."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Naudokite šį įvesties srautą kaip numatytąjį, jei jo nėra kaip kanalo nuosavybė (KODIPROP). Naudokite atsargiai, nes tai išjungs bet kokį priedo numatytojo srauto tikrinimo veiksmą. Atminkite, kad `inputstream.ffmpegdirect`, jei ir `mimetype`, ir `inputstream.ffmpegdirect.manifest_type` yra nenustatyti, srautas vis tiek bus tikrinamas, jei reikia."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Naudokite šį MIME tipą kaip numatytąjį, jei jo nėra kaip kanalo ypatybė (KODIPROP). Naudokite atsargiai, nes tai išjungs bet kokį priedo numatytojo srauto tikrinimo veiksmą."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Kanalų grupių tinkinimo nustatymai."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Įjungti SAT>IP automatinį konfigūravimą"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Automatiškai atraskite SAT>IP serverius ir nustatykite kanalų, EPG ir logotipų šaltinius."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Pasirinktas SAT>IP serverio priegloba arba URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Rodo šiuo metu pasirinktą SAT>IP serverį. Jį taip pat galima įvesti rankiniu būdu."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Pirmenybę teikite FRITZ!Box HD grojaraščiui"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Jei įmanoma, teikite pirmenybę /dvb/m3u/tvhd.m3u, o ne SD/numatytuosius grojaraščius."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP aptikimo laikas"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Kiek laiko leidžiama vykdyti SSDP atradimą prieš naudojant geriausią iki šiol rastą rezultatą."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX sekundės"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "MX reikšmė naudojama SSDP M-SEARCH užklausoms."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Nepaisyti logotipo pagrindinio URL"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Pasirenkamas logotipo bazinis URL, naudojamas, kai logotipai nėra įterpti į grojaraštį / EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Išvalykite SAT>IP EPG talpyklą"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Ištrina talpykloje saugomus SAT>IP EPG duomenis. Nauji duomenys įkeliami kitą „Kodi EPG“ atnaujinimą."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Ištrinti SAT>IP EPG talpyklą dabar?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG talpykla išvalyta. Atnaujinkite Kodi EPG, kad įkeltumėte iš naujo."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi iš naujo įkelia SAT>IP EPG duomenis. Tai gali užtrukti šiek tiek laiko."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG perkrovimas baigtas."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Logotipams tikrinti naudokite FRITZ!Box prisijungimo duomenis"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Jei įjungta, logotipo URL patikrinimas pagal FRITZ!Box naudoja vietinį prisijungimo seansą."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box vartotojo vardas"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Vartotojo vardas, naudojamas vietiniam FRITZ!Box prisijungimui norint pasiekti apsaugotus kanalų logotipus."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRITZ!Box slaptažodis"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Slaptažodis, naudojamas vietiniam FRITZ!Box prisijungimui. Jis naudojamas tik atmintyje SID kūrimui."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Raskite ir pasirinkite SAT>IP serveris"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Atidaro serverio aptikimą ir leidžia pasirinkti vieną iš aptiktų SAT>IP serverių. Rezultatas įrašomas į žemiau esantį laukelį."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Pasirinkite SAT>IP serveris"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Vietiniame tinkle nerasta SAT>IP serverio."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Pasirinktas serveris: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Ieškoma SAT>IP serverių vietiniame tinkle..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Nuskaitymo sąsaja: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Dabartinis serveris: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Dabartinė"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Nepavyko išsaugoti pasirinkto SAT>IP serverio."
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Box prisijungimas pavyko {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "Nepavyko prisijungti prie FRITZ!Box {host}: {error}"

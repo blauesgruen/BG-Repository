@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Azerbaijani <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/az_az/>\n"
+"Language: az_az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Məkan"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Yerli yol (yerli şəbəkə daxildir)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Uzaqdan yol (İnternet ünvanı)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Ümumi"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Kanal nömrəsinə başlayın"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "M3U-da yalnız kanal sırasına görə nömrə"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG ayarları"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Bütün kanallara vaxt dəyişikliyi tətbiq edin"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG vaxtının dəyişməsi"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Yalnız qruplarda televiziya kanallarını yükləyin"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "TV Qrupları"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Kanal Loqoları"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Radio Qrupları"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "TV qrup rejimi"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Radio qrup rejimi"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Bütün qruplar"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Bəzi qruplar"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Fərdi qruplar"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "TV qruplarının sayı"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV Loqo Seçimləri"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "XMLTV-dən kanalların loqoları"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Məhəl qoyma"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "M3U-ya üstünlük verin"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "XMLTV-yə üstünlük verin"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Televiziya qrupu 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Televiziya qrupu 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Televiziya qrupu 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Televiziya qrupu 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Televiziya qrupu 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Janrlar"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Janrları xəritələşdirərkən XMLTV-dən janr mətnindən istifadə edin"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Janrlar yolu"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Janrların URL-i"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Fərdi TV qrupları faylı"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Radio qrupu 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Radio qrupu 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Radio qrupu 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Radio qrupu 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Radio qrupu 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Qabaqcıl"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Multicast relay (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Multicast axın URL-lərini çevirin"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Relay host adı və ya IP ünvanı"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Relay portu"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Axın"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "m3u8 (HLS) axınları üçün inputstream.adaptive istifadə edin"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Mümkünsə, FFmpeg http yenidən qoşulma seçimlərindən istifadə edin"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "İstifadəçi-Agent"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Giriş axını adı"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME növü"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Kanal defoltları"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Radio qruplarının sayı"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Fərdi Radio qrupları faylı"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Yalnız qruplarda Radio kanallarını yükləyin"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Qruplar"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "EPG Kanal İdentifikatorları üçün İşə İqnor Edin"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U Başlanğıc Yoxlanışı"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Yoxlama üçün vaxt aşımı"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Yoxlama üçün interval"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Radio"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Giriş axını xətası"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "%s addon quraşdırılmayıb."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "%s əlavəsi aktiv deyil."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Əlavənin işləməsi üçün tələb olunan ümumi parametrlər."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Kanalların nömrələnməsinə başlamaq üçün nömrə. Yalnız PVR parametrlərindən [B]Use backend kanal nömrələri[/B] aktiv olduqda və kanal nömrəsi M3U faylında təqdim edilmədikdə istifadə olunur."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Hər hansı 'tvg-chno' teqlərinə məhəl qoymayın və yalnız M3U-da 'Kanal nömrəsini başlat'dan başlayaraq sıra ilə kanalları nömrələyin."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "M3U faylından yalnız qruplara aid olan televiziya kanalları (yəni [B]group-title[/B] atributuna malikdir) yüklənəcək."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Aşağıdakı üç rejimdən birini seçin: [B]Bütün qruplar[/B] M3U faylından bütün TV qruplarını yükləyin; [B]Some groups[/B] Only load the groups specified in the next options; [B]Xüsusi qruplar[/B] M3U faylından adları XML faylından yüklənmiş qruplar toplusunu yükləyin."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Əgər əvvəlki seçim \"Bəzi qruplar\" olaraq təyin edilibsə, siz M3U faylından yüklənəcək TV qrupunu təyin etməlisiniz. Nəzərə alın ki, bu, qrup başlıq atributunda göstərildiyi kimi qrup adıdır (yəni 'UK (TV)'). Bu parametr hərflərə həssasdır."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Əgər əvvəlki seçim “Bəzi qruplar” olaraq təyin edilibsə, siz M3U faylından götürüləcək Radio qrupunu təyin etməlisiniz. Xahiş edirik unutmayın ki, bu, qrup başlığı atributunda göstərildiyi kimi qrup adıdır (yəni, \"Böyük Britaniya (Radio)\"). Bu parametr hərflərə həssasdır."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Fərdi TV qruplarını yükləmək üçün istifadə edilən fayl. Defolt fayl `customTVGroups-example.xml`-dir."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Fərdi Radio qruplarını yükləmək üçün istifadə edilən fayl. Defolt fayl `customRadioGroups-example.xml`-dir."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "`Some groups` seçilmiş rejim olduqda yüklənəcək TV qruplarının sayı. 5-ə qədər seçilə bilər. 5-dən çox tələb olunarsa, bunun əvəzinə \"Xüsusi qruplar\" rejimi istifadə edilməlidir."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "`Some groups` seçilmiş rejim olduqda yüklənəcək Radio qruplarının sayı. 5-ə qədər seçilə bilər. 5-dən çox tələb olunarsa, bunun əvəzinə \"Xüsusi qruplar\" rejimi istifadə edilməlidir."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "M3U faylından yalnız qruplara aid olan Radio kanalları (yəni [B]group-title[/B] atributuna malikdir) yüklənəcək."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "EPG ilə əlaqəli parametrlər. Qeyd edək ki, Kodi yalnız lazım olduqda EPG məlumatlarını yükləyəcək. Əlavə, ya tutma aktiv olduqda və ya XMLTV loqoları tələb olunarsa, Kodi-nin tələb edib etməməsindən asılı olmayaraq, EPG məlumatlarının yüklənməsini məcbur edəcəkdir."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "EPG vaxtlarını bu dəyərlə -12 saatdan +14 saata qədər tənzimləyin."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "`EPG time shift` ilə bütün kanallar üçün vaxt dəyişikliyinin ləğv edilib-edilməməsi. Aktiv deyilsə `EPG time shift` üstəgəl kanal başına fərdi vaxt dəyişikliyindən (əgər varsa) istifadə olunacaq."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Kanalları EPG girişlərinə uyğunlaşdırarkən, həmçinin tvg-id kimi tanınan EPG Kanal İdentifikatorları üçün Case-ə məhəl qoymayın. Deaktiv edilərsə, yalnız hərf-nəqliyyat uyğunluğu istifadə ediləcək."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Etibarlı M3U faylını yoxlayarkən, cəhdin vaxtı bitməzdən əvvəl gözləmə müddəti."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Etibarlı M3U faylını yoxlayarkən, cəhdlər arasında gözləmə müddəti. Qeyd edək ki, etibarlı fayl yalnız işə salındıqda yoxlanılacaq və etibarlı fayl tapıldıqdan sonra bütün yoxlamalar dayandırılır."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Kanal Loqoları ilə əlaqəli parametrlər."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Kanal loqolarının idarə edilməsinə üstünlük verilir. Seçimlər bunlardır: [B]Ignore[/B] - XMLTV faylından kanal loqolarından istifadə etməyin; [B]Prefer M3U[/B] - M3U-dan kanal loqosundan istifadə edin, əgər varsa, XMLTV loqosundan istifadə edin; [B]XMLTV-yə üstünlük verin[/B] - XMLTV faylındakı kanal loqosundan istifadə edin, əks halda M3U loqosundan istifadə edin."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Aktivdirsə və janr növü və alt növü əldə etmək üçün janr xəritəçəkmə faylı istifadə edilərsə, standart kodi mətni əvəzinə janr üçün EPG-nin janr mətnindən (yəni \"kateqoriya\" mətni) istifadə edin."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Janrların XML resursunun harada tapılacağını seçin. Seçimlər bunlardır: [B]Yerli yol[/B] - Cihazda və ya yerli şəbəkədə olsun, janr XML faylına gedən yol; [B]Remote path[/B] - XML ​​faylının janrlarının yerini göstərən URL."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Məkan [B]Yerli Yol[/B] olarsa, bu parametr etibarlı yoldan ibarət olmalıdır."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Məkan [B]Remote Path[/B] olarsa, bu parametr etibarlı URL-dən ibarət olmalıdır."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Multicast releləri, axın xüsusiyyətləri və s. daxil olmaqla qabaqcıl parametrlər."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Multicast (UDP/RTP) axınları Wi-Fi şəbəkələrində yaxşı işləmir. Multicast relay axını UDP/RTP multicast-dan HTTP-yə çevirə bilər. Bu seçimin aktivləşdirilməsi multicast axın URL-lərini M3U faylından HTTP ünvanlarına çevirəcək ki, onlara yerli şəbəkədə \"udpxy\" relayı vasitəsilə daxil olmaq mümkün olsun. məs. 'udp://@239.239.3.38:5239' kimi bir UDP multicast axın URL-i 'http://192.168.1.1:4000/udp/239.239.3.38:5239' kimi bir şeyə çevriləcək."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Lokal şəbəkədəki çoxqavralı relayın (udpxy) host adı və ya IP ünvanı."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Lokal şəbəkədə multicast relay portu (udpxy)."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "m3u8 (HLS) axınları üçün ffmpeg-in libavformat yerinə inputstream.adaptive istifadə edin."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Nəzərə alın ki, bu, yalnız libavformat (məsələn, M3u8/HLS) tərəfindən işlənən http/https axınlarına şamil edilə bilər. Libavformatdan istifadə M3U faylında `inputstream` xassəsini kodi-nin daxili tətbiqi üçün `inputstream.ffmpeg` və ya addon versiyası üçün `inputstream.ffmpegdirect` kimi təyin etməklə müəyyən edilə bilər. yəni. xəttin əlavə edilməsi: `#KODIPROP:inputstream=inputstream.ffmpeg`. Bu seçim aktiv deyilsə, kodi xassəsini əlavə etməklə hər bir axın/kanal üçün aktivləşdirilə bilər, yəni: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Mülk olaraq və ya kanal axını URL-nin bir hissəsi kimi təmin edilmədikdə bu İstifadəçi-Agentdən istifadə edin."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Kanalın mülkiyyəti (KODIPROP) kimi təmin edilməmişsə, bu giriş yayımını defolt olaraq istifadə edin. Diqqətlə istifadə edin, çünki bu, addonun defolt axın yoxlama davranışının hər hansı istifadəsini deaktiv edəcək. Nəzərə alın ki, `inputstream.ffmpegdirect` üçün həm `mimetype`, həm də `inputstream.ffmpegdirect.manifest_type` təyin olunmayıbsa, tələb olunarsa, axın yoxlaması davam edəcək."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Kanalın mülkiyyəti (KODIPROP) kimi təmin edilmədikdə, bu MIME növünü defolt olaraq istifadə edin. Diqqətlə istifadə edin, çünki bu, addonun defolt axın yoxlama davranışının hər hansı istifadəsini deaktiv edəcək."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Kanal qruplarının fərdiləşdirilməsi üzrə parametrlər."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "SAT>IP avtomatik konfiqurasiyasını aktivləşdirin"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Avtomatik olaraq SAT>IP serverlərini kəşf edin və kanal, EPG və loqo mənbələrini həll edin."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Seçilmiş SAT>IP server host və ya URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Hazırda seçilmiş SAT>IP serverini göstərir. Həm də əl ilə daxil edilə bilər."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "FRITZ!Box HD pleylistinə üstünlük verin"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Mövcud olduqda SD/defolt pleylistlər əvəzinə /dvb/m3u/tvhd.m3u-ya üstünlük verin."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP kəşf vaxt aşımı"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "İndiyə qədər tapılmış ən yaxşı nəticədən istifadə etməzdən əvvəl SSDP kəşfinin nə qədər müddətə işləməsinə icazə verilir."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX saniyə"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "SSDP M-SEARCH sorğuları üçün istifadə edilən MX dəyəri."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Loqo əsas URL-ni ləğv edin"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Loqolar pleylistə/EPG-ə daxil edilmədikdə istifadə edilən isteğe bağlı loqo bazası URL-i."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "SAT>IP EPG önbelleğini təmizləyin"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Keşlənmiş SAT>IP EPG məlumatlarını silir. Növbəti Kodi EPG yeniləməsində təzə məlumat yüklənir."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "SAT>IP EPG önbelleği indi silinsin?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG önbelleği təmizləndi. Yenidən yükləmək üçün Kodi EPG-ni yeniləyin."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi SAT>IP EPG məlumatlarını yenidən yükləyir. Bu bir az vaxt ala bilər."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG yenidən yüklənməsi tamamlandı."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Loqo yoxlamaları üçün FRITZ!Box girişindən istifadə edin"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Aktivdirsə, loqo URL-i FRITZ!Box-a qarşı yoxlayır, yerli giriş sessiyasından istifadə edir."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box istifadəçi adı"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Qorunan kanal loqolarına daxil olmaq üçün yerli FRITZ!Box girişi üçün istifadə edilən istifadəçi adı."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRITZ!Box parolu"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Yerli FRITZ!Box girişi üçün istifadə edilən parol. O, yalnız SID yaradılması üçün yaddaşda istifadə olunur."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Tapın və SAT>IP server seçin"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Server kəşfini açır və aşkarlanmış SAT>IP serverlərindən birini seçməyə imkan verir. Nəticə aşağıdakı sahəyə yazılır."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "SAT>IP server seçin"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Lokal şəbəkədə heç bir SAT>IP server tapılmadı."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Seçilmiş server: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Lokal şəbəkədə SAT>IP serverləri axtarılır..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Skanlama interfeysi: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Cari server: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Cari"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Seçilmiş SAT>IP serverini saxlamaq mümkün olmadı."
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Box girişi {host} üçün uğurlu oldu"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ!Box girişi {host} üçün uğursuz oldu: {error}"

@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Armenian <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/hy_am/>\n"
+"Language: hy_am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Տեղը"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Տեղական ուղի (ներառյալ տեղական ցանցը)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Հեռավոր ճանապարհ (ինտերնետ հասցե)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Գլխավոր"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Սկսել ալիքի համարը"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "M3U-ում համարը միայն ալիքի պատվերով"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG-ի կարգավորումներ"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Կիրառել ժամանակի հերթափոխը բոլոր ալիքների վրա"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG ժամանակի հերթափոխ"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Հեռուստաալիքները միայն խմբերով բեռնեք"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Հեռուստախմբեր"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Ալիքի լոգոները"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Ռադիոյի խմբեր"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Հեռուստատեսային խմբի ռեժիմ"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Ռադիոյի խմբի ռեժիմ"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Բոլոր խմբերը"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Որոշ խմբեր"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Պատվերով խմբեր"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Հեռուստախմբերի թիվը"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV լոգոների ընտրանքներ"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Ալիքների լոգոները XMLTV-ից"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Անտեսել"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Նախընտրեք M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Նախընտրեք XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Հեռուստատեսային խումբ 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Հեռուստատեսային խումբ 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Հեռուստատեսային խումբ 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Հեռուստատեսային խումբ 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Հեռուստատեսային խումբ 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Ժանրեր"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Ժանրերը քարտեզագրելիս օգտագործեք XMLTV-ի ժանրի տեքստը"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Ժանրային ուղի"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Ժանրերի URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Պատվերով հեռուստատեսային խմբերի ֆայլ"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Ռադիո խումբ 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Ռադիո խումբ 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Ռադիո խումբ 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Ռադիո խումբ 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Ռադիո խումբ 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Ընդլայնված"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Multicast ռելե (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Փոխակերպեք բազմաբնույթ հոսքի URL-ները"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Փոխանցել հոսթի անունը կամ IP հասցեն"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Ռելե պորտ"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Սթրիմինգ"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Օգտագործեք inputstream.adaptive-ը m3u8 (HLS) հոսքերի համար"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Հնարավորության դեպքում օգտագործեք FFmpeg http վերամիացման տարբերակները"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Օգտատեր-Գործակալ"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Ներածման հոսքի անվանումը"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME տեսակը"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Ալիքի կանխադրվածները"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Ռադիոյի խմբերի քանակը"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Պատվերով ռադիո խմբերի ֆայլ"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Բեռնել ռադիոալիքները միայն խմբերով"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Խմբեր"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Անտեսել գործը EPG ալիքի ID-ների համար"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U գործարկման ստուգում"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Ստուգման ժամանակի ավարտ"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Ստուգման ընդմիջում"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "հեռուստացույց"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Ռադիո"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Ներածման հոսքի սխալ"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "%s հավելումը տեղադրված չէ:"
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "%s հավելումը միացված չէ:"
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Հավելվածի գործարկման համար անհրաժեշտ ընդհանուր կարգավորումներ:"
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Համարը, որից սկսելու համարակալել ալիքները: Օգտագործվում է միայն այն դեպքում, երբ [B]Օգտագործեք հետևի ալիքի համարները[/B] PVR կարգավորումներից, միացված է, և ալիքի համարը M3U ֆայլում նշված չէ:"
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Անտեսեք «tvg-chno» պիտակները և միայն թվային ալիքները՝ M3U-ում «Սկսել ալիքի համարից» հերթականությամբ:"
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "M3U ֆայլից կբեռնվեն միայն այն հեռուստաալիքները, որոնք պատկանում են խմբերին (այսինքն՝ ունեն [B]group-title[/B] հատկանիշ):"
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Ընտրեք հետևյալ երեք ռեժիմներից մեկը. [B]Բոլոր խմբերը[/B] Բեռնել բոլոր հեռուստատեսային խմբերը M3U ֆայլից; [B]Որոշ խմբեր[/B] Բեռնում են միայն հաջորդ ընտրանքներում նշված խմբերը; [B]Պատվերով խմբեր[/B] Բեռնել խմբերի մի շարք M3U ֆայլից, որոնց անունները բեռնված են XML ֆայլից:"
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Եթե ​​նախորդ տարբերակը սահմանվել է «Որոշ խմբեր», ապա պետք է նշեք հեռուստատեսային խումբ, որը պետք է բեռնվի M3U ֆայլից: Խնդրում ենք նկատի ունենալ, որ սա խմբի անվանումն է, ինչպես ցույց է տրված group-title հատկանիշում (այսինքն՝ «Մեծ Բրիտանիա (TV)»): Այս կարգավորումը մեծատառերի նկատմամբ զգայուն է:"
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Եթե ​​նախորդ տարբերակը սահմանվել է «Որոշ խմբեր», ապա պետք է նշեք ռադիո խումբ, որը պետք է բեռնվի M3U ֆայլից: Խնդրում ենք նկատի ունենալ, որ սա խմբի անվանումն է, ինչպես ցույց է տրված group-title հատկանիշում (այսինքն՝ «Մեծ Բրիտանիա (Ռադիո)»): Այս կարգավորումը մեծատառերի նկատմամբ զգայուն է:"
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Ֆայլը օգտագործվում է հատուկ հեռուստատեսային խմբերը բեռնելու համար: Նախնական ֆայլը `customTVGroups-example.xml` է:"
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Ֆայլն օգտագործվում է հատուկ ռադիո խմբերը բեռնելու համար: Նախնական ֆայլը `customRadioGroups-example.xml` է:"
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Հեռուստատեսային խմբերի քանակը, որոնք պետք է բեռնվեն, երբ `Some groups` ընտրված ռեժիմն է: Կարելի է ընտրել մինչև 5: Եթե ​​պահանջվում է ավելի քան 5, փոխարենը պետք է օգտագործվի «Պատվերով խմբեր» ռեժիմը:"
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Ռադիոյի խմբերի քանակը, որոնք պետք է բեռնվեն, երբ `Some groups` ընտրված ռեժիմն է: Կարելի է ընտրել մինչև 5: Եթե ​​պահանջվում է ավելի քան 5, փոխարենը պետք է օգտագործվի «Պատվերով խմբեր» ռեժիմը:"
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "M3U ֆայլից կբեռնվեն միայն խմբերին պատկանող ռադիոալիքները (այսինքն՝ ունեն [B]group-title[/B] հատկանիշ):"
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "EPG-ի հետ կապված կարգավորումներ: Նկատի ունեցեք, որ Kodi-ն միայն անհրաժեշտության դեպքում կբեռնի EPG-ի տվյալները: Հավելվածը կստիպի բեռնել EPG-ի տվյալները՝ անկախ այն բանից, թե Կոդի-ն դա կպահանջի, թե ոչ, եթե catchup-ը միացված է, կամ պահանջվում են XMLTV լոգոներ։"
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Կարգավորեք EPG-ի ժամանակներն այս արժեքով՝ -12 ժամից մինչև +14 ժամ:"
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Անտեսել ժամանակի հերթափոխը `EPG time shift`-ով բոլոր ալիքների համար, թե ոչ: Եթե ​​միացված չէ `EPG time shift` գումարած յուրաքանչյուր ալիքի անհատական ​​ժամանակի հերթափոխը (եթե առկա է):"
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Անտեսեք գործը EPG ալիքի ID-ների համար, որը նաև հայտնի է որպես tvg-id's, երբ ալիքները համընկնում են EPG գրառումների հետ: Եթե ​​անջատված է, կօգտագործվի միայն մեծատառերի համընկնում:"
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Վավեր M3U ֆայլի առկայությունը ստուգելիս՝ փորձի ժամանակի ավարտից առաջ սպասելու տևողությունը:"
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Վավեր M3U ֆայլի առկայությունը ստուգելիս փորձերի միջև սպասելու տևողությունը: Նկատի ունեցեք, որ վավեր ֆայլը կստուգվի միայն գործարկման ժամանակ, և վավեր ֆայլ գտնելուց հետո բոլոր ստուգումները կդադարեն:"
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Ալիքի լոգոների հետ կապված կարգավորումներ:"
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Նախապատվությունը, թե ինչպես վարվել ալիքների լոգոների հետ: Ընտրանքներն են՝ [B]Ignore[/B] - Մի օգտագործեք ալիքների լոգոները XMLTV ֆայլից; [B]Prefer M3U[/B] - Օգտագործեք ալիքի պատկերանշանը M3U-ից, եթե առկա է, այլապես օգտագործեք XMLTV լոգոն; [B]Prefer XMLTV[/B] - Օգտագործեք ալիքի պատկերանշանը XMLTV ֆայլից, եթե առկա է, այլապես օգտագործեք M3U լոգոն:"
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Եթե ​​միացված է, և ժանրի քարտեզագրման ֆայլը օգտագործվում է ժանրի տեսակ և ենթատեսակ ստանալու համար, օգտագործեք EPG-ի ժանրի տեքստը (այսինքն՝ «կատեգորիա» տեքստը) ժանրի համար kodi լռելյայն տեքստի փոխարեն:"
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Ընտրեք որտեղ գտնել XML ժանրերի ռեսուրսը: Ընտրանքներն են՝ [B]Local path[/B] - Ճանապարհ դեպի ժանրային XML ֆայլ, լինի դա սարքում, թե տեղական ցանցում; [B]Remote path[/B] - URL, որը նշում է ժանրերի XML ֆայլի գտնվելու վայրը:"
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Եթե ​​գտնվելու վայրը [B]Local Path[/B] է, այս կարգավորումը պետք է պարունակի վավեր ուղի:"
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Եթե ​​գտնվելու վայրը [B]Remote Path[/B] է, այս կարգավորումը պետք է պարունակի վավեր URL:"
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Ընդլայնված կարգավորումներ, ներառյալ բազմաբնույթ ռելեներ, հոսքային հատկություններ և այլն:"
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Multicast (UDP/RTP) հոսքերը լավ չեն աշխատում Wifi ցանցերում: Multicast ռելեը կարող է փոխարկել հոսքը UDP/RTP multicast-ից HTTP-ի: Այս ընտրանքի ակտիվացումը կվերածի բազմակի հեռարձակման URL-ները M3U ֆայլից HTTP հասցեների, որպեսզի դրանք հասանելի լինեն տեղական ցանցում «udpxy» ռելեի միջոցով: օր. UDP multicast հոսքի URL-ը, ինչպիսին «udp://@239.239.3.38:5239»-ն է, կվերածվի «http://192.168.1.1:4000/udp/239.239.3.38:5239»-ի նման մի բանի:"
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Տեղական ցանցում բազմահաղորդիչ ռելեի (udpxy) հյուրընկալողի անունը կամ ip հասցեն:"
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Multicast ռելեի նավահանգիստը (udpxy) տեղական ցանցում:"
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "m3u8 (HLS) հոսքերի համար ffmpeg-ի libavformat-ի փոխարեն օգտագործեք inputstream.adaptive-ը:"
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Նկատի ունեցեք, որ սա կարող է վերաբերել միայն http/https հոսքերին, որոնք մշակվում են libavformat-ով (օրինակ՝ M3u8/HLS): Libavformat-ի օգտագործումը կարող է նշվել M3U ֆայլում՝ սահմանելով `inputstream` հատկությունը որպես `inputstream.ffmpeg` kodi-ի ներքին իրականացման համար կամ `inputstream.ffmpegdirect` հավելյալ տարբերակի համար: այսինքն. ավելացնելով տողը՝ `#KODIPROP:inputstream=inputstream.ffmpeg`: Եթե ​​այս տարբերակը միացված չէ, այն դեռևս կարող է միացվել յուրաքանչյուր հոսքի/ալիքի համար՝ ավելացնելով kodi հատկություն, այսինքն՝ `#KODIPROP:http-reconnect=true`:"
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Օգտագործեք այս օգտվող-գործակալը, եթե չկա մեկը, որը տրամադրվում է որպես սեփականություն կամ որպես ալիքի հոսքի URL-ի մաս:"
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Օգտագործեք այս inputsream-ը որպես լռելյայն, եթե ալիքի հատկություն (KODIPROP) չկա: Օգտագործեք զգուշությամբ, քանի որ դա կանջատի հավելումների կանխադրված հոսքի ստուգման վարքագծի ցանկացած օգտագործում: Նկատի ունեցեք, որ `inputstream.ffmpegdirect`-ի դեպքում, եթե և `mimetype`-ը և `inputstream.ffmpegdirect.manifest_type`-ը կարգավորված չեն, հոսքի ստուգումը դեռ կկատարվի, եթե պահանջվի:"
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Օգտագործեք այս MIME տեսակը որպես լռելյայն, եթե ալիքի հատկություն (KODIPROP) չկա: Օգտագործեք զգուշությամբ, քանի որ դա կանջատի հավելումների կանխադրված հոսքի ստուգման վարքագծի ցանկացած օգտագործում:"
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Ալիքների խմբերի հարմարեցման կարգավորումներ:"
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Միացնել SAT>IP ավտոմատ կազմաձևումը"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Ավտոմատ կերպով հայտնաբերեք SAT>IP սերվերները և լուծեք ալիքի, EPG-ի և լոգոյի աղբյուրները:"
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Ընտրված է SAT>IP սերվերի հոսթ կամ URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Ցույց է տալիս ներկայումս ընտրված SAT>IP սերվերը: Այն կարող է մուտքագրվել նաև ձեռքով:"
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Նախընտրեք FRITZ!Box HD երգացանկը"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Նախընտրեք /dvb/m3u/tvhd.m3u-ն, քան SD/կանխադրված երգացանկը, երբ առկա է:"
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP-ի հայտնաբերման ժամանակի սպառում"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Որքա՞ն ժամանակ է թույլատրվում գործել SSDP-ի հայտնաբերումը մինչև մինչ այժմ գտնված լավագույն արդյունքն օգտագործելը:"
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX վայրկյան"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "MX արժեքը, որն օգտագործվում է SSDP M-SEARCH հարցումների համար:"
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Անտեսել լոգոյի բազային URL-ը"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Լոգոյի հիմնական URL-ն օգտագործվում է, երբ լոգոները ներառված չեն երգացանկում/EPG-ում:"
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Մաքրել SAT>IP EPG քեշը"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Ջնջում է պահված SAT>IP EPG տվյալները: Թարմ տվյալները բեռնվում են Kodi EPG-ի հաջորդ թարմացման վրա:"
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Ջնջե՞լ SAT>IP EPG քեշը հիմա:"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG քեշը մաքրվեց: Թարմացրեք Kodi EPG-ը՝ վերաբեռնելու համար:"
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi-ն վերաբեռնում է SAT>IP EPG տվյալները. Սա կարող է որոշ ժամանակ պահանջել:"
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG վերաբեռնումն ավարտված է:"
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Օգտագործեք FRITZ!Box-ի մուտքը պատկերանշանի ստուգման համար"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Եթե ​​միացված է, լոգոտիպի URL-ը ստուգում է FRITZ!Box-ը օգտագործել տեղական մուտքի սեսիա:"
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box օգտվողի անուն"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Օգտանուն օգտագործվում է տեղական FRITZ!Box մուտքի համար՝ պաշտպանված ալիքների լոգոները մուտք գործելու համար:"
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRITZ!Box գաղտնաբառ"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Գաղտնաբառ, որն օգտագործվում է տեղական FRITZ!Box մուտքի համար: Այն օգտագործվում է միայն հիշողության մեջ SID ստեղծելու համար:"
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Գտեք և ընտրեք SAT>IP սերվեր"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Բացում է սերվերի հայտնաբերումը և թույլ է տալիս ընտրել հայտնաբերված SAT>IP սերվերներից մեկը: Արդյունքը գրված է ստորև նշված դաշտում:"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Ընտրեք SAT>IP սերվեր"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Տեղական ցանցում SAT>IP սերվեր չի գտնվել:"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Ընտրված սերվեր՝ {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "SAT>IP սերվերների որոնում տեղական ցանցում ..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Սկանավորման ինտերֆեյս՝ {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Ընթացիկ սերվեր՝ {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Ընթացիկ"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Ընտրված SAT>IP սերվերը չի կարող պահպանվել:"
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Box-ի մուտքը հաջողվեց {host}-ի համար"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ! Box մուտքը ձախողվեց {host}-ի համար՝ {error}"

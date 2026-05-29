@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Esperanto <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/eo/>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Loko"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Loka vojo (inkludas lokan reton)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Fora vojo (interreta adreso)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Generalo"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Komencu kanalan numeron"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Nur nombro laŭ kanalordo en M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG-agordoj"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Apliki tempoŝanĝon al ĉiuj kanaloj"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG tempoŝanĝo"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Ŝarĝu nur televidkanalojn en grupoj"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Televidgrupoj"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Kanalo-Emblemoj"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Radiogrupoj"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Televida grupreĝimo"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Reĝimo de radiogrupo"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Ĉiuj grupoj"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Kelkaj grupoj"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Propraj grupoj"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Nombro de televidgrupoj"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV Logos Opcioj"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Kanala emblemoj de XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Ignoru"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Prefere M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Prefere XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Televida grupo 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Televida grupo 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Televida grupo 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Televida grupo 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Televida grupo 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Ĝenroj"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Uzu ĝenran tekston de XMLTV dum mapado de ĝenroj"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Vojo de ĝenroj"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Ĝenroj URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Propra televidgrupo dosiero"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Radiogrupo 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Radiogrupo 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Radiogrupo 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Radiogrupo 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Radiogrupo 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Altnivela"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Plurelsenda relajso (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Transformi multielsendajn riveretajn URLojn"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Relajsa gastiga nomo aŭ IP-adreso"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Relajsa haveno"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Streaming"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Uzu inputstream.adaptive por m3u8 (HLS) riveretoj"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Uzu FFmpeg http-rekonekti opciojn se eble"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Uzanto-Agente"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Enigoflua nomo"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME-tipo"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Kanalo defaŭlta"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Nombro de Radiogrupoj"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Propra Radio-grupo dosiero"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Nur ŝarĝu Radiokanalojn en grupoj"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Grupoj"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Ignoru minusklecon por EPG-Kanalaj identigiloj"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U Komenca Kontrolo"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Tempo por kontrolo"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Intervalo por kontrolo"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "televido"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Radio"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Enigoflua eraro"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "La %s aldonaĵo ne estas instalita."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "La %s aldonaĵo ne estas ebligita."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Ĝeneralaj agordoj necesaj por ke la aldonaĵo funkcias."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "La nombro de kiu komenci nombri kanalojn. Nur uzata kiam [B]Uzi backend-kanalaj nombroj[/B] de PVR-agordoj estas ebligita kaj kanalnumero ne estas provizita en la M3U-dosiero."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Ignoru iujn ajn 'tvg-chno'-etikedojn kaj nur nombrajn kanalojn laŭ la ordo en la M3U komencanta ĉe 'Komencu kanalan nombron'."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Nur televidkanaloj kiuj apartenas al grupoj (t.e. havas [B]group-title[/B] atributon) estos ŝargitaj de la M3U-dosiero."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Elektu el unu el la sekvaj tri reĝimoj: [B]Ĉiuj grupoj[/B] Ŝarĝu ĉiujn televidgrupojn el la M3U-dosiero; [B]Kelkaj grupoj[/B] Ŝarĝu nur la grupojn specifitajn en la sekvaj opcioj; [B]Personadaj grupoj[/B] Ŝarĝu aron da grupoj el la M3U-dosiero, kies nomoj estas ŝargitaj el XML-dosiero."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Se la antaŭa opcio estis agordita al 'Kelkaj grupoj', vi devas specifi televidgrupon por ŝarĝi el la M3U-dosiero. Bonvolu noti, ke ĉi tiu estas la grupnomo kiel montrita en la grup-titola atributo (t.e. 'UK (TV)'). Ĉi tiu agordo distingas minuskleklojn."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Se la antaŭa opcio estis agordita al 'Kelkaj grupoj', vi devas specifi Radio-grupon por esti prenita el la M3U-dosiero. Bonvolu noti, ke ĉi tiu estas la grupnomo kiel montrita sur la grup-titola atributo (t.e. 'UK (Radio)'). Ĉi tiu agordo distingas minuskleklojn."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "La dosiero uzata por ŝargi la kutimajn televidgrupojn. La defaŭlta dosiero estas `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "La dosiero uzata por ŝargi la kutimajn Radiogrupojn. La defaŭlta dosiero estas `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "La nombro da televidgrupoj por ŝargi kiam `Some groups` estas la elektita reĝimo. Ĝis 5 povas esti elektitaj. Se necesas pli ol 5 la reĝimo 'Personaraj grupoj' devus esti uzata anstataŭe."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "La nombro da Radiogrupoj por ŝargi kiam `Some groups` estas la elektita reĝimo. Ĝis 5 povas esti elektitaj. Se necesas pli ol 5 la reĝimo 'Personaraj grupoj' devus esti uzata anstataŭe."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Nur radiokanaloj kiuj apartenas al grupoj (t.e. havas [B]group-title[/B] atributon) estos ŝargitaj de la M3U-dosiero."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Agordoj rilataj al la EPG. Notu, ke Kodi ŝarĝos la EPG-datumojn nur kiam ĝi bezonas. La aldonaĵo devigos ŝarĝon de la EPG-datumoj sendepende de ĉu Kodi petas ĝin aŭ ne se aŭ rekaptado estas ebligita aŭ XMLTV-emblemoj estas postulataj."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Alĝustigu la EPG-tempojn laŭ ĉi tiu valoro, de -12 horoj ĝis +14 horoj."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Ĉu anstataŭi aŭ ne la tempoŝanĝon por ĉiuj kanaloj kun `EPG time shift`. Se ne estas ebligita `EPG time shift` plus la individua tempoŝanĝo per kanalo (se disponebla) estos uzata."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Ignoru Kazon por EPG-Kanalo-identigiloj, ankaŭ konataj kiel tvg-id-oj, dum kongruo de kanaloj al EPG-enskriboj. Se malebligita, nur uskle-distinta kongruo estos uzata."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Kiam vi serĉas validan M3U-dosieron, la tempodaŭro por atendi antaŭ la tempodaŭro de la provo."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Kiam vi serĉas validan M3U-dosieron, la tempodaŭro por atendi inter provoj. Notu, ke valida dosiero estos kontrolita nur ĉe ekfunkciigo kaj post kiam valida dosiero estas trovita ĉiuj kontroloj ĉesas."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Agordoj rilataj al Kanalaj Logos."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Prefero pri kiel trakti kanalemblemojn. La opcioj estas: [B]Ignori[/B] - Ne uzu kanalemblemojn de XMLTV-dosiero; [B]Preferi M3U[/B] - Uzu la kanalan emblemon de la M3U se disponebla alie uzu la XMLTV-emblemon; [B]Preferi XMLTV[/B] - Uzu la kanalemblemon de la XMLTV-dosiero se disponebla alie uzu la M3U-emblemon."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Se ebligita, kaj ĝenromapa dosiero estas uzata por akiri ĝenrospecon kaj subspecon, uzu la ĝenrotekston de la EPG (t.e. 'kategoria' teksto) por la ĝenro anstataŭ la kodi-defaŭlta teksto."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Elektu kie trovi la ĝenran XML-rimedon. La opcioj estas: [B]Loka vojo[/B] - Vojo al ĝenra XML-dosiero ĉu ĝi estas sur la aparato aŭ la loka reto; [B]Fora vojo[/B] - URL specifanta la lokon de la ĝenra XML-dosiero."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Se loko estas [B]Loka Vojo[/B] ĉi tiu agordo devus enhavi validan vojon."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Se loko estas [B]Fora Vojo[/B] ĉi tiu agordo devus enhavi validan URL."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Altnivelaj agordoj inkluzive de plurelsendaj relajsoj, fluantaj propraĵoj ktp."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Multirolantaro (UDP/RTP) fluoj ne funkcias bone sur Wifi-retoj. Multirolantaro povas konverti la rivereton de UDP/RTP multirolantaro al HTTP. Ebligi ĉi tiun opcion transformos multielsendfluajn URL-ojn de la M3U-dosiero al HTTP-adresoj por ke ili estu alireblaj per \"udpxy\" relajso en la loka reto. ekz. UDP-multirolanta fluo URL kiel 'udp://@239.239.3.38:5239' transformiĝus al io kiel 'http://192.168.1.1:4000/udp/239.239.3.38:5239'."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "La gastiga nomo aŭ ip-adreso de la plurelsenda relajso (udpxy) en la loka reto."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "La haveno de la plurelsenda relajso (udpxy) sur la loka reto."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Uzu inputstream.adaptive anstataŭ la libavformat de ffmpeg por m3u8 (HLS) fluoj."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Rimarku, ke ĉi tio povas validi nur por http/https-riveretoj, kiuj estas procesitaj de libavformat (ekz. M3u8/HLS). Uzado de libavformat povas esti specifita en M3U-dosiero fiksante la posedaĵon `inputstream` kiel `inputstream.ffmpeg` por interna efektivigo de kodi aŭ `inputstream.ffmpegdirect` por aldonversio. i.e. aldonante la linion: `#KODIPROP:inputstream=inputstream.ffmpeg`. Se ĉi tiu opcio ne estas ebligita, ĝi ankoraŭ povas esti ebligita per rivereto/kanalo aldonante kodi-posedaĵon, t.e.: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Uzu ĉi tiun Uzantan Agenton se ne estas unu provizita kiel posedaĵo aŭ kiel parto de la kanala fluo URL."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Uzu ĉi tiun inputsream kiel defaŭltan se ne estas unu provizita kiel posedaĵo (KODIPROP) de la kanalo. Uzu zorge, ĉar ĉi tio malŝaltos ajnan uzon de la defaŭlta flua inspekta konduto de la aldonaĵo. Rimarku, ke por `inputstream.ffmpegdirect` se kaj `mimetype` kaj `inputstream.ffmpegdirect.manifest_type` estas nemetitaj, inspektado de la fluo ankoraŭ okazos se necese."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Uzu ĉi tiun MIME-tipo kiel defaŭltan se ne ekzistas unu provizita kiel posedaĵo (KODIPROP) de la kanalo. Uzu zorge, ĉar ĉi tio malŝaltos ajnan uzon de la defaŭlta flua inspekta konduto de la aldonaĵo."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Agordoj pri personigo de kanalgrupoj."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Ebligu SAT>IP aŭtomata agordo"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Aŭtomate malkovru SAT>IP-servilojn kaj solvu kanalajn, EPG kaj logofontojn."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Elektita SAT>IP servila gastiganto aŭ URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Montras la nuntempe elektitan SAT>IP-servilon. Ĝi ankaŭ povas esti enigita permane."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Preferas ludliston de FRITZ!Box HD"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Preferu /dvb/m3u/tvhd.m3u ol SD/defaŭltajn ludlistojn kiam disponeblas."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP-malkovrotempo"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Kiom longe SSDP-malkovro rajtas funkcii antaŭ ol uzi la plej bonan rezulton trovitan ĝis nun."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX sekundoj"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "MX-valoro uzata por SSDP M-SEARCH-petoj."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Anstataŭigi logo-bazan URL"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Laŭvola emblema baza URL uzata kiam emblemoj ne estas enigitaj en ludlisto/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Forigi SAT>IP EPG-kaŝmemoron"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Forigas kaŝmemorigitajn datumojn de SAT>IP EPG. Freŝaj datumoj ŝarĝas ĉe sekva Kodi EPG-refreŝiĝo."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Ĉu forigi la kaŝmemoron SAT>IP EPG nun?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG-kaŝmemoro malplenigita. Refreŝigu Kodi EPG por reŝargi."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi reŝargas datumojn de SAT>IP EPG. Ĉi tio povas preni iom da tempo."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG-reŝargi finiĝis."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Uzu FRITZ!Box-ensaluton por logokontroloj"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Se ĝi estas ebligita, logo-URL-kontroloj kontraŭ la FRITZ!Box uzas lokan ensalutan sesion."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box uzantnomo"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Uzantnomo uzata por loka ensaluto de FRITZ!Box por aliri protektitajn kanalajn emblemojn."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "pasvorto de FRITZ!Box"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Pasvorto uzata por loka ensaluto de FRITZ!Box. Ĝi estas uzata nur en memoro por SID-kreado."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Trovu kaj elektu SAT>IP-servilo"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Malfermas servilan malkovron kaj ebligas al vi elekti unu el la detektitaj SAT>IP-serviloj. La rezulto estas skribita en la suban kampon."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Elektu SAT>IP-servilo"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Neniu SAT>IP-servilo trovita en la loka reto."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Elektita servilo: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Serĉante SAT>IP-servilojn en la loka reto..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Skananta interfaco: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Nuna servilo: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Nuna"
+
+msgctxt "#30934"
+msgid ""
+msgstr "La elektita SAT>IP-servilo ne povis esti konservita."
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Box-ensaluto sukcesis por {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "Ensaluto de FRITZ!Box malsukcesis por {host}: {error}"

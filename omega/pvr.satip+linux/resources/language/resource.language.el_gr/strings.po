@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Greek <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/el_gr/>\n"
+"Language: el_gr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Τοποθεσία"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Τοπική διαδρομή (περιλαμβάνει τοπικό δίκτυο)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Απομακρυσμένη διαδρομή (Διεύθυνση Διαδικτύου)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Γενικά"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Αριθμός καναλιού έναρξης"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Μόνο αριθμός κατά παραγγελία καναλιού στο M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "Ρυθμίσεις EPG"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Εφαρμογή χρονικής μετατόπισης σε όλα τα κανάλια"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "Μετατόπιση χρόνου EPG"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Φορτώστε τηλεοπτικά κανάλια μόνο σε ομάδες"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Τηλεοπτικές Ομάδες"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Λογότυπα καναλιών"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Ραδιοφωνικές ομάδες"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Λειτουργία ομάδας τηλεόρασης"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Λειτουργία ομάδας ραδιοφώνου"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Όλες οι ομάδες"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Κάποιες ομάδες"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Προσαρμοσμένες ομάδες"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Αριθμός τηλεοπτικών ομάδων"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "Επιλογές Λογότυπων XMLTV"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Λογότυπα καναλιών από το XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Αγνόηση"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Προτίμηση M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Προτίμηση XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "τηλεοπτική ομάδα 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "τηλεοπτική ομάδα 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Τηλεοπτική ομάδα 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Τηλεοπτική ομάδα 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Τηλεοπτική ομάδα 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Είδη"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Χρησιμοποιήστε κείμενο είδους από το XMLTV κατά την αντιστοίχιση ειδών"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Διαδρομή ειδών"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Διεύθυνση URL ειδών"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Προσαρμοσμένο αρχείο ομάδων τηλεόρασης"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Ραδιοφωνική ομάδα 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Ραδιοφωνική ομάδα 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Ραδιοφωνική ομάδα 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Ραδιοφωνική ομάδα 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Ραδιοφωνική ομάδα 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Για Προχωρημένους"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Ρελέ πολλαπλής εκπομπής (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Μεταμορφώστε τις διευθύνσεις URL ροής πολλαπλής διανομής"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Αναμετάδοση ονόματος κεντρικού υπολογιστή ή διεύθυνσης IP"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Θύρα ρελέ"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Ροή"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Χρησιμοποιήστε το inputstream.adaptive για ροές m3u8 (HLS)."
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Χρησιμοποιήστε τις επιλογές επανασύνδεσης FFmpeg http εάν είναι δυνατόν"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Χρήστης-Πράκτορας"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Όνομα ροής εισόδου"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "Τύπος MIME"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Προεπιλογές καναλιού"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Αριθμός ραδιοφωνικών ομάδων"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Αρχείο προσαρμοσμένων ομάδων ραδιοφώνου"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Φορτώστε ραδιοφωνικά κανάλια μόνο σε ομάδες"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Ομάδες"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Παράβλεψη πεζών-κεφαλαίων για αναγνωριστικά καναλιών EPG"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "Έλεγχος εκκίνησης M3U"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Χρονικό όριο για έλεγχο"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Διάστημα για έλεγχο"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "Τηλεόραση"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Ραδιόφωνο"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Σφάλμα ροής εισόδου"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "Το πρόσθετο %s δεν είναι εγκατεστημένο."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "Το πρόσθετο %s δεν είναι ενεργοποιημένο."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Γενικές ρυθμίσεις που απαιτούνται για τη λειτουργία του πρόσθετου."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Ο αριθμός από τον οποίο ξεκινά η αρίθμηση καναλιών. Χρησιμοποιείται μόνο όταν η [B]Χρήση αριθμών καναλιών υποστήριξης[/B] από τις ρυθμίσεις PVR είναι ενεργοποιημένη και δεν παρέχεται αριθμός καναλιού στο αρχείο M3U."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Αγνοήστε τυχόν ετικέτες «tvg-chno» και μόνο αριθμήστε κανάλια με τη σειρά στο M3U που ξεκινά από «Αριθμός καναλιού έναρξης»."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Μόνο τα τηλεοπτικά κανάλια που ανήκουν σε ομάδες (δηλαδή έχουν χαρακτηριστικό [B]group-title[/B]) θα φορτωθούν από το αρχείο M3U."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Επιλέξτε μία από τις ακόλουθες τρεις λειτουργίες: [B]Όλες οι ομάδες[/B] Φόρτωση όλων των ομάδων τηλεόρασης από το αρχείο M3U. [B]Ορισμένες ομάδες[/B] Φορτώνουν μόνο τις ομάδες που καθορίζονται στις επόμενες επιλογές. [B]Προσαρμοσμένες ομάδες[/B] Φόρτωση ενός συνόλου ομάδων από το αρχείο M3U των οποίων τα ονόματα φορτώνονται από ένα αρχείο XML."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Εάν η προηγούμενη επιλογή έχει οριστεί σε 'Ορισμένες ομάδες', πρέπει να καθορίσετε μια ομάδα τηλεόρασης που θα φορτωθεί από το αρχείο M3U. Λάβετε υπόψη ότι αυτό είναι το όνομα της ομάδας όπως φαίνεται στο χαρακτηριστικό group-title (δηλαδή «Η.Β. (TV)»). Αυτή η ρύθμιση είναι διάκριση πεζών-κεφαλαίων."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Εάν η προηγούμενη επιλογή έχει οριστεί σε 'Ορισμένες ομάδες', πρέπει να καθορίσετε μια ομάδα ραδιοφώνου που θα ληφθεί από το αρχείο M3U. Μην ξεχνάτε ότι αυτό είναι το όνομα της ομάδας όπως φαίνεται στο χαρακτηριστικό group-title (δηλαδή «Η.Β. (Ραδιόφωνο)»). Αυτή η ρύθμιση είναι διάκριση πεζών-κεφαλαίων."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Το αρχείο που χρησιμοποιείται για τη φόρτωση των προσαρμοσμένων ομάδων τηλεόρασης. Το προεπιλεγμένο αρχείο είναι `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Το αρχείο που χρησιμοποιείται για τη φόρτωση των προσαρμοσμένων ομάδων ραδιοφώνου. Το προεπιλεγμένο αρχείο είναι `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Ο αριθμός των ομάδων τηλεόρασης που θα φορτωθούν όταν `Some groups` είναι η επιλεγμένη λειτουργία. Μπορούν να επιλεγούν έως και 5. Εάν απαιτούνται περισσότερες από 5, θα πρέπει να χρησιμοποιηθεί η λειτουργία \"Προσαρμοσμένες ομάδες\"."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Ο αριθμός των ομάδων ραδιοφώνου που θα φορτωθούν όταν `Some groups` είναι η επιλεγμένη λειτουργία. Μπορούν να επιλεγούν έως και 5. Εάν απαιτούνται περισσότερες από 5, θα πρέπει να χρησιμοποιηθεί η λειτουργία \"Προσαρμοσμένες ομάδες\"."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Μόνο τα ραδιοφωνικά κανάλια που ανήκουν σε ομάδες (δηλαδή έχουν χαρακτηριστικό [B]group-title[/B]) θα φορτώνονται από το αρχείο M3U."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Ρυθμίσεις που σχετίζονται με το EPG. Σημειώστε ότι το Kodi θα φορτώσει τα δεδομένα EPG μόνο όταν χρειάζεται. Το πρόσθετο θα αναγκάσει τη φόρτωση των δεδομένων EPG ανεξάρτητα από το εάν το ζητά ή όχι το Kodi εάν είναι ενεργοποιημένο είτε το catchup είτε απαιτούνται λογότυπα XMLTV."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Προσαρμόστε τους χρόνους EPG με αυτήν την τιμή, από -12 ώρες σε +14 ώρες."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Αν θα παρακάμψει ή όχι τη χρονική μετατόπιση για όλα τα κανάλια με `EPG time shift`. Εάν δεν είναι ενεργοποιημένο, θα χρησιμοποιηθούν τα `EPG time shift` συν η μεμονωμένη χρονική μετατόπιση ανά κανάλι (εάν υπάρχει)."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Αγνοήστε το Case για τα αναγνωριστικά καναλιών EPG, γνωστά και ως tvg-id's, κατά την αντιστοίχιση καναλιών με καταχωρίσεις EPG. Εάν είναι απενεργοποιημένη, θα χρησιμοποιείται μόνο αντιστοίχιση με διάκριση πεζών-κεφαλαίων."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Κατά τον έλεγχο για ένα έγκυρο αρχείο M3U, το χρονικό διάστημα αναμονής προτού λήξει η προσπάθεια."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Κατά τον έλεγχο για έγκυρο αρχείο M3U, το χρονικό διάστημα αναμονής μεταξύ των προσπαθειών. Σημειώστε ότι ένα έγκυρο αρχείο θα ελέγχεται μόνο κατά την εκκίνηση και μόλις βρεθεί ένα έγκυρο αρχείο σταματούν όλοι οι έλεγχοι."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Ρυθμίσεις που σχετίζονται με τα λογότυπα καναλιών."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Προτίμηση για τον τρόπο χειρισμού των λογότυπων καναλιών. Οι επιλογές είναι: [B]Ignore[/B] - Μην χρησιμοποιείτε λογότυπα καναλιών από αρχείο XMLTV. [B]Prefer M3U[/B] - Χρησιμοποιήστε το λογότυπο του καναλιού από το M3U, εάν είναι διαθέσιμο, διαφορετικά χρησιμοποιήστε το λογότυπο XMLTV. [B]Προτιμήστε XMLTV[/B] - Χρησιμοποιήστε το λογότυπο του καναλιού από το αρχείο XMLTV, εάν είναι διαθέσιμο, διαφορετικά χρησιμοποιήστε το λογότυπο M3U."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Εάν είναι ενεργοποιημένο και χρησιμοποιείται ένα αρχείο αντιστοίχισης είδους για τη λήψη ενός τύπου και δευτερεύοντος τύπου είδους, χρησιμοποιήστε το κείμενο του είδους του EPG (δηλαδή το κείμενο «κατηγορίας») για το είδος αντί για το προεπιλεγμένο κείμενο kodi."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Επιλέξτε πού θα βρείτε τον πόρο XML των ειδών. Οι επιλογές είναι: [B]Τοπική διαδρομή[/B] - Μια διαδρομή προς ένα αρχείο XML ειδών είτε στη συσκευή είτε στο τοπικό δίκτυο. [B]Απομακρυσμένη διαδρομή[/B] - Μια διεύθυνση URL που καθορίζει τη θέση του αρχείου XML των ειδών."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Εάν η τοποθεσία είναι [B]Local Path[/B], αυτή η ρύθμιση θα πρέπει να περιέχει μια έγκυρη διαδρομή."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Εάν η τοποθεσία είναι [B]Remote Path[/B], αυτή η ρύθμιση θα πρέπει να περιέχει μια έγκυρη διεύθυνση URL."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Προηγμένες ρυθμίσεις, συμπεριλαμβανομένων των ρελέ πολλαπλής εκπομπής, των ιδιοτήτων ροής κ.λπ."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Οι ροές Multicast (UDP/RTP) δεν λειτουργούν καλά σε δίκτυα Wi-Fi. Ένα ρελέ πολλαπλής εκπομπής μπορεί να μετατρέψει τη ροή από πολυεκπομπή UDP/RTP σε HTTP. Η ενεργοποίηση αυτής της επιλογής θα μετατρέψει τις διευθύνσεις URL ροής πολλαπλής διανομής από το αρχείο M3U σε διευθύνσεις HTTP, ώστε να είναι δυνατή η πρόσβαση σε αυτές μέσω ενός αναμετάδοσης 'udpxy' στο τοπικό δίκτυο. Π.χ. μια διεύθυνση URL ροής πολλαπλής διανομής UDP όπως \"udp://@239.239.3.38:5239\" θα μετασχηματιζόταν σε κάτι σαν \"http://192.168.1.1:4000/udp/239.239.3.38:5239\"."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Το όνομα κεντρικού υπολογιστή ή η διεύθυνση IP του αναμεταδότη πολλαπλής διανομής (udpxy) στο τοπικό δίκτυο."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Η θύρα του ρελέ πολλαπλής εκπομπής (udpxy) στο τοπικό δίκτυο."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Χρησιμοποιήστε το inputstream.adaptive αντί για το libavformat του ffmpeg για ροές m3u8 (HLS)."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Σημειώστε ότι αυτό μπορεί να ισχύει μόνο για ροές http/https που υποβάλλονται σε επεξεργασία από libavformat (π.χ. M3u8/HLS). Η χρήση του libavformat μπορεί να καθοριστεί σε ένα αρχείο M3U ορίζοντας την ιδιότητα `inputstream` ως `inputstream.ffmpeg` για την εσωτερική υλοποίηση του kodi ή `inputstream.ffmpegdirect` για την έκδοση addon. Δηλ. προσθέτοντας τη γραμμή: `#KODIPROP:inputstream=inputstream.ffmpeg`. Εάν αυτή η επιλογή δεν είναι ενεργοποιημένη, μπορεί ακόμα να ενεργοποιηθεί ανά ροή/κανάλι προσθέτοντας μια ιδιότητα kodi, π.χ.: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Χρησιμοποιήστε αυτόν τον παράγοντα χρήστη εάν δεν παρέχεται ως ιδιότητα ή ως μέρος της διεύθυνσης URL ροής καναλιού."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Χρησιμοποιήστε αυτό το inputsream ως προεπιλογή εάν δεν παρέχεται ως ιδιότητα (KODIPROP) του καναλιού. Χρησιμοποιήστε το με προσοχή καθώς αυτό θα απενεργοποιήσει οποιαδήποτε χρήση της προεπιλεγμένης συμπεριφοράς επιθεώρησης ροής του πρόσθετου. Λάβετε υπόψη ότι για `inputstream.ffmpegdirect` εάν και τα `mimetype` και `inputstream.ffmpegdirect.manifest_type` δεν έχουν οριστεί, η επιθεώρηση ροής θα συνεχίσει να γίνεται εάν απαιτείται."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Χρησιμοποιήστε αυτόν τον τύπο MIME ως προεπιλογή εάν δεν παρέχεται ως ιδιότητα (KODIPROP) του καναλιού. Χρησιμοποιήστε το με προσοχή καθώς αυτό θα απενεργοποιήσει οποιαδήποτε χρήση της προεπιλεγμένης συμπεριφοράς επιθεώρησης ροής του πρόσθετου."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Ρυθμίσεις για την προσαρμογή των ομάδων καναλιών."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Ενεργοποίηση αυτόματης διαμόρφωσης SAT>IP"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Ανακαλύψτε αυτόματα διακομιστές SAT>IP και επιλύστε πηγές καναλιών, EPG και λογότυπων."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Επιλεγμένος κεντρικός υπολογιστής διακομιστή SAT>IP ή διεύθυνση URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Εμφανίζει τον τρέχοντα επιλεγμένο διακομιστή SAT>IP. Μπορεί επίσης να εισαχθεί χειροκίνητα."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Προτιμήστε τη λίστα αναπαραγωγής FRITZ!Box HD"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Προτιμήστε το /dvb/m3u/tvhd.m3u έναντι των λιστών αναπαραγωγής SD/προεπιλεγμένων όταν είναι διαθέσιμες."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "Λήξη χρονικού ορίου ανακάλυψης SAT>IP"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Πόσο καιρό επιτρέπεται να εκτελεστεί η ανακάλυψη SSDP πριν χρησιμοποιηθεί το καλύτερο αποτέλεσμα που έχει βρεθεί μέχρι στιγμής."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX δευτερόλεπτα"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "Τιμή MX που χρησιμοποιείται για αιτήματα SSDP M-SEARCH."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Παράκαμψη διεύθυνσης URL βάσης λογότυπου"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Προαιρετική διεύθυνση URL βάσης λογότυπου που χρησιμοποιείται όταν τα λογότυπα δεν είναι ενσωματωμένα στη λίστα αναπαραγωγής/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Εκκαθάριση κρυφής μνήμης SAT>IP EPG"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Διαγράφει αποθηκευμένα δεδομένα SAT>IP EPG. Φορτώνονται νέα δεδομένα στην επόμενη ανανέωση Kodi EPG."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Διαγραφή της προσωρινής μνήμης SAT>IP EPG τώρα;"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "Η προσωρινή μνήμη SAT>IP EPG διαγράφηκε. Ανανεώστε το Kodi EPG για επαναφόρτωση."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Το Kodi επαναφορτώνει δεδομένα SAT>IP EPG. Αυτό μπορεί να πάρει κάποιο χρόνο."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "Ολοκληρώθηκε η επαναφόρτωση SAT>IP EPG."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Χρησιμοποιήστε τη σύνδεση FRITZ!Box για ελέγχους λογότυπου"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Εάν είναι ενεργοποιημένο, η διεύθυνση URL του λογότυπου ελέγχει έναντι του FRITZ!Box χρησιμοποιεί μια τοπική περίοδο σύνδεσης."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "Όνομα χρήστη FRITZ!Box"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Όνομα χρήστη που χρησιμοποιείται για την τοπική σύνδεση FRITZ!Box για πρόσβαση σε προστατευμένα λογότυπα καναλιών."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "Κωδικός πρόσβασης FRITZ!Box"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Κωδικός πρόσβασης που χρησιμοποιείται για τοπική σύνδεση στο FRITZ!Box. Χρησιμοποιείται μόνο στη μνήμη για τη δημιουργία SID."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Βρείτε και επιλέξτε διακομιστή SAT>IP"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Ανοίγει τον εντοπισμό διακομιστή και σας επιτρέπει να επιλέξετε έναν από τους διακομιστές SAT>IP που εντοπίστηκαν. Το αποτέλεσμα γράφεται στο παρακάτω πεδίο."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Επιλέξτε SAT> IP server"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Δεν βρέθηκε διακομιστής SAT>IP στο τοπικό δίκτυο."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Επιλεγμένος διακομιστής: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Αναζήτηση διακομιστών SAT>IP στο τοπικό δίκτυο ..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Διεπαφή σάρωσης: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Τρέχων διακομιστής: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Ρεύμα"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Δεν ήταν δυνατή η αποθήκευση του επιλεγμένου διακομιστή SAT>IP."
+
+msgctxt "#30935"
+msgid ""
+msgstr "Η σύνδεση FRITZ!Box πέτυχε για {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "Η σύνδεση FRITZ!Box απέτυχε για {host}: {error}"

@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:35+0000\n"
+"Last-Translator: Xean <xeanhort007@gmail.com>\n"
+"Language-Team: Catalan (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/ca_es/>\n"
+"Language: ca_es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Ubicació"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Camí local (inclou la xarxa local)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Camí remot (adreça d'Internet)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "General"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Número de canal inicial"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Només nombre per ordre de canal a M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "Opcions de l'EPG"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Aplica el canvi de temps a tots els canals"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "Desplaçament horari EPG"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Carregueu canals de televisió només en grups"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Grups de televisió"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Logotips del canal"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Grups de ràdio"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Mode grup de televisió"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Mode grup de ràdio"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Tots els grups"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Alguns grups"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Grups personalitzats"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Nombre de grups de televisió"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "Opcions dels logos de XMLTV"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Logotips dels canals de XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Ignora"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Prefereix M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Prefereix XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Grup de televisió 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Grup de televisió 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Grup de televisió 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Grup de televisió 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Grup de televisió 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Gèneres"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Utilitzeu el text de gènere de XMLTV quan mapegeu gèneres"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Camí dels gèneres"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "URL dels gèneres"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Fitxer de grups de televisió personalitzat"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Grup de ràdio 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Grup de ràdio 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Grup de ràdio 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Grup de ràdio 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Grup de ràdio 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Avançat"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Relé multicast (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Transformeu els URL de flux multicast"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Retransmet el nom d'amfitrió o l'adreça IP"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Port de relé"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Transmissió en directe"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Utilitzeu inputstream.adaptive per a fluxos m3u8 (HLS)."
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Utilitzeu les opcions de reconnexió http de FFmpeg si és possible"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Usuari-Agent"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Nom del corrent d'entrada"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "tipus MIME"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Canals per defecte"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Nombre de grups de ràdio"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Fitxer de grups de ràdio personalitzat"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Carregueu canals de ràdio només en grups"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Grups"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Ignoreu majúscules i minúscules per als ID de canals EPG"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "Comprovació d'inici de M3U"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Temps d'espera per al control"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Interval de comprovació"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Ràdio"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Error de corrent d'entrada"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "El complement %s no està instal·lat."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "El complement %s no està habilitat."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Configuració general necessària perquè el complement funcioni."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "El número des del qual començar a numerar els canals. Només s'utilitza quan [B]Utilitza números de canal de fons[/B] de la configuració de PVR està habilitat i no es proporciona un número de canal al fitxer M3U."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Ignoreu les etiquetes \"tvg-chno\" i només nombreu els canals per l'ordre de l'M3U a partir de \"Iniciar número de canal\"."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Només es carregaran des del fitxer M3U els canals de televisió que pertanyin a grups (és a dir, que tinguin un atribut [B]group-title[/B])."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Trieu entre un dels tres modes següents: [B]Tots els grups[/B] Carregueu tots els grups de TV des del fitxer M3U; [B]Alguns grups[/B] Carregueu només els grups especificats a les opcions següents; [B]Grups personalitzats[/B] Carregueu un conjunt de grups des del fitxer M3U els noms dels quals es carreguen des d'un fitxer XML."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Si l'opció anterior s'ha establert com a \"Alguns grups\", cal que especifiqueu un grup de TV que es carregarà des del fitxer M3U. Tingueu en compte que aquest és el nom del grup tal com es mostra a l'atribut del títol del grup (és a dir, \"Regne Unit (TV)\"). Aquesta configuració distingeix entre majúscules i minúscules."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Si l'opció anterior s'ha establert com a \"Alguns grups\", heu d'especificar un grup de ràdio que s'ha d'obtenir del fitxer M3U. Tingueu en compte que aquest és el nom del grup tal com es mostra a l'atribut del títol del grup (és a dir, \"Regne Unit (Ràdio)\"). Aquesta configuració distingeix entre majúscules i minúscules."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "El fitxer utilitzat per carregar els grups de televisió personalitzats. El fitxer predeterminat és `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "El fitxer utilitzat per carregar els grups de ràdio personalitzats. El fitxer predeterminat és `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "El nombre de grups de TV que cal carregar quan `Some groups` és el mode seleccionat. Se'n poden triar fins a 5. Si se'n necessiten més de 5, s'ha d'utilitzar el mode \"Grups personalitzats\"."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "El nombre de grups de ràdio que cal carregar quan `Some groups` és el mode seleccionat. Se'n poden triar fins a 5. Si se'n necessiten més de 5, s'ha d'utilitzar el mode \"Grups personalitzats\"."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Només es carregaran des del fitxer M3U els canals de ràdio que pertanyin a grups (és a dir, que tinguin un atribut [B]group-title[/B])."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Configuració relacionada amb l'EPG. Tingueu en compte que Kodi només carregarà les dades de l'EPG quan ho necessiti. El complement forçarà la càrrega de les dades de l'EPG independentment de si Kodi ho sol·licita o no si la recuperació està activada o es requereixen logotips XMLTV."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Ajusteu els temps de l'EPG amb aquest valor, de -12 hores a +14 hores."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Si s'ha d'anul·lar o no el canvi de temps per a tots els canals amb `EPG time shift`. Si no està activat, s'utilitzarà `EPG time shift` més el canvi de temps individual per canal (si està disponible)."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Ignoreu les majúscules i minúscules dels identificadors de canals EPG, també coneguts com a tvg-id, quan feu coincidir canals amb entrades EPG. Si està desactivat, només s'utilitzarà la concordança sensible a majúscules i minúscules."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "En comprovar si hi ha un fitxer M3U vàlid, el temps d'espera abans d'esgotar el temps de l'intent."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "En comprovar si hi ha un fitxer M3U vàlid, el temps d'espera entre intents. Tingueu en compte que només es comprovarà un fitxer vàlid a l'inici i, un cop es trobi un fitxer vàlid, totes les comprovacions s'aturen."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Configuració relacionada amb els logotips del canal."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Preferència sobre com gestionar els logotips del canal. Les opcions són: [B]Ignora[/B] - No utilitzeu logotips de canal d'un fitxer XMLTV; [B]Prefer M3U[/B] - Utilitzeu el logotip del canal de l'M3U si està disponible, en cas contrari, utilitzeu el logotip XMLTV; [B]Prefer XMLTV[/B]: utilitzeu el logotip del canal del fitxer XMLTV si està disponible, en cas contrari, utilitzeu el logotip de M3U."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Si està activat, i s'utilitza un fitxer de mapatge de gènere per obtenir un tipus de gènere i un subtipus, utilitzeu el text de gènere de l'EPG (és a dir, el text \"categoria\") per al gènere en lloc del text predeterminat de kodi."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Seleccioneu on trobar el recurs XML de gèneres. Les opcions són: [B]Camí local[/B] - Una ruta a un fitxer XML de gènere, ja sigui al dispositiu o a la xarxa local; [B]Camí remot[/B]: un URL que especifica la ubicació del fitxer XML de gènere."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Si la ubicació és [B]Camí local[/B], aquesta configuració hauria de contenir un camí vàlid."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Si la ubicació és [B]Camí remot[/B], aquesta configuració hauria de contenir un URL vàlid."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Configuracions avançades que inclouen relés multicast, propietats de transmissió, etc."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Els fluxos de multidifusió (UDP/RTP) no funcionen bé a les xarxes Wifi. Un relé multicast pot convertir el flux de multicast UDP/RTP a HTTP. L'habilitació d'aquesta opció transformarà els URL de transmissió multicast del fitxer M3U a adreces HTTP perquè s'hi pugui accedir mitjançant un relé \"udpxy\" a la xarxa local. p. ex. un URL de flux multicast UDP com \"udp://@239.239.3.38:5239\" es transformaria en alguna cosa com \"http://192.168.1.1:4000/udp/239.239.3.38:5239\"."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "El nom d'amfitrió o l'adreça IP del relé multicast (udpxy) a la xarxa local."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "El port del relé multicast (udpxy) a la xarxa local."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Utilitzeu inputstream.adaptive en comptes del format libav de ffmpeg per a fluxos m3u8 (HLS)."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Tingueu en compte que això només es pot aplicar als fluxos http/https processats per libavformat (per exemple, M3u8/HLS). L'ús de libavformat es pot especificar en un fitxer M3U establint la propietat `inputstream` com a `inputstream.ffmpeg` per a la implementació interna de kodi o `inputstream.ffmpegdirect` per a la versió del complement. és a dir afegint la línia: `#KODIPROP:inputstream=inputstream.ffmpeg`. Si aquesta opció no està activada, encara es pot activar per flux/canal afegint una propietat kodi, és a dir: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Utilitzeu aquest User-Agent si no n'hi ha cap proporcionat com a propietat o com a part de l'URL del flux del canal."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Utilitzeu aquest inputsream com a valor predeterminat si no n'hi ha cap subministrat com a propietat (KODIPROP) del canal. Feu servir amb cura, ja que això desactivarà qualsevol ús del comportament d'inspecció de flux predeterminat del complement. Tingueu en compte que per a `inputstream.ffmpegdirect` si tant `mimetype` com `inputstream.ffmpegdirect.manifest_type` no estan configurats, la inspecció del flux encara es produirà si és necessari."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Utilitzeu aquest tipus MIME com a predeterminat si no n'hi ha cap proporcionat com a propietat (KODIPROP) del canal. Feu servir amb cura, ja que això desactivarà qualsevol ús del comportament d'inspecció de flux predeterminat del complement."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Configuració per personalitzar grups de canals."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Activa la configuració automàtica SAT>IP"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Descobriu automàticament servidors SAT>IP i resoleu fonts de canal, EPG i logotip."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "SAT>Amfitrió del servidor IP o URL seleccionat"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Mostra el servidor SAT>IP seleccionat actualment. També es pot introduir manualment."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Prefereix la llista de reproducció FRITZ!Box HD"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Preferiu /dvb/m3u/tvhd.m3u sobre les llistes de reproducció SD/predeterminades quan estiguin disponibles."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>Temps d'espera de descobriment d'IP"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Quant de temps es permet que s'executi el descobriment SSDP abans d'utilitzar el millor resultat trobat fins ara."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX segons"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "Valor MX utilitzat per a les sol·licituds SSDP M-SEARCH."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Substituïu l'URL base del logotip"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "URL de base del logotip opcional que s'utilitza quan els logotips no estan incrustats a la llista de reproducció/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Esborra la memòria cau SAT>IP EPG"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Suprimeix les dades SAT>IP EPG guardades a la memòria cau. Es carreguen dades noves a la propera actualització de Kodi EPG."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Vols suprimir ara la memòria cau SAT>IP EPG?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG memòria cau esborrada. Actualitza l'EPG de Kodi per tornar a carregar."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi està tornant a carregar dades SAT>IP EPG. Això pot trigar una mica."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP Recàrrega EPG acabada."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Utilitzeu l'inici de sessió de FRITZ!Box per comprovar el logotip"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Si està activat, les comprovacions de l'URL del logotip amb el FRITZ!Box utilitzen una sessió d'inici de sessió local."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "Nom d'usuari de FRITZ!Box"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Nom d'usuari utilitzat per a l'inici de sessió local de FRITZ!Box per accedir als logotips de canals protegits."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "Contrasenya del FRITZ!Box"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "La contrasenya utilitzada per a l'inici de sessió local de FRITZ!Box. Només s'utilitza a la memòria per a la creació de SID."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Cerqueu i seleccioneu SAT>Servidor IP"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Obre el descobriment de servidors i us permet triar un dels servidors SAT>IP detectats. El resultat s'escriu al camp següent."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Seleccioneu SAT>Servidor IP"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "No s'ha trobat cap servidor SAT>IP a la xarxa local."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Servidor seleccionat: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Cercant servidors SAT>IP a la xarxa local..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Interfície d'escaneig: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Servidor actual: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Actual"
+
+msgctxt "#30934"
+msgid ""
+msgstr "El servidor SAT>IP seleccionat no s'ha pogut desar."
+
+msgctxt "#30935"
+msgid ""
+msgstr "S'ha pogut iniciar la sessió a FRITZ!Box per a {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "No s'ha pogut iniciar la sessió a FRITZ!Box per a {host}: {error}"

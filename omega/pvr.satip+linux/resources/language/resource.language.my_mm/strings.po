@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Burmese <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/my_mm/>\n"
+"Language: my_mm\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "တည်နေရာ"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "ဒေသဆိုင်ရာလမ်းကြောင်း (ဒေသခံကွန်ရက် အပါအဝင်)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "အဝေးထိန်းလမ်းကြောင်း (အင်တာနက်လိပ်စာ)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "ယေဘုယျ"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "ချန်နယ်နံပါတ်ကို စတင်ပါ။"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "M3U တွင် ချန်နယ်အမှာစာအလိုက် နံပါတ်သာ"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG ဆက်တင်များ"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "ချန်နယ်အားလုံးတွင် အချိန်ပြောင်းပါ။"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG အချိန်ပြောင်းခြင်း။"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "တီဗီချန်နယ်များကို အုပ်စုများအတွင်းသာ တင်ပါ။"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "တီဗီအဖွဲ့များ"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "ချန်နယ် Logos"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့များ"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "တီဗီအုပ်စုမုဒ်"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "ရေဒီယိုအုပ်စုမုဒ်"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "အဖွဲ့အားလုံး"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "တချို့အဖွဲ့တွေ"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "စိတ်ကြိုက်အဖွဲ့များ"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "တီဗီအဖွဲ့အရေအတွက်"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV Logos ရွေးစရာများ"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "XMLTV မှ ချန်နယ်များ လိုဂို"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "လစ်လျူရှု့"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "M3U ကို ဦးစားပေးပါ။"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "XMLTV ကို ဦးစားပေးပါ။"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "တီဗီအဖွဲ့ ၁"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "တီဗီအဖွဲ့ ၂"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "တီဗီအဖွဲ့ ၃"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "တီဗီအဖွဲ့ ၄"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "တီဗီအဖွဲ့ ၅"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "အမျိုးအစား"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "အမျိုးအစားများကို ပုံဖော်သည့်အခါ XMLTV မှ အမျိုးအစား စာသားကို အသုံးပြုပါ။"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "အမျိုးအစားလမ်းကြောင်း"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "အမျိုးအစား URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "စိတ်ကြိုက် TV အဖွဲ့များ ဖိုင်"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့ ၁"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့ ၂"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့ ၃"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့ ၄"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့ ၅"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "အဆင့်မြင့်သော"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Multicast relay (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Multicast stream URL များကို ပြောင်းလဲပါ။"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Relay hostname သို့မဟုတ် IP လိပ်စာ"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Relay ဆိပ်ကမ်း"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "လွှ"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "m3u8 (HLS) စီးကြောင်းများအတွက် inputstream.adaptive ကိုသုံးပါ။"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "ဖြစ်နိုင်ပါက FFmpeg http ပြန်လည်ချိတ်ဆက်မှုရွေးချယ်စရာများကို အသုံးပြုပါ။"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "အသုံးပြုသူ-အေးဂျင့်"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Inputstream အမည်"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME အမျိုးအစား"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "ချန်နယ်ပုံသေများ"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "ရေဒီယိုအဖွဲ့အရေအတွက်"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "စိတ်ကြိုက်ရေဒီယိုအဖွဲ့များဖိုင်"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "ရေဒီယိုချန်နယ်များကို အုပ်စုများအတွင်းသာ တင်ပါ။"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "အဖွဲ့များ"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "EPG ချန်နယ် ID များအတွက် Case ကို လျစ်လျူရှုပါ။"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U Startup စစ်ဆေးခြင်း။"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "စစ်ဆေးရန် အချိန်ကုန်သွားသည်။"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "စစ်ဆေးရန်ကြားကာလ"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "ရေဒီယို"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Inputstream အမှား"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "%s အပိုပရိုဂရမ်ကို ထည့်သွင်းမထားပါ။"
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "%s addon ကို ဖွင့်မထားပါ။"
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "addon လုပ်ဆောင်ရန်အတွက် အထွေထွေဆက်တင်များ လိုအပ်သည်။"
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "နံပါတ်တပ်မည့် ချန်နယ်များမှ နံပါတ်။ PVR ဆက်တင်များမှ [B]နောက်ကွယ်မှချန်နယ်နံပါတ်များ[/B]ကိုအသုံးပြုပြီး M3U ဖိုင်တွင် ချန်နယ်နံပါတ်ကို ဖြည့်သွင်းသည့်အခါမှသာ အသုံးပြုပါသည်။"
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "'tvg-chno' တဂ်များနှင့် 'Start channel number' မှစတင်သည့် M3U ရှိ အမှာစာဖြင့် 'tvg-chno' တဂ်များနှင့်သာ နံပါတ်ချန်နယ်များကို လျစ်လျူရှုပါ။"
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "အဖွဲ့များပိုင်တီဗီချန်နယ်များ (ဆိုလိုသည်မှာ [B]group-title[/B] ရည်ညွှန်းချက်ပါရှိသည်) M3U ဖိုင်မှ တင်ပေးပါမည်။"
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "အောက်ပါမုဒ်သုံးမျိုးထဲမှ တစ်ခုကို ရွေးပါ- [B]အဖွဲ့အားလုံး[/B] M3U ဖိုင်မှ TV အဖွဲ့အားလုံးကို တင်ပါ။ [B]အချို့သောအဖွဲ့များ[/B] နောက်ရွေးချယ်မှုများတွင် သတ်မှတ်ထားသည့် အုပ်စုများကိုသာ တင်ပါ။ [B]စိတ်ကြိုက်အဖွဲ့များ[/B] XML ဖိုင်တစ်ခုမှ အမည်များတင်ထားသည့် M3U ဖိုင်မှ အုပ်စုတစ်စုကို တင်ပါ။"
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "ယခင်ရွေးချယ်မှုအား 'အချို့သောအဖွဲ့များ' ဟုသတ်မှတ်ထားလျှင် M3U ဖိုင်မှတင်ရန် TV အုပ်စုကို သတ်မှတ်ရန် လိုအပ်သည်။ ဤသည်မှာ အုပ်စုခေါင်းစဉ် ရည်ညွှန်းချက်တွင် ပြထားသည့်အတိုင်း အုပ်စုအမည်ဖြစ်သည် (ဆိုလိုသည်မှာ 'UK (TV)')။ ဤဆက်တင်သည် အကြီးအသေးသာဖြစ်သည်။"
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "ယခင်ရွေးချယ်မှုအား 'အချို့သောအဖွဲ့များ' ဟုသတ်မှတ်ထားလျှင် M3U ဖိုင်မှရယူရန် ရေဒီယိုအုပ်စုကို သတ်မှတ်ရန် လိုအပ်သည်။ အဖွဲ့အမည် ရည်ညွှန်းချက်တွင် ပြထားသည့်အတိုင်း ဤအဖွဲ့အမည်ဖြစ်သည် (ဆိုလိုသည်မှာ 'UK (ရေဒီယို)'))။ ဤဆက်တင်သည် အကြီးအသေးသာဖြစ်သည်။"
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "စိတ်ကြိုက် TV အဖွဲ့များကို တင်ရန် အသုံးပြုသည့် ဖိုင်။ မူရင်းဖိုင်မှာ `customTVGroups-example.xml` ဖြစ်သည်။"
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "စိတ်ကြိုက် ရေဒီယို အုပ်စုများကို တင်ရန် အသုံးပြုသည့် ဖိုင်။ မူရင်းဖိုင်မှာ `customRadioGroups-example.xml` ဖြစ်သည်။"
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "`Some groups` ရွေးချယ်ထားသည့်မုဒ်ဖြစ်သောအခါ တင်ရန် TV အဖွဲ့အရေအတွက်။ ၅ ခုအထိ ရွေးချယ်နိုင်ပါတယ်။ 5 ခုထက်ပိုလိုအပ်ပါက 'စိတ်ကြိုက်အဖွဲ့များ' မုဒ်ကိုအစား အသုံးပြုသင့်သည်။"
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "`Some groups` သည် ရွေးချယ်ထားသည့်မုဒ်ဖြစ်သောအခါ တင်ရန် ရေဒီယိုအုပ်စုများအရေအတွက်။ ၅ ခုအထိ ရွေးချယ်နိုင်ပါတယ်။ 5 ခုထက်ပိုလိုအပ်ပါက 'စိတ်ကြိုက်အဖွဲ့များ' မုဒ်ကိုအစား အသုံးပြုသင့်သည်။"
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "အဖွဲ့များနှင့်သက်ဆိုင်သည့် ရေဒီယိုချန်နယ်များသာ (ဆိုလိုသည်မှာ [B]group-title[/B] ရည်ညွှန်းချက်) M3U ဖိုင်မှ တင်ပါမည်။"
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "EPG နှင့်ဆက်စပ်ဆက်တင်များ။ Kodi သည် လိုအပ်သည့်အခါမှသာ EPG ဒေတာကို တင်မည်ဖြစ်ကြောင်း သတိပြုပါ။ အပိုပရိုဂရမ်သည် အဖမ်းအဆီးကိုဖွင့်ထားလျှင် သို့မဟုတ် XMLTV လိုဂိုများ လိုအပ်ပါက Kodi က တောင်းဆိုသည်ဖြစ်စေ တောင်းဆိုသည်ဖြစ်စေ EPG ဒေတာကို တွန်းအားပေးမည်ဖြစ်သည်။"
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "ဤတန်ဖိုးဖြင့် EPG အကြိမ်များကို -12 နာရီမှ +14 နာရီအထိ ချိန်ညှိပါ။"
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "`EPG time shift` ဖြင့် ချန်နယ်အားလုံးအတွက် အချိန်အပြောင်းအရွှေ့ကို လွှမ်းမိုးနိုင်သည်ဖြစ်စေ မကျော်နိုင်သည်ဖြစ်စေ။ မဖွင့်ထားပါက `EPG time shift` နှင့် ချန်နယ်တစ်ခုချင်းအလိုက် အချိန်ပြောင်းခြင်း (ရရှိနိုင်ပါက) ကို အသုံးပြုပါမည်။"
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "ချန်နယ်များကို EPG ထည့်သွင်းမှုများနှင့် ကိုက်ညီသောအခါတွင် tvg-id ဟုခေါ်သော EPG ချန်နယ် ID များကို လျစ်လျူရှုပါ။ ပိတ်ထားပါက၊ case Senitive matching ကိုသာ အသုံးပြုပါမည်။"
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "တရားဝင် M3U ဖိုင်ကို စစ်ကြည့်သောအခါ၊ ကြိုးစားမှုကို အချိန်မဆွဲမီ စောင့်ရမည့်အချိန်။"
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "တရားဝင် M3U ဖိုင်ကို စစ်ကြည့်သောအခါ၊ ကြိုးစားမှုကြားတွင် စောင့်ရမည့် အချိန်ကြာသည်။ မှန်ကန်သောဖိုင်ကို စတင်ချိန်တွင်သာ စစ်ဆေးမည်ဖြစ်ပြီး မှန်ကန်သည့်ဖိုင်ကို တွေ့ရှိပါက စစ်ဆေးမှုများအားလုံး ရပ်တန့်သွားမည်ဖြစ်ကြောင်း သတိပြုပါ။"
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "ချန်နယ်လိုဂိုများနှင့် ဆက်စပ်ဆက်တင်များ။"
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "ချန်နယ်လိုဂိုများကို ကိုင်တွယ်နည်းကို ဦးစားပေးပါ။ ရွေးချယ်စရာများမှာ- [B]Ignore[/B] - XMLTV ဖိုင်မှ ချန်နယ်လိုဂိုများကို အသုံးမပြုပါနှင့်။ [B]M3U[/B] ကို ဦးစားပေးမည် - XMLTV လိုဂိုကို အသုံးပြုပါက M3U မှ ချန်နယ်လိုဂိုကို အသုံးပြုပါ။ [B]XMLTV ကို ဦးစားပေး[/B] - M3U လိုဂိုကို သုံးပါက XMLTV ဖိုင်မှ ချန်နယ်လိုဂိုကို အသုံးပြုပါ။"
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "ဖွင့်ထားပါက၊ အမျိုးအစားတစ်ခုကို မြေပုံဆွဲခြင်းဖိုင်ကို အသုံးပြုပြီး အမျိုးအစားအမျိုးအစားနှင့် အမျိုးအစားခွဲများကို ရယူရန်အတွက် kodi မူရင်းစာသားအစား အမျိုးအစားအတွက် EPG ၏အမျိုးအစားစာသား (ဆိုလိုသည်မှာ 'အမျိုးအစား' စာသား) ကို အသုံးပြုပါ။"
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "အမျိုးအစား XML ရင်းမြစ်ကို ရှာရမည့်နေရာကို ရွေးပါ။ ရွေးချယ်စရာများမှာ- [B]Local path[/B] - အမျိုးအစား XML ဖိုင်တစ်ခုသို့ လမ်းကြောင်းတစ်ခု စက်ပစ္စည်း သို့မဟုတ် ဒေသန္တရကွန်ရက်တွင်ဖြစ်စေ ၊ [B]အဝေးထိန်းလမ်းကြောင်း[/B] - အမျိုးအစား XML ဖိုင်၏တည်နေရာကို သတ်မှတ်သည့် URL တစ်ခု။"
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "တည်နေရာသည် [B]Local Path[/B] ဖြစ်ပါက ဤဆက်တင်တွင် မှန်ကန်သောလမ်းကြောင်းတစ်ခု ပါဝင်သင့်သည်။"
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "တည်နေရာသည် [B]အဝေးထိန်းလမ်းကြောင်း[/B]ဖြစ်ပါက၊ ဤဆက်တင်တွင် မှန်ကန်သော URL တစ်ခုပါဝင်သင့်သည်။"
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "multicast relays၊ streaming properties စသည်တို့အပါအဝင် အဆင့်မြင့်ဆက်တင်များ။"
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Multicast (UDP/RTP) ထုတ်လွှင့်မှုများသည် Wifi ကွန်ရက်များတွင် ကောင်းစွာအလုပ်မလုပ်ပါ။ multicast relay သည် stream ကို UDP/RTP multicast မှ HTTP သို့ ပြောင်းနိုင်သည်။ ဤရွေးချယ်မှုကို ဖွင့်ခြင်းဖြင့် multicast stream URL များကို M3U ဖိုင်မှ HTTP လိပ်စာများအဖြစ်သို့ ပြောင်းလဲပေးမည်ဖြစ်သောကြောင့် ၎င်းတို့အား ဒေသတွင်းကွန်ရက်ရှိ 'udpxy' relay မှတဆင့် ဝင်ရောက်ကြည့်ရှုနိုင်မည်ဖြစ်သည်။ E.g. 'udp://@239.239.3.38:5239' ကဲ့သို့ UDP multicast stream URL သည် 'http://192.168.1.1.1:4000/udp/239.239.3.38:5239' ကဲ့သို့ ပြောင်းလဲသွားပါမည်။"
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "ဒေသခံကွန်ရက်ပေါ်ရှိ multicast relay (udpxy) ၏ hostname သို့မဟုတ် ip လိပ်စာ။"
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "ဒေသတွင်းကွန်ရက်ရှိ multicast relay (udpxy) ၏ဆိပ်ကမ်း။"
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "m3u8 (HLS) စီးကြောင်းများအတွက် ffmpeg ၏ libavformat အစား inputstream.adaptive ကိုသုံးပါ။"
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "၎င်းသည် libavformat (ဥပမာ M3u8/HLS) ဖြင့် လုပ်ဆောင်သည့် http/https ထုတ်လွှင့်မှုများတွင်သာ သက်ရောက်နိုင်သည်ကို သတိပြုပါ။ libavformat ကိုအသုံးပြုခြင်းဖြင့် kodi ၏အတွင်းပိုင်းအကောင်အထည်ဖော်မှုအတွက် `inputstream` ကို `inputstream.ffmpeg` သို့မဟုတ် addon ဗားရှင်းအတွက် `inputstream.ffmpegdirect` အဖြစ် သတ်မှတ်ခြင်းဖြင့် M3U ဖိုင်တွင် သတ်မှတ်နိုင်ပါသည်။ I.e. လိုင်းထည့်ခြင်း- `#KODIPROP:inputstream=inputstream.ffmpeg`။ ဤရွေးချယ်ခွင့်ကို ဖွင့်မထားပါက၊ ဥပမာ- `#KODIPROP:http-reconnect=true` ကိုထည့်သွင်းခြင်းဖြင့် တိုက်ရိုက်ထုတ်လွှင့်မှု/ချန်နယ်တစ်ခုတွင် ၎င်းကို ဖွင့်ထားနိုင်ဆဲဖြစ်သည်။"
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "ပစ္စည်းဥစ္စာပိုင်ဆိုင်မှုအဖြစ် သို့မဟုတ် ချန်နယ်စီးကြောင်း URL ၏တစ်စိတ်တစ်ပိုင်းအဖြစ် ပံ့ပိုးပေးခြင်းမရှိပါက ဤအသုံးပြုသူ-အေးဂျင့်ကို အသုံးပြုပါ။"
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "ချန်နယ်၏ ပိုင်ဆိုင်မှု (KODIPROP) အဖြစ် ပံ့ပိုးပေးထားသည့် တစ်ခုမှ မရှိပါက ဤထည့်သွင်းမှုစရီမ်ကို မူရင်းအဖြစ် အသုံးပြုပါ။ ၎င်းသည် addon ၏ ပုံသေစီးကြောင်းစစ်ဆေးခြင်းအပြုအမူကို အသုံးပြုမှုမှန်သမျှကို ပိတ်ပစ်မည်ဖြစ်သောကြောင့် ဂရုတစိုက်အသုံးပြုပါ။ `inputstream.ffmpegdirect` အတွက် `mimetype` နှင့် `inputstream.ffmpegdirect.manifest_type` နှစ်ခုစလုံးကို သတ်မှတ်မထားပါက ထုတ်လွှင့်မှု စစ်ဆေးခြင်း လိုအပ်ပါက ဆက်လက်ဖြစ်ပေါ်နေဦးမည်ကို သတိပြုပါ။"
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "ချန်နယ်၏ ပိုင်ဆိုင်မှု (KODIPROP) အဖြစ် ပံ့ပိုးပေးထားသည့် တစ်ခုမှ မရှိပါက ဤ MIME အမျိုးအစားကို မူရင်းအတိုင်း အသုံးပြုပါ။ ၎င်းသည် addon ၏ ပုံသေစီးကြောင်းစစ်ဆေးခြင်းအပြုအမူကို အသုံးပြုမှုမှန်သမျှကို ပိတ်ပစ်မည်ဖြစ်သောကြောင့် ဂရုတစိုက်အသုံးပြုပါ။"
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "ချန်နယ်အဖွဲ့များကို စိတ်ကြိုက်ပြင်ဆင်ခြင်းဆိုင်ရာ ဆက်တင်များ။"
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "SAT>IP အလိုအလျောက်ဖွဲ့စည်းမှုကို ဖွင့်ပါ။"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "SAT>IP ဆာဗာများကို အလိုအလျောက်ရှာဖွေပြီး ချန်နယ်၊ EPG နှင့် လိုဂိုအရင်းအမြစ်များကို ဖြေရှင်းပါ။"
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "SAT>IP ဆာဗာ host သို့မဟုတ် URL ကို ရွေးချယ်ထားသည်။"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "လက်ရှိရွေးချယ်ထားသော SAT>IP ဆာဗာကို ပြသသည်။ ၎င်းကို ကိုယ်တိုင်လည်း ထည့်သွင်းနိုင်သည်။"
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "FRITZ!Box HD အစီအစဉ်ကို ဦးစားပေးပါ။"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "ရနိုင်သောအခါတွင် SD/default playlists ထက် /dvb/m3u/tvhd.m3u ကို ဦးစားပေးပါ။"
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP ရှာဖွေတွေ့ရှိမှု အချိန်ကုန်သွားသည်။"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "ယခုအချိန်အထိ တွေ့ရှိထားသည့် အကောင်းဆုံးရလဒ်ကို အသုံးမပြုမီ SSDP ရှာဖွေတွေ့ရှိမှုသည် မည်မျှကြာအောင် လုပ်ဆောင်နိုင်မည်နည်း။"
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX စက္ကန့်"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "SSDP M-SEARCH တောင်းဆိုမှုများအတွက် MX တန်ဖိုး။"
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "လိုဂိုအခြေခံ URL ကို အစားထိုးပါ။"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "လိုဂိုများကို ပြသစာရင်း/EPG တွင် ထည့်သွင်းမထားသည့်အခါ ရွေးချယ်နိုင်သော လိုဂိုအခြေခံ URL ကို အသုံးပြုသည်။"
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "SAT>IP EPG cache ကိုရှင်းလင်းပါ။"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "သိမ်းဆည်းထားသော SAT>IP EPG ဒေတာကို ဖျက်ပါ။ လာမည့် Kodi EPG ပြန်လည်ဆန်းသစ်မှုတွင် ဒေတာအသစ်များ ပေါ်လာသည်။"
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "SAT>IP EPG ကက်ရှ်ကို ယခု ဖျက်မလား။"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG ကက်ရှ်ကို ရှင်းလင်းလိုက်ပါပြီ။ ပြန်လည်စတင်ရန် Kodi EPG ကို ပြန်လည်စတင်ပါ။"
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi သည် SAT>IP EPG ဒေတာကို ပြန်လည်စတင်နေပါသည်။ အချိန်အနည်းငယ်ကြာနိုင်သည်။"
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG ပြန်လည်စတင်ခြင်း ပြီးပါပြီ။"
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "လိုဂိုစစ်ဆေးမှုများအတွက် FRITZ! Box အကောင့်ဝင်ပါ။"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "ဖွင့်ထားလျှင် လိုဂို URL သည် FRITZ!Box နှင့် ဆန့်ကျင်ဘက်ဖြစ်ပြီး စက်တွင်း အကောင့်ဝင်သည့်အပိုင်းကို အသုံးပြုပါ။"
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Box အသုံးပြုသူအမည်"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "ဒေသဆိုင်ရာ FRITZ! ကာကွယ်ထားသော ချန်နယ်လိုဂိုများကို ဝင်ရောက်ကြည့်ရှုရန် ဘောက်စ်အကောင့်ဝင်ရန် အသုံးပြုသူအမည်။"
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRIZ!Box စကားဝှက်"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "ဒေသတွင်း FRITZ!Box အကောင့်ဝင်ရန်အတွက် အသုံးပြုသည့် စကားဝှက်။ SID ဖန်တီးမှုအတွက်သာ ၎င်းကို မမ်မိုရီအတွင်းတွင်သာ အသုံးပြုပါသည်။"
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "SAT>IP ဆာဗာကိုရှာပြီး ရွေးချယ်ပါ။"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "ဆာဗာရှာဖွေတွေ့ရှိမှုကို ဖွင့်ပြီး ရှာဖွေတွေ့ရှိထားသော SAT>IP ဆာဗာများထဲမှ တစ်ခုကို ရွေးချယ်နိုင်စေပါသည်။ ရလဒ်ကို အောက်ပါအကွက်တွင် ရေးထားသည်။"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "SAT>IP ဆာဗာကို ရွေးပါ။"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "ပြည်တွင်းကွန်ရက်တွင် SAT>IP ဆာဗာကို ရှာမတွေ့ပါ။"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "ရွေးချယ်ထားသော ဆာဗာ- {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "ပြည်တွင်းကွန်ရက်ရှိ SAT>IP ဆာဗာများကို ရှာဖွေနေသည်..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "စကင်ဖတ်စစ်ဆေးခြင်း မျက်နှာပြင်- {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "လက်ရှိ ဆာဗာ- {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "လက်ရှိ"
+
+msgctxt "#30934"
+msgid ""
+msgstr "ရွေးချယ်ထားသော SAT>IP ဆာဗာကို မသိမ်းဆည်းနိုင်ခဲ့ပါ။"
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Box အကောင့်ဝင်ခြင်းသည် {host} အတွက် အောင်မြင်ခဲ့သည်"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ! {host} အတွက် ဘောက်စ်အကောင့်ဝင်ခြင်း မအောင်မြင်ပါ {error}"

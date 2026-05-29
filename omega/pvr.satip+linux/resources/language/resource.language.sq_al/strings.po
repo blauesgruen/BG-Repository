@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Albanian <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/sq_al/>\n"
+"Language: sq_al\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Lokalizimi"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Rruga lokale (përfshin rrjetin lokal)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Rruga e largët (adresa e internetit)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Të përgjithshëm"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Nis numrin e kanalit"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Numri vetëm sipas porosisë së kanalit në M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "Cilësimet EPG"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Aplikoni ndryshimin e kohës në të gjitha kanalet"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "Zhvendosja e kohës EPG"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Ngarko kanalet televizive vetëm në grupe"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Grupet televizive"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Logot e kanaleve"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Grupet e Radios"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Modaliteti i grupit televiziv"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Modaliteti i grupit të radios"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Të gjitha grupet"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Disa grupe"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Grupe të personalizuara"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Numri i grupeve televizive"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "Opsionet e logos XMLTV"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Logot e kanaleve nga XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Injoroni"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Preferoni M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Preferoni XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Grupi televiziv 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Grupi televiziv 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Grupi televiziv 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Grupi televiziv 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Grupi televiziv 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Zhanret"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Përdorni tekstin e zhanrit nga XMLTV kur hartoni zhanret"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Rruga e zhanreve"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "URL e zhanreve"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Skedari i personalizuar i grupeve televizive"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Grupi i radios 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Grupi i radios 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Grupi i radios 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Grupi i radios 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Grupi i radios 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Të shtuar"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Rele multicast (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Transformoni URL-të e transmetimit multicast"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Transmetoni emrin e hostit ose adresën IP"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Porta rele"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Transmetim"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Përdorni inputstream.adaptive për transmetimet m3u8 (HLS)."
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Përdorni opsionet e rilidhjes FFmpeg http nëse është e mundur"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Përdorues-Agjent"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Emri i rrjedhës hyrëse"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "Lloji MIME"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Parazgjedhjet e kanalit"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Numri i grupeve të radios"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Skedari i personalizuar i grupeve të radios"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Ngarko kanalet e radios vetëm në grupe"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Grupet"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Injoro rast për ID-të e kanaleve EPG"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "Kontrolli i fillimit të M3U"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Kohëzgjatja e kontrollit"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Intervali për kontroll"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Radio"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Gabim në rrjedhën e hyrjes"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "Shtesa %s nuk është e instaluar."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "Shtesa %s nuk është e aktivizuar."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Cilësimet e përgjithshme të nevojshme për funksionimin e shtesës."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Numri nga i cili fillon numërimi i kanaleve. Përdoret vetëm kur [B]Përdor numrat e kanaleve të mbështetjes[/B] nga cilësimet PVR është aktivizuar dhe një numër kanali nuk jepet në skedarin M3U."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Injoroni çdo etiketë 'tvg-chno' dhe vetëm kanalet me numër sipas renditjes në M3U duke filluar nga 'Numri i kanalit të nisjes'."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Nga skedari M3U do të ngarkohen vetëm kanalet televizive që i përkasin grupeve (d.m.th. kanë një atribut [B]group-title[/B])."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Zgjidhni një nga tre mënyrat e mëposhtme: [B]Të gjitha grupet[/B] Ngarkoni të gjitha grupet televizive nga skedari M3U; [B]Disa grupe[/B] Ngarkojnë vetëm grupet e specifikuara në opsionet vijuese; [B]Grupet e personalizuara[/B] Ngarko një grup grupesh nga skedari M3U, emrat e të cilëve janë ngarkuar nga një skedar XML."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Nëse opsioni i mëparshëm është vendosur në \"Disa grupe\", duhet të specifikoni një grup televiziv që do të ngarkohet nga skedari M3U. Ju lutemi vini re se ky është emri i grupit siç tregohet në atributin e titullit të grupit (d.m.th. \"UK (TV)\"). Ky cilësim është i ndjeshëm ndaj shkronjave të vogla."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Nëse opsioni i mëparshëm është vendosur në \"Disa grupe\", ju duhet të specifikoni një grup Radio që do të merret nga skedari M3U. Ju lutemi mos harroni se ky është emri i grupit siç tregohet në atributin e titullit të grupit (d.m.th. 'UK (Radio)'). Ky cilësim është i ndjeshëm ndaj shkronjave të vogla."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Skedari i përdorur për të ngarkuar grupet e personalizuara televizive. Skedari i parazgjedhur është `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Skedari i përdorur për të ngarkuar grupet e personalizuara të Radios. Skedari i parazgjedhur është `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Numri i grupeve televizive për t'u ngarkuar kur `Some groups` është modaliteti i zgjedhur. Mund të zgjidhen deri në 5. Nëse kërkohen më shumë se 5, në vend të kësaj duhet të përdoret modaliteti \"Grupe të personalizuara\"."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Numri i grupeve të radios për t'u ngarkuar kur `Some groups` është modaliteti i zgjedhur. Mund të zgjidhen deri në 5. Nëse kërkohen më shumë se 5, në vend të kësaj duhet të përdoret modaliteti \"Grupe të personalizuara\"."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Vetëm kanalet e radios që i përkasin grupeve (d.m.th. kanë një atribut [B]grup-title[/B]) do të ngarkohen nga skedari M3U."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Cilësimet që lidhen me EPG. Vini re se Kodi do të ngarkojë të dhënat EPG vetëm kur duhet. Shtesa do të detyrojë një ngarkesë të të dhënave EPG, pavarësisht nëse Kodi e kërkon apo jo nëse është aktivizuar ose katchup ose kërkohen logot XMLTV."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Rregulloni kohët EPG me këtë vlerë, nga -12 orë në +14 orë."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Të anashkalohet apo jo ndryshimi i kohës për të gjitha kanalet me `EPG time shift`. Nëse nuk aktivizohet, do të përdoret `EPG time shift` plus ndryshimi individual i orës për kanal (nëse disponohet)."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Injoro Case për ID-të e kanaleve EPG, të njohura gjithashtu si tvg-id's, kur kanalet përputhen me hyrjet EPG. Nëse çaktivizohet, do të përdoret vetëm përputhja e ndjeshme e shkronjave të vogla."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Kur kontrolloni për një skedar të vlefshëm M3U, kohëzgjatja e pritjes përpara se të përfundoni përpjekjen."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Kur kontrolloni për një skedar të vlefshëm M3U, kohëzgjatja e pritjes midis përpjekjeve. Vini re se një skedar i vlefshëm do të kontrollohet vetëm gjatë nisjes dhe pasi të gjendet një skedar i vlefshëm, të gjitha kontrollet ndalojnë."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Cilësimet që lidhen me logot e kanalit."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Preferenca se si të trajtohen logot e kanaleve. Opsionet janë: [B]Ignore[/B] - Mos përdorni logot e kanaleve nga një skedar XMLTV; [B]Preferoni M3U[/B] - Përdorni logon e kanalit nga M3U nëse është e disponueshme, përndryshe përdorni logon XMLTV; [B]Preferoni XMLTV[/B] - Përdorni logon e kanalit nga skedari XMLTV nëse është i disponueshëm, përndryshe përdorni logon M3U."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Nëse aktivizohet, dhe një skedar i hartës së zhanrit përdoret për të marrë një lloj zhanri dhe nënlloj, përdorni tekstin e zhanrit të EPG (d.m.th. tekstin e 'kategorisë') për zhanrin në vend të tekstit të paracaktuar kodi."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Zgjidhni ku të gjeni burimin XML të zhanreve. Opsionet janë: [B]Shtegu lokal[/B] - Një shteg drejt një skedari XML të zhanreve, qoftë në pajisje ose në rrjetin lokal; [B]Rruga në distancë[/B] - Një URL që specifikon vendndodhjen e skedarit XML të zhanreve."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Nëse vendndodhja është [B]Shtegu Lokal[/B] ky cilësim duhet të përmbajë një shteg të vlefshëm."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Nëse vendndodhja është [B]Rruga në distancë[/B] ky cilësim duhet të përmbajë një URL të vlefshme."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Cilësimet e avancuara duke përfshirë reletë multicast, vetitë e transmetimit etj."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Transmetimet multicast (UDP/RTP) nuk funksionojnë mirë në rrjetet Wifi. Një rele multicast mund të konvertojë transmetimin nga UDP/RTP multicast në HTTP. Aktivizimi i këtij opsioni do të transformojë URL-të e transmetimit multicast nga skedari M3U në adresat HTTP, në mënyrë që ato të mund të aksesohen nëpërmjet një rele \"udpxy\" në rrjetin lokal. P.sh. një URL e transmetimit multicast UDP si 'udp://@239.239.3.38:5239' do të transformohej në diçka si 'http://192.168.1.1:4000/udp/239.239.3.38:5239'."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Emri i hostit ose adresa IP e rele multicast (udpxy) në rrjetin lokal."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Porta e rele multicast (udpxy) në rrjetin lokal."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Përdorni inputstream.adaptive në vend të libavformatit të ffmpeg për transmetimet m3u8 (HLS)."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Vini re se kjo mund të zbatohet vetëm për transmetimet http/https që përpunohen nga libavformat (p.sh. M3u8/HLS). Përdorimi i formatit libav mund të specifikohet në një skedar M3U duke vendosur veçorinë `inputstream` si `inputstream.ffmpeg` për zbatimin e brendshëm të kodit ose `inputstream.ffmpegdirect` për versionin shtesë. d.m.th. duke shtuar rreshtin: `#KODIPROP:inputstream=inputstream.ffmpeg`. Nëse ky opsion nuk është i aktivizuar, mund të aktivizohet përsëri për transmetim/kanal duke shtuar një veçori kodi, p.sh.: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Përdorni këtë agjent përdoruesi nëse nuk ka një të dhënë si pronë ose si pjesë e URL-së së transmetimit të kanalit."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Përdoreni këtë inputsream si parazgjedhje nëse nuk ka një të dhënë si pronë (KODIPROP) të kanalit. Përdoreni me kujdes pasi kjo do të çaktivizojë çdo përdorim të sjelljes së inspektimit të transmetimit të paracaktuar të shtesës. Ki parasysh se për `inputstream.ffmpegdirect` nëse të dyja `mimetype` dhe `inputstream.ffmpegdirect.manifest_type` janë të pacaktuara, inspektimi i transmetimit do të vazhdojë të ndodhë nëse kërkohet."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Përdorni këtë lloj MIME si parazgjedhje nëse nuk ka një të dhënë si pronë (KODIPROP) të kanalit. Përdoreni me kujdes pasi kjo do të çaktivizojë çdo përdorim të sjelljes së inspektimit të transmetimit të paracaktuar të shtesës."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Cilësimet për personalizimin e grupeve të kanaleve."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Aktivizo konfigurimin automatik SAT>IP"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Zbuloni automatikisht serverët SAT>IP dhe zgjidhni burimet e kanalit, EPG dhe logos."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "U zgjodh host ose URL i serverit SAT>IP"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Tregon serverin SAT>IP të përzgjedhur aktualisht. Mund të futet edhe manualisht."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Preferoni listën për luajtje FRITZ!Box HD"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Preferoni /dvb/m3u/tvhd.m3u mbi listat e luajtjes SD/default kur ofrohen."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>Koha e fundit e zbulimit IP"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Sa kohë lejohet të ekzekutohet zbulimi SSDP përpara se të përdoret rezultati më i mirë i gjetur deri më tani."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX sekonda"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "Vlera MX e përdorur për kërkesat SSDP M-SEARCH."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Anuloni URL-në bazë të logos"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "URL-ja e bazës së logos opsionale përdoret kur logot nuk janë të ngulitura në listën e luajtjes/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Pastro cache SAT>IP EPG"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Fshin të dhënat e ruajtura në memorien SAT>IP EPG. Të dhënat e freskëta ngarkohen në rifreskimin e ardhshëm të Kodi EPG."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Të fshihet tani cache SAT>IP EPG?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG cache u pastrua. Rifresko Kodi EPG për ta ringarkuar."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi po ngarkon të dhënat SAT>IP EPG. Kjo mund të marrë pak kohë."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "Ringarkimi SAT>IP EPG përfundoi."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Përdorni hyrjen në FRITZ!Box për kontrollet e logos"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Nëse aktivizohet, URL-ja e logos kontrollon kundër FRITZ!Box-it përdor një sesion lokal identifikimi."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "Emri i përdoruesit FRITZ!Box"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Emri i përdoruesit i përdorur për identifikimin lokal të FRITZ!Box për të hyrë në logot e mbrojtura të kanaleve."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "Fjalëkalimi i FRITZ!Box"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Fjalëkalimi i përdorur për hyrjen lokale të FRITZ!Box. Përdoret vetëm në memorie për krijimin e SID."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Gjeni dhe zgjidhni serverin SAT>IP"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Hap zbulimin e serverit dhe ju lejon të zgjidhni një nga serverët SAT>IP të zbuluar. Rezultati shkruhet në fushën më poshtë."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Zgjidhni SAT> IP server"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Nuk u gjet asnjë server SAT>IP në rrjetin lokal."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Serveri i zgjedhur: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Kërkimi i serverëve SAT>IP në rrjetin lokal ..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Ndërfaqja e skanimit: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Serveri aktual: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Aktuale"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Serveri i zgjedhur SAT>IP nuk mund të ruhet."
+
+msgctxt "#30935"
+msgid ""
+msgstr "Identifikimi i FRITZ!Box u arrit për {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ!Identifikimi i kutisë dështoi për {host}: {error}"

@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Serbian (Latin script) <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/sr_Latn/>\n"
+"Language: sr_rs@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Lokacija"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Локална путања (укључује локалну мрежу)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Удаљена путања (Интернет адреса)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Opšte"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Стартни број канала"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Само број по редоследу канала у М3У"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG podešavanja"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Примените временски помак на све канале"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "ЕПГ померање времена"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Учитавајте ТВ канале само у групама"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "ТВ групе"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Логос канала"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Радио групе"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Режим ТВ групе"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Радио групни режим"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Све групе"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Неке групе"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Прилагођене групе"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Број ТВ група"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV Opcije Logoa"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Логотипи канала са КСМЛТВ-а"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Ignorisati"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Dati prednost M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Dati prednost XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "ТВ група 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "ТВ група 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "ТВ група 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "ТВ група 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "ТВ група 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Žanrovi"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Користите текст жанра са КСМЛТВ-а када мапирате жанрове"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Пут жанрова"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "УРЛ жанрова"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Датотека прилагођених ТВ група"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Радио група 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Радио група 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Радио група 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Радио група 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Радио група 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Napredno"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Мултицаст релеј (удпки)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Трансформишите УРЛ-ове стримова за више канала"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Релеј име хоста или ИП адреса"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Релејни порт"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Strimovanje"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Користите инпутстреам.адаптиве за м3у8 (ХЛС) токове"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Користите опције ФФмпег хттп поновног повезивања ако је могуће"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Усер-Агент"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Име улазног тока"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "МИМЕ тип"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Подразумеване вредности канала"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Број радио група"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Датотека прилагођених радио група"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Радио канале учитавајте само у групама"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Групе"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Занемарите велика и мала слова за ИД-ове ЕПГ канала"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "Провера покретања М3У"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Истекло време за проверу"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Интервал за проверу"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "TV"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Radio"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Грешка улазног тока"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "Додатак __ПХ0__ није инсталиран."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "Додатак __ПХ0__ није омогућен."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Општа подешавања потребна да би додатак функционисао."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Број са којег почиње нумерисање канала. Користи се само када је __ПХ0__Користи позадинске бројеве канала__ПХ1__ из ПВР подешавања омогућено и број канала није наведен у М3У датотеци."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Занемарите све ознаке 'твг-цхно' и нумеришите само канале по редоследу у М3У почевши од 'Старт цханнел нумбер'."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Само ТВ канали који припадају групама (тј. имају атрибут __ПХ0__гроуп-титле__ПХ1__) биће учитани из М3У датотеке."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Изаберите један од следећа три режима: __ПХ0__Све групе__ПХ1__ Учитајте све ТВ групе из М3У датотеке; __ПХ2__Неке групе__ПХ3__ Учитавајте само групе наведене у следећим опцијама; __ПХ4__Прилагођене групе__ПХ5__ Учитајте скуп група из М3У датотеке чија се имена учитавају из КСМЛ датотеке."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Ако је претходна опција била постављена на 'Неке групе' потребно је да наведете ТВ групу која ће се учитати из М3У датотеке. Имајте на уму да је ово назив групе као што је приказано у атрибуту наслова групе (тј. „УК (ТВ)“). Ово подешавање је осетљиво на велика и мала слова."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Ако је претходна опција била постављена на 'Неке групе' потребно је да наведете Радио групу која ће се преузети из М3У датотеке. Имајте на уму да је ово име групе како је приказано у атрибуту наслова групе (тј. „УК (Радио)“). Ово подешавање је осетљиво на велика и мала слова."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Датотека која се користи за учитавање прилагођених ТВ група. Подразумевана датотека је __ПХ0__."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Датотека која се користи за учитавање прилагођених Радио група. Подразумевана датотека је __ПХ0__."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Број ТВ група за учитавање када је __ПХ0__ изабран режим. Може се изабрати до 5. Ако је потребно више од 5, уместо тога треба користити режим „Прилагођене групе“."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Број радио група за учитавање када је __ПХ0__ изабран режим. Може се изабрати до 5. Ако је потребно више од 5, уместо тога треба користити режим „Прилагођене групе“."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Само радио канали који припадају групама (тј. имају атрибут __ПХ0__гроуп-титле__ПХ1__) биће учитани из М3У датотеке."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Подешавања која се односе на ЕПГ. Имајте на уму да ће Коди учитавати ЕПГ податке само када је то потребно. Додатак ће присилити учитавање ЕПГ података без обзира на то да ли га Коди захтева или не ако је омогућено надокнађивање или су потребни КСМЛТВ логотипи."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Подесите ЕПГ времена за ову вредност, од -12 сати до +14 сати."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Да ли да се замени временски помак за све канале са __ПХ0__. Ако није омогућено, користиће се __ПХ1__ плус појединачни временски помак по каналу (ако је доступан)."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Занемарите велика и мала слова за ИД-ове ЕПГ канала, такође познате као твг-ид, када упарујете канале са ЕПГ уносима. Ако је онемогућено, користиће се само подударање осетљиво на велика и мала слова."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Приликом провере важеће М3У датотеке, дужина времена чекања пре истека покушаја."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Приликом провере важеће М3У датотеке, дужина времена чекања између покушаја. Имајте на уму да ће важећа датотека бити проверена само при покретању и када се пронађе важећа датотека, све провере се заустављају."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Подешавања која се односе на логотипе канала."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Преференција за руковање логотипима канала. Опције су: __ПХ0__Игноре__ПХ1__ - Не користите лого канала из КСМЛТВ датотеке; __ПХ2__Префер М3У__ПХ3__ - Користите лого канала са М3У ако је доступан, иначе користите КСМЛТВ лого; __ПХ4__Префер КСМЛТВ__ПХ5__ - Користите лого канала из КСМЛТВ датотеке ако је доступан, иначе користите М3У лого."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Ако је омогућено, и датотека мапирања жанра се користи за добијање типа жанра и подтипа, користите текст жанра ЕПГ-а (тј. текст 'категорије') за жанр уместо коди подразумеваног текста."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Изаберите где ћете пронаћи КСМЛ ресурс за жанрове. Опције су: __ПХ0__Локална путања__ПХ1__ - путања до жанровске КСМЛ датотеке било да се налази на уређају или локалној мрежи; __ПХ2__Удаљена путања__ПХ3__ - УРЛ адреса која наводи локацију КСМЛ датотеке жанрова."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Ако је локација __ПХ0__Локална путања__ПХ1__ ово подешавање треба да садржи исправну путању."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Ако је локација __ПХ0__Удаљена путања__ПХ1__ ово подешавање треба да садржи важећи УРЛ."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Напредна подешавања укључујући мултицаст релеје, својства стриминга итд."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Мултицаст (УДП/РТП) токови не функционишу добро на Вифи мрежама. Мултицаст релеј може да конвертује ток из УДП/РТП мултицаст у ХТТП. Омогућавање ове опције ће трансформисати вишеструке УРЛ-ове стрима из М3У датотеке у ХТТП адресе тако да им се може приступити преко 'удпки' релеја на локалној мрежи. Нпр. УРЛ вишеструког УДП стрима као што је 'удп://@239.239.3.38:5239' би се трансформисао у нешто попут 'хттп://192.168.1.1:4000/удп/239.239.3.38:5239'."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Име хоста или ИП адреса мултицаст релеја (удпки) на локалној мрежи."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Порт мултицаст релеја (удпки) на локалној мрежи."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Користите инпутстреам.адаптиве уместо ффмпег-овог либавформата за м3у8 (ХЛС) токове."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Имајте на уму да се ово може применити само на хттп/хттпс стримове које обрађује либавформат (нпр. М3у8/ХЛС). Коришћење либавформата може се навести у М3У датотеци постављањем својства __ПХ0__ као __ПХ1__ за интерну имплементацију кодија или __ПХ2__ за верзију додатка. тј. додајући ред: __ПХ3__. Ако ова опција није омогућена, и даље се може омогућити по стриму/каналу додавањем својства коди, тј.: __ПХ4__."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Користите овај кориснички агент ако не постоји као својство или као део УРЛ-а стрима канала."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Користите овај инпутсреам као подразумевани ако не постоји један испоручен као својство (КОДИПРОП) канала. Користите пажљиво јер ће ово онемогућити било какву употребу подразумеваног понашања контроле тока додатка. Имајте на уму да ће за __ПХ0__ ако и __ПХ1__ и __ПХ2__ нису подешени, инспекција тока ће се и даље одвијати ако је потребно."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Користите овај МИМЕ тип као подразумевани ако га нема као својство (КОДИПРОП) канала. Користите пажљиво јер ће ово онемогућити било какву употребу подразумеваног понашања контроле тока додатка."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Подешавања за прилагођавање група канала."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Омогући САТ>ИП аутоматску конфигурацију"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Аутоматски откријте САТ>ИП сервере и решите канале, ЕПГ и изворе логотипа."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Изабрани САТ>ИП сервер хост или УРЛ"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Приказује тренутно изабрани САТ>ИП сервер. Може се унети и ручно."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Преферирај ФРИТЗ!Бок ХД плејлисту"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Дајте предност /двб/м3у/твхд.м3у у односу на СД/подразумеване листе песама када су доступне."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "Временско ограничење за САТ>ИП откривање"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Колико дуго је дозвољено да ССДП откриће ради пре него што се користи најбољи до сада пронађени резултат."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "САТ>ИП ССДП МКС секунди"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "МКС вредност која се користи за ССДП М-СЕАРЦХ захтеве."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Замени основни УРЛ логотипа"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Опциони основни УРЛ логотипа који се користи када логотипи нису уграђени у листу песама/ЕПГ."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Обриши САТ>ИП ЕПГ кеш меморију"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Брише кеширане САТ>ИП ЕПГ податке. Свежи подаци се учитавају приликом следећег освежавања Коди ЕПГ-а."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Избрисати САТ>ИП ЕПГ кеш сада?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "САТ>ИП ЕПГ кеш је обрисан. Освежите Коди ЕПГ да бисте поново учитали."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Коди поново учитава САТ>ИП ЕПГ податке. Ово може потрајати."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "САТ>ИП ЕПГ поновно учитавање је завршено."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Користите ФРИТЗ!Бок пријаву за проверу логотипа"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Ако је омогућено, УРЛ логотипа проверава у односу на ФРИТЗ!Бок користећи локалну сесију пријављивања."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "ФРИТЗ!Бок корисничко име"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Корисничко име које се користи за локално ФРИТЗ!Бок пријављивање за приступ заштићеним логоима канала."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "Лозинка за ФРИТЗ!Бок"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Лозинка која се користи за локалну ФРИТЗ!Бок пријаву. Користи се само у меморији за креирање СИД-а."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Пронађите и изаберите САТ>ИП сервер"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Отвара откривање сервера и омогућава вам да изаберете један од откривених САТ>ИП сервера. Резултат је уписан у поље испод."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Изаберите САТ>ИП сервер"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Није пронађен САТ>ИП сервер у локалној мрежи."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Изабрани сервер: __ПХ0__"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Претраживање САТ>ИП сервера у локалној мрежи..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Интерфејс за скенирање: __ПХ0__"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Тренутни сервер: __ПХ0__"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Цуррент"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Изабрани САТ>ИП сервер није могао бити сачуван."
+
+msgctxt "#30935"
+msgid ""
+msgstr "ФРИТЗ!Бок пријављивање је успело за __ПХ0__"
+
+msgctxt "#30936"
+msgid ""
+msgstr "ФРИТЗ!Бок пријављивање није успело за __ПХ0__: __ПХ1__"

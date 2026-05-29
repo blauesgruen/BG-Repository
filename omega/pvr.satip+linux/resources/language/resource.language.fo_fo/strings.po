@@ -1,0 +1,731 @@
+# Kodi Media Center language file
+# Addon Name: PVR SAT>IP Client
+# Addon id: pvr.satip
+# Addon Provider: blauesgruen
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-01-17 23:36+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Faroese <https://kodi.weblate.cloud/projects/kodi-add-ons-pvr-clients/pvr-satip/fo_fo/>\n"
+"Language: fo_fo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
+#. settings labels
+#. label: General - m3uPathType
+#. label: EPG Settings - epgPathType
+#. label: Channel Logos - logoPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-option: General - m3uPathType
+#. label-option: General - epgPathType
+#. label-option: General - logoPathType
+#. label-option: General - genresPathType
+
+#. label-category: general
+#. label-group: General - General
+
+#. label: General - startNum
+msgctxt "#30000"
+msgid ""
+msgstr "Stað"
+
+#. label: General - numberByOrder
+msgctxt "#30001"
+msgid ""
+msgstr "Lokal leið (íroknað lokalt netverk)"
+
+#. label-category: epgsettings
+msgctxt "#30002"
+msgid ""
+msgstr "Fjarleið (internetadressa)"
+
+#. label-group: EPG Settings - EPG Settings
+msgctxt "#30010"
+msgid ""
+msgstr "Vanligt"
+
+#. label: EPG Settings - epgTSOverride
+msgctxt "#30013"
+msgid ""
+msgstr "Byrja rásarnummar"
+
+#. label: EPG Settings - epgTimeShift
+msgctxt "#30014"
+msgid ""
+msgstr "Bert nummar eftir rásarskipan í M3U"
+
+#. label: General - tvChannelGroupsOnly
+msgctxt "#30019"
+msgid ""
+msgstr "EPG innstillingar"
+
+#. label-group: General - TV Groups
+msgctxt "#30020"
+msgid ""
+msgstr "EPG"
+
+#. label-category: channellogos
+#. label-group: Channel Logos - Channel Logos
+msgctxt "#30023"
+msgid ""
+msgstr "Set tíðarskifti á allar rásir"
+
+#. label-group: General - Radio Groups
+msgctxt "#30024"
+msgid ""
+msgstr "EPG tíðarskifti"
+
+#. label: General - tvGroupMoade
+msgctxt "#30028"
+msgid ""
+msgstr "Innlesa bert sjónvarpsrásir í bólkum"
+
+#. label: General - radioGroupMoade
+msgctxt "#30029"
+msgid ""
+msgstr "Sjónvarpsbólkar"
+
+#. label-option: Channels - tvGroupmode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30030"
+msgid ""
+msgstr "Rásarmerki"
+
+#. label-option: Channels - tvGroupMode
+#. label-option: Channels - radioGroupGode
+msgctxt "#30033"
+msgid ""
+msgstr "Útvarpsbólkar"
+
+#. label-option: General - tvGroupMode
+#. label-option: General - radioGroupGode
+msgctxt "#30034"
+msgid ""
+msgstr "Sjónvarpsbólkastilling"
+
+#. label: Channels - numTvGroups
+msgctxt "#30035"
+msgid ""
+msgstr "Útvarpsbólkastilling"
+
+#. label-group: Channel Logos - XMLTV Logos Options
+msgctxt "#30036"
+msgid ""
+msgstr "Allir bólkarnir"
+
+#. label: Channel Logos - logoFromEpg
+msgctxt "#30037"
+msgid ""
+msgstr "Nakrir bólkar"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30038"
+msgid ""
+msgstr "Sersniðgivnir bólkar"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30039"
+msgid ""
+msgstr "Tal av sjónvarpsbólkum"
+
+#. label-option: Channel Logos - logoFromEpg
+msgctxt "#30040"
+msgid ""
+msgstr "XMLTV búmerkjamøguleikar"
+
+#. label: General - oneTvGroup
+msgctxt "#30041"
+msgid ""
+msgstr "Rásarmerki frá XMLTV"
+
+#. label: General - twoTvGroup
+msgctxt "#30042"
+msgid ""
+msgstr "Skúgva til viks"
+
+#. label: General - threeTvGroup
+msgctxt "#30043"
+msgid ""
+msgstr "Helst M3U"
+
+#. label: General - fourTvGroup
+msgctxt "#30044"
+msgid ""
+msgstr "Helst XMLTV"
+
+#. label: General - fiveTvGroup
+msgctxt "#30045"
+msgid ""
+msgstr "Sjónvarpsbólkur 1"
+
+#. label-category: genres
+#. label-group: Genres - Genres
+msgctxt "#30046"
+msgid ""
+msgstr "Sjónvarpsbólkur 2"
+
+#. label: Genres - useEpgGenreText
+msgctxt "#30047"
+msgid ""
+msgstr "Sjónvarpsbólkur 3"
+
+#. label: Genres - genresPath
+msgctxt "#30048"
+msgid ""
+msgstr "Sjónvarpsbólkur 4"
+
+#. label: Genres - genresUrl
+msgctxt "#30049"
+msgid ""
+msgstr "Sjónvarpsbólkur 5"
+
+#. label: Channels - customTvGroupsFile
+msgctxt "#30050"
+msgid ""
+msgstr "Evni"
+
+#. label: General - oneRadioGroup
+msgctxt "#30051"
+msgid ""
+msgstr "Brúka sjangrutekst frá XMLTV tá tú kortleggjar sjangrur"
+
+#. label: General - twoRadioGroup
+msgctxt "#30052"
+msgid ""
+msgstr "Sjangrur leið"
+
+#. label: General - threeRadioGroup
+msgctxt "#30053"
+msgid ""
+msgstr "Sløgur URL"
+
+#. label: General - fourRadioGroup
+msgctxt "#30054"
+msgid ""
+msgstr "Tillagað sjónvarpsbólkafíla"
+
+#. label: General - fiveRadioGroup
+msgctxt "#30055"
+msgid ""
+msgstr "Útvarpsbólkur 1"
+
+#. label-category: advanced
+msgctxt "#30056"
+msgid ""
+msgstr "Útvarpsbólkur 2"
+
+#. label-group: Advanced - Multicast relay
+msgctxt "#30057"
+msgid ""
+msgstr "Útvarpsbólkur 3"
+
+#. label: Advanced - transformMulticastStreamUrls
+msgctxt "#30058"
+msgid ""
+msgstr "Útvarpsbólkur 4"
+
+#. label: Advanced - udpxyHost
+msgctxt "#30059"
+msgid ""
+msgstr "Útvarpsbólkur 5"
+
+#. label: Advanced - udpxyPort
+msgctxt "#30060"
+msgid ""
+msgstr "Framkomin"
+
+#. label-group: Advanced - Streaming
+msgctxt "#30061"
+msgid ""
+msgstr "Fleirsendingarstafett (udpxy)"
+
+#. label: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30062"
+msgid ""
+msgstr "Umskapa slóðir til fleirsendingarstreym"
+
+#. label: Advanced - useFFmpegReconnect
+msgctxt "#30063"
+msgid ""
+msgstr "Relay vertsnavn ella IP adressa"
+
+#. label: Advanced - defaultUserAgent
+msgctxt "#30064"
+msgid ""
+msgstr "Stafettportur"
+
+#. label: Advanced - defaultInputstream
+msgctxt "#30065"
+msgid ""
+msgstr "Stroyming"
+
+#. label: Advanced - defaultMimeType
+msgctxt "#30066"
+msgid ""
+msgstr "Brúka inputstreymur.tillagandi til m3u8 (HLS) streymar"
+
+#. label-group: Advanced - Channel defaults
+msgctxt "#30067"
+msgid ""
+msgstr "Brúka FFmpeg http endursambandsmøguleikar um møguligt"
+
+#. label: General - numRadioGroups
+msgctxt "#30068"
+msgid ""
+msgstr "Brúkari-umboðsmaður"
+
+#. label: Channels - customRadioGroupsFile
+msgctxt "#30069"
+msgid ""
+msgstr "Inntøkustreymsnavn"
+
+#. label: General - radioChannelGroupsOnly
+msgctxt "#30070"
+msgid ""
+msgstr "MIME slag"
+
+#. label-category: Groups
+msgctxt "#30071"
+msgid ""
+msgstr "Rásar forsetingar"
+
+#. label: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30072"
+msgid ""
+msgstr "Tal av útvarpsbólkum"
+
+# empty strings from id 30128 to 30449
+#. label: TV
+msgctxt "#30073"
+msgid ""
+msgstr "Tillagað útvarpsbólkafíla"
+
+#. label: Catchup - connectCheckTimoutSecs
+msgctxt "#30074"
+msgid ""
+msgstr "Heinta bert útvarpsrásir í bólkum"
+
+#. label: Catchup - connectCheckIntervalSecs
+msgctxt "#30076"
+msgid ""
+msgstr "Bólkar"
+
+#. label: TV
+msgctxt "#30077"
+msgid ""
+msgstr "Ignorera mál fyri EPG-rásar-ID"
+
+#. label: Radio
+msgctxt "#30078"
+msgid ""
+msgstr "M3U Uppstartskanning"
+
+# empty strings from id 30452 to 30499
+#. notification: Inputstreams
+msgctxt "#30079"
+msgid ""
+msgstr "Timeout fyri at kanna"
+
+#. notification: Inputstreams
+msgctxt "#30080"
+msgid ""
+msgstr "Millumbil til eftirlit"
+
+#. notification: Inputstreams
+msgctxt "#30450"
+msgid ""
+msgstr "Sjónvarp"
+
+# empty strings from id 30503 to 30599
+#. ############
+#. help info #
+#. ############
+#. help info - General
+#. help-category: General
+msgctxt "#30451"
+msgid ""
+msgstr "Útvarp"
+
+#. help: General - startNum
+msgctxt "#30500"
+msgid ""
+msgstr "Inntøkustreymsfeilur"
+
+#. help: General - numberByOrder
+msgctxt "#30501"
+msgid ""
+msgstr "%s tilskotið er ikki sett upp."
+
+#. help: General - tvChannelGroupsOnly
+msgctxt "#30502"
+msgid ""
+msgstr "%s tilskotið er ikki virkið."
+
+#. help: Channels - tvGroupMode
+msgctxt "#30600"
+msgid ""
+msgstr "Almennar innstillingar krevjast fyri at addon skal virka."
+
+#. help: Channels - oneTvGroup
+#. help: Channels - twoTvGroup
+#. help: Channels - threeTvGroup
+#. help: Channels - fourTvGroup
+#. help: Channels - fiveTvGroup
+msgctxt "#30605"
+msgid ""
+msgstr "Nummarið at byrja at nummera rásir frá. Bert brúkt, tá [B]Brúka baksíðurásarnummur[/B] frá PVR-innstillingum er virkið og rásarnummar ikki er givið í M3U-fíluni."
+
+#. help: Channels - oneRadioGroup
+#. help: Channels - twoRadioGroup
+#. help: Channels - threeRadioGroup
+#. help: Channels - fourRadioGroup
+#. help: Channels - fiveRadioGroup
+msgctxt "#30606"
+msgid ""
+msgstr "Ignorera nøkur 'tvg-chno' merki og bert nummar rásir eftir raðfylgjuni í M3U sum byrjar við 'Byrja rásarnummar'."
+
+#. help: Channels - customTvGroupsFile
+msgctxt "#30610"
+msgid ""
+msgstr "Einans sjónvarpsrásir, sum hoyra til bólkar (t.e. hava ein [B]bólkur-heiti[/B] eginleika), verða heintaðar úr M3U fíluni."
+
+#. help: Channels - customRadioGroupsFile
+msgctxt "#30611"
+msgid ""
+msgstr "Vel ímillum ein av hesum trimum háttunum: [B]Allir bólkar[/B] Heinta allar sjónvarpsbólkar úr M3U fíluni; [B]Sum bólkar[/B] Heinta bert teir bólkar, sum eru tilskilaðir í næstu møguleikunum; [B]Tillagaðir bólkar[/B] Heinta eitt sett av bólkum úr M3U fíluni, hvørs nøvn eru heintað úr eini XML fílu."
+
+#. help: Channels - numTvGroups
+msgctxt "#30612"
+msgid ""
+msgstr "Um fyrri møguleikin hevur verið settur til 'Summir bólkar' mást tú tilskila ein sjónvarpsbólk, sum skal heintast úr M3U fíluni. Legg til merkis, at hetta er bólkanavnið, sum víst í bólkaheiti eginleikanum (t.e. 'UK (TV)'). Henda innstillingin er viðkvæm fyri stórum stavilsum."
+
+#. help: Channels - numRadioGroups
+msgctxt "#30614"
+msgid ""
+msgstr "Um fyrri møguleikin hevur verið settur til 'Summir bólkar' mást tú tilskila ein Radiobólk, sum skal heintast úr M3U fíluni. Vinarliga ikki siga, at hetta er bólkanavnið, sum víst á bólkaheiti eginleikanum (t.e. 'UK (Radio)'). Henda innstillingin er viðkvæm fyri stórum stavilsum."
+
+#. help: General - radioChannelGroupsOnly
+msgctxt "#30615"
+msgid ""
+msgstr "Fílan, sum verður brúkt til at heinta sersniðgivnu sjónvarpsbólkarnar. Forsetta fílan er `customTVGroups-example.xml`."
+
+#. help info - EPG Settings
+#. help-category: EPG Settings
+msgctxt "#30616"
+msgid ""
+msgstr "Fílan, sum verður brúkt til at heinta tilrættalagdu Radiobólkarnar. Forsetta fílan er `customRadioGroups-example.xml`."
+
+#. help: EPG Settings - epgTimeShift
+msgctxt "#30617"
+msgid ""
+msgstr "Talið av sjónvarpsbólkum, sum skulu heintast, tá `Some groups` er valdi hátturin. Veljast kann upp til 5. Um fleiri enn 5 eru kravd skal 'Tillagaðir bólkar' hátturin brúkast í staðin."
+
+#. help: EPG Settings - epgTSOverside
+msgctxt "#30618"
+msgid ""
+msgstr "Talið av Radiobólkum, sum skulu heintast, tá `Some groups` er valdi hátturin. Veljast kann upp til 5. Um fleiri enn 5 eru kravd skal 'Tillagaðir bólkar' hátturin brúkast í staðin."
+
+#. help: EPG Settings - epgIgnoreCaseForChannelIds
+msgctxt "#30619"
+msgid ""
+msgstr "Einans Útvarpsrásir, sum hoyra til bólkar (t.e. hava ein [B]bólkur-heiti[/B] eginleika), verða heintaðar úr M3U fíluni."
+
+# empty strings from id 30627 to 30639
+#. help info - Channel Logos
+#. help-category: Channel Logos
+msgctxt "#30620"
+msgid ""
+msgstr "Innstillingar í sambandi við EPG. Legg til merkis, at Kodi bert fer at heinta EPG dáturnar, tá tað hevur tørv á tí. Tilskotið fer at noyða eina last av EPG dátunum uttan mun til um Kodi biður um tað ella ikki, um antin catchup er virkið ella XMLTV búmerki eru kravd."
+
+#. help: EPG Settings - connectionCheckIntervalSecs
+msgctxt "#30625"
+msgid ""
+msgstr "Stilla EPG-tíðirnar eftir hesum virðinum, frá -12 tímum til +14 tímar."
+
+#. help-category: Channel Logos
+msgctxt "#30626"
+msgid ""
+msgstr "Um tíðarskiftið fyri allar rásir við `EPG time shift` skal yvirhálast ella ikki. Um ikki virkið verður `EPG time shift` umframt einstaka tíðarskiftið fyri hvørja rás (um tøkt) nýtt."
+
+#. help: Channel Logos - logoFromEpg
+msgctxt "#30627"
+msgid ""
+msgstr "Ignorera Fall fyri EPG Rásar-ID, eisini kend sum tvg-id's, tá tú passar rásir til EPG-frágreiðingar. Um tað er sløkt, verður bert smásvar nýtt."
+
+#. help: Genres - useEpgGenreText
+msgctxt "#30628"
+msgid ""
+msgstr "Tá ið kannað verður fyri gyldugari M3U-fílu, hvussu leingi tú skalt bíða áðrenn royndin verður tíðarfest."
+
+#. help: Genres - genresPathType
+msgctxt "#30629"
+msgid ""
+msgstr "Tá kannað verður fyri gyldugari M3U-fílu, hvussu leingi tú skalt bíða millum royndirnar. Legg til merkis, at ein gyldug fíla bert verður kannað við uppstarti og tá ein gyldug fíla er funnin, steðga allar kanningar."
+
+#. help: Genres - genresPath
+msgctxt "#30640"
+msgid ""
+msgstr "Innstillingar í sambandi við rásarmerki."
+
+#. help: Genres - genresUrl
+msgctxt "#30644"
+msgid ""
+msgstr "Val um hvussu tú handfarar rásarmerki. Møguleikarnir eru: [B]Ignorera[/B] - Brúka ikki rásarmerki frá XMLTV fílu; [B]Heldur M3U[/B] - Brúka rásarmerkið frá M3U um tað er tøkt annars brúka XMLTV-merkið; [B]Heldur XMLTV[/B] - Brúka rásarmerkið frá XMLTV fíluni um tað er tøkt annars brúka M3U búmerkið."
+
+# empty strings from id 30665 to 30679
+#. help info - Advanced
+#. help-category: Advanced
+msgctxt "#30661"
+msgid ""
+msgstr "Um tað er virkið, og ein sjangrukortleggingarfíla verður brúkt til at fáa eitt sjangruslag og undirslag brúka sjangrutekstin hjá EPG (t.e. 'flokk' tekstin) til sjangruna ístaðin fyri kodi forsetta tekstin."
+
+#. help: Advanced - transformMulticastStreamUrls
+msgctxt "#30662"
+msgid ""
+msgstr "Vel hvar tú skalt finna sjangrurnar XML tilfeingið. Møguleikarnir eru: [B]Lokal leið[/B] - Ein leið til eina sjangru XML fílu um hon er á tólinum ella á lokala netinum; [B]Fjarleið[/B] - Ein URL, sum tilskilar staðsetingina av XML-fíluni hjá sjangrunum."
+
+#. help: Advanced - udpxyHost
+msgctxt "#30663"
+msgid ""
+msgstr "Um staðsetingin er [B]Lokal leið[/B] skal henda innstillingin innihalda eina gylduga leið."
+
+#. help: Advanced - udpxyPort
+msgctxt "#30664"
+msgid ""
+msgstr "Um staðsetingin er [B]Fjarleið[/B] skal henda innstillingin innihalda eina gylduga URL."
+
+#. help: Advanced - useInputstreamAdaptiveforHls
+msgctxt "#30680"
+msgid ""
+msgstr "Framkomnar innstillingar herundir multicast stafettir, stroymings eginleikar o.s.fr."
+
+#. help: Advanced - useFFmpegReconnect
+msgctxt "#30681"
+msgid ""
+msgstr "Fleirsendingar (UDP/RTP) streymar virka ikki væl á Wifi netverkum. Ein fleirsendingarstafett kann umskipa streymin frá UDP/RTP fleirsending til HTTP. At virkja hendan møguleikan fer at umskapa multicast streym URL'ir frá M3U fíluni til HTTP adressur, so tær kunnu fáast atgongd til umvegis eitt 'udpxy' stafett á lokala netinum. T.d. ein UDP multicast streym URL sum 'udp://@239.239.3.38:5239' vildi fingið umskapað til okkurt sum 'http://192.168.1.1:4000/udp/239.239.38:5239'."
+
+#. help: Advanced - defaultUserAgent
+msgctxt "#30682"
+msgid ""
+msgstr "Vertsnavnið ella ip-adressan hjá multicast-stafettini (udpxy) á lokala netinum."
+
+#. help: Advanced - defaultInputstream
+msgctxt "#30683"
+msgid ""
+msgstr "Porturin hjá multicast-stafettini (udpxy) á lokala netinum."
+
+#. help: Advanced - defaultMimeType
+msgctxt "#30684"
+msgid ""
+msgstr "Brúka inntøkustreymur.tillagandi í staðin fyri libavsniðið hjá ffmpeg til m3u8 (HLS) streymar."
+
+#. help: Groups - groups
+msgctxt "#30685"
+msgid ""
+msgstr "Legg til merkis, at hetta bert kann vera galdandi fyri http/https streymar, sum verða viðgjørdir av libavformat (t.d. M3u8/HLS). Við at brúka libavformat kann tilskilast í eini M3U fílu við at seta eginleikan `inputstream` sum `inputstream.ffmpeg` til innanhýsis umsiting hjá kodi ella `inputstream.ffmpegdirect` til addon útgávu. T.v.s. leggja linjuna afturat: `#KODIPROP:inputstream=inputstream.ffmpeg`. Um hesin møguleikin ikki er virkin kann hann framvegis virkjast fyri hvønn streym/rás við at leggja ein kodi eginleika til, t.e.: `#KODIPROP:http-reconnect=true`."
+
+#. label: General - satipAutoConfig
+msgctxt "#30686"
+msgid ""
+msgstr "Brúka hendan Brúkara-umboðsmannin, um tað ikki er ein, sum er veitt sum ein ogn ella sum partur av rásarstreyms-URL'inum."
+
+#. help: General - satipAutoConfig
+msgctxt "#30687"
+msgid ""
+msgstr "Brúka hetta inputsream sum forsett, um tað ikki er ein veitt sum ein eginleiki (KODIPROP) hjá rásini. Brúka við varsemi, tí hetta fer at sløkkja nakra nýtslu av forsetta streymkanningarháttinum hjá addon'inum. Legg til merkis, at fyri `inputstream.ffmpegdirect` um bæði `mimetype` og `inputstream.ffmpegdirect.manifest_type` eru ósett, fer streymeftirlit framvegis at henda, um tørvur er á tí."
+
+#. label: General - satipServerHost
+msgctxt "#30688"
+msgid ""
+msgstr "Brúka hetta MIME slagið sum forsett, um tað ikki er eitt, sum er veitt sum ein eginleiki (KODIPROP) hjá rásini. Brúka við varsemi, tí hetta fer at sløkkja nakra nýtslu av forsetta streymkanningarháttinum hjá addon'inum."
+
+#. help: General - satipServerHost
+msgctxt "#30743"
+msgid ""
+msgstr "Innstillingar um at tillaga rásarbólkar."
+
+#. label: General - satipPreferFritzHd
+msgctxt "#30901"
+msgid ""
+msgstr "Virkja SAT>IP sjálvvirkandi uppseting"
+
+#. help: General - satipPreferFritzHd
+msgctxt "#30902"
+msgid ""
+msgstr "Uppdaga sjálvvirkandi SAT>IP ambætarar og loysa rás, EPG og búmerkikeldur."
+
+#. label: General - satipDiscoveryTimeoutMs
+msgctxt "#30903"
+msgid ""
+msgstr "Valdur SAT>IP-ambætaravertur ella URL"
+
+#. help: General - satipDiscoveryTimeoutMs
+msgctxt "#30904"
+msgid ""
+msgstr "Vísir tann valda SAT>IP ambætaran í løtuni. Tað kann eisini skrivast inn manuelt."
+
+#. label: General - satipDiscoveryMxSeconds
+msgctxt "#30905"
+msgid ""
+msgstr "Helst FRITZ!Box HD spælilista"
+
+#. help: General - satipDiscoveryMxSeconds
+msgctxt "#30906"
+msgid ""
+msgstr "Heldur /dvb/m3u/tvhd.m3u fram um SD/standard spælilistar tá teir eru tøkir."
+
+#. label: General - satipLogoBaseUrl
+msgctxt "#30907"
+msgid ""
+msgstr "SAT>IP uppdaganartíð"
+
+#. help: General - satipLogoBaseUrl
+msgctxt "#30908"
+msgid ""
+msgstr "Hvussu leingi SSDP uppdagan er loyvd at koyra áðrenn brúkt verður besta úrslitið, sum higartil er funnið."
+
+#. label: General - satipClearEpgCache
+msgctxt "#30909"
+msgid ""
+msgstr "SAT>IP SSDP MX sekund"
+
+#. help: General - satipClearEpgCache
+msgctxt "#30910"
+msgid ""
+msgstr "MX virði nýtt til SSDP M-LEITING fyrispurningar."
+
+#. message: General - satipClearEpgCache
+msgctxt "#30911"
+msgid ""
+msgstr "Yvirhála búmerkjagrundarlagið URL"
+
+#. notification: General - satipClearEpgCache
+msgctxt "#30912"
+msgid ""
+msgstr "Valfrí slóð til búmerki, sum verður brúkt, tá búmerki ikki eru innbygd í spælilista/EPG."
+
+#. notification: SAT>IP EPG scan started
+msgctxt "#30913"
+msgid ""
+msgstr "Rudda SAT>IP EPG goymsluna"
+
+#. notification: SAT>IP EPG scan finished
+msgctxt "#30914"
+msgid ""
+msgstr "Strika goymdar SAT>IP EPG dátur. Frísk dáta heintast á næstu Kodi EPG uppdatering."
+
+#. label: General - satipUseFritzBoxAuth
+msgctxt "#30915"
+msgid ""
+msgstr "Strika SAT>IP EPG goymsluna nú?"
+
+#. help: General - satipUseFritzBoxAuth
+msgctxt "#30916"
+msgid ""
+msgstr "SAT>IP EPG goymslan ruddað. Fríska Kodi EPG fyri at endurlesa."
+
+#. label: General - satipFritzBoxSid
+msgctxt "#30917"
+msgid ""
+msgstr "Kodi er við at umlesa SAT> IP EPG dátur. Hetta kann taka eina tíð."
+
+#. help: General - satipFritzBoxSid
+msgctxt "#30918"
+msgid ""
+msgstr "SAT>IP EPG umlesing liðug."
+
+#. label: General - satipFritzBoxPassword
+msgctxt "#30919"
+msgid ""
+msgstr "Brúka FRITZ!Box innritan til búmerkjakanningar"
+
+#. help: General - satipFritzBoxPassword
+msgctxt "#30920"
+msgid ""
+msgstr "Um tað er virkið, brúka logo URL kanningar móti FRITZ!Box eina lokala innritanarsetu."
+
+#. label: General - satipDiscoverSelectServer
+msgctxt "#30921"
+msgid ""
+msgstr "FRITZ!Kassi brúkaranavnið"
+
+#. help: General - satipDiscoverSelectServer
+msgctxt "#30922"
+msgid ""
+msgstr "Brúkaranavn brúkt til lokalt FRITZ!Box innritan fyri at fáa atgongd til vard rásarmerki."
+
+#. heading: SAT>IP server select dialog
+msgctxt "#30923"
+msgid ""
+msgstr "FRITZ!Kassa loyniorð"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30924"
+msgid ""
+msgstr "Loyniorð brúkt til lokala FRITZ!Box innritan. Tað verður bert brúkt í minninum til SID skapan."
+
+#. notification: SAT>IP server select dialog
+msgctxt "#30925"
+msgid ""
+msgstr "Finn og vel SAT>IP-ambætara"
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30926"
+msgid ""
+msgstr "Opnar ambætara uppdagan og letur teg velja ein av teimum uppdagaðu SAT>IP ambætarunum. Úrslitið er skrivað í teigin niðanfyri."
+
+#. text: SAT>IP server discovery progress dialog
+msgctxt "#30927"
+msgid ""
+msgstr "Vel SAT>IP-ambætara"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30928"
+msgid ""
+msgstr "Eingin SAT>IP ambætari funnin í lokala netinum."
+
+#. text: SAT>IP server select dialog
+msgctxt "#30929"
+msgid ""
+msgstr "Valdur ambætari: {host}"
+
+#. text: SAT>IP server select dialog
+msgctxt "#30930"
+msgid ""
+msgstr "Leita eftir SAT>IP-ambætarum í lokala netinum ..."
+
+#. notification: FRITZ!Box login status
+msgctxt "#30931"
+msgid ""
+msgstr "Skanningargrunnflata: {iface}"
+
+#. notification: FRITZ!Box login status
+msgctxt "#30932"
+msgid ""
+msgstr "Núverandi ambætari: {host}"
+
+msgctxt "#30933"
+msgid ""
+msgstr "Streymur"
+
+msgctxt "#30934"
+msgid ""
+msgstr "Valdi SAT>IP-ambætarin kundi ikki goymast."
+
+msgctxt "#30935"
+msgid ""
+msgstr "FRITZ!Innritan í kassa eydnaðist fyri {host}"
+
+msgctxt "#30936"
+msgid ""
+msgstr "FRITZ!Innritan í kassa miseydnaðist fyri {host}: {error}"

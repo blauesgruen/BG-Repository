@@ -94,6 +94,67 @@ function Copy-AddonAssetsFromZip([string]$ZipPath, [string]$TargetDirectory) {
     }
 }
 
+function Copy-ZipWithPlatformOverride([string]$ZipPath, [string]$TargetZipPath, [string]$Platform) {
+    $tempDir = Join-Path $env:TEMP ('kodi-platform-override-' + [guid]::NewGuid().ToString('N'))
+    New-Item -ItemType Directory -Force -Path $tempDir | Out-Null
+
+    try {
+        [System.IO.Compression.ZipFile]::ExtractToDirectory($ZipPath, $tempDir)
+        $addonXml = Get-ChildItem -Path $tempDir -Recurse -Filter 'addon.xml' -File |
+            Where-Object { $_.Directory.Parent.FullName -eq $tempDir } |
+            Select-Object -First 1
+
+        if ($null -eq $addonXml) {
+            throw "No add-on root addon.xml found in $ZipPath"
+        }
+
+        $addonDoc = [System.Xml.XmlDocument]::new()
+        $addonDoc.Load($addonXml.FullName)
+        $metadata = @($addonDoc.DocumentElement.SelectNodes('extension[@point="xbmc.addon.metadata"]')) | Select-Object -First 1
+        if ($null -eq $metadata) {
+            throw "Missing xbmc.addon.metadata in $ZipPath"
+        }
+
+        $platformNode = @($metadata.SelectNodes('platform')) | Select-Object -First 1
+        if ($null -eq $platformNode) {
+            $platformNode = $addonDoc.CreateElement('platform')
+            [void]$metadata.AppendChild($platformNode)
+        }
+        $platformNode.InnerText = $Platform
+
+        $settings = [System.Xml.XmlWriterSettings]::new()
+        $settings.Encoding = [System.Text.UTF8Encoding]::new($false)
+        $settings.Indent = $true
+        $settings.NewLineChars = "`n"
+        $writer = [System.Xml.XmlWriter]::Create($addonXml.FullName, $settings)
+        try {
+            $addonDoc.Save($writer)
+        }
+        finally {
+            $writer.Close()
+        }
+
+        if (Test-Path $TargetZipPath) {
+            Remove-Item -Force $TargetZipPath
+        }
+
+        $zip = [System.IO.Compression.ZipFile]::Open($TargetZipPath, [System.IO.Compression.ZipArchiveMode]::Create)
+        try {
+            $root = (Resolve-Path $tempDir).Path.TrimEnd('\') + '\'
+            Get-ChildItem -Path $tempDir -Recurse -File | ForEach-Object {
+                $relativePath = $_.FullName.Substring($root.Length).Replace('\', '/')
+                [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $_.FullName, $relativePath, [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
+            }
+        }
+        finally {
+            $zip.Dispose()
+        }
+    }
+    finally {
+        Remove-Item -Recurse -Force $tempDir
+    }
+}
+
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
     throw "GitHub CLI 'gh' is required for private release imports."
 }
@@ -151,6 +212,15 @@ try {
                 Copy-AddonAssetsFromZip $zipFile.FullName $targetDir
                 $reason = 'imported'
                 $imported = $true
+
+                if ($platform -eq 'linux-armv7') {
+                    $compatPlatform = 'linux'
+                    $compatDir = Join-Path $feedDir "$id+$compatPlatform"
+                    $compatZip = Join-Path $compatDir "$id-$version.zip"
+                    New-Item -ItemType Directory -Force -Path $compatDir | Out-Null
+                    Copy-ZipWithPlatformOverride $zipFile.FullName $compatZip $compatPlatform
+                    Copy-AddonAssetsFromZip $compatZip $compatDir
+                }
             }
 
             $report += [pscustomobject]@{

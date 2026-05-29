@@ -54,6 +54,9 @@ jobs:
       - name: Commit updated repository files
         shell: pwsh
         run: |
+          # Rebase to avoid non-fast-forward push failures in concurrent updates.
+          git fetch origin
+          git pull --rebase origin $env:GITHUB_REF_NAME
           $repoConfig = Get-Content -Raw repo.config.json | ConvertFrom-Json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

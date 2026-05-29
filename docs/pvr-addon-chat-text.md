@@ -69,12 +69,15 @@ Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
 
 ```text
 Windows:              windows-x86_64
-Linux:                linux
 CoreELEC Amlogic-ne:  linux-aarch64
 CoreELEC Amlogic-ng:  linux-armv7
 ```
 
 Der Plattformwert darf nicht leer sein.
+
+Das generische Linux-Paket mit `<platform>linux</platform>` soll vorerst nicht
+in denselben Feed wie die CoreELEC-ARM-Pakete. CoreELEC kann sonst das breite
+Linux-Paket matchen und das falsche Binary installieren.
 
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 

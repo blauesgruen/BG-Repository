@@ -41,6 +41,10 @@ $validPlatforms = @(
     'tvos-aarch64'
 )
 
+$blockedPlatforms = @(
+    'linux'
+)
+
 function Get-AddonXmlFromZip([string]$ZipPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
     try {
@@ -113,6 +117,9 @@ try {
             }
             elseif ([string]::IsNullOrWhiteSpace($platform)) {
                 $reason = 'missing platform'
+            }
+            elseif ($blockedPlatforms -contains $platform) {
+                $reason = "ambiguous platform '$platform'"
             }
             elseif ($validPlatforms -notcontains $platform) {
                 $reason = "unsupported platform '$platform'"

@@ -91,12 +91,15 @@ The current platform values expected in `addon.xml` are:
 
 ```text
 Windows:              windows-x86_64
-Linux:                linux
 CoreELEC Amlogic-ne:  linux-aarch64
 CoreELEC Amlogic-ng:  linux-armv7
 ```
 
 The platform value must not be empty.
+
+Do not publish the generic `linux` package in the same feed as CoreELEC ARM
+packages. Kodi/CoreELEC can match the broad `linux` package on ARM devices and
+install the wrong binary.
 
 ## Manual Import
 

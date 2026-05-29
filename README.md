@@ -8,6 +8,14 @@ Install the repository in Kodi from this ZIP:
 https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.0.zip
 ```
 
+Alternatively, download the same install ZIP from the latest release:
+
+```text
+https://github.com/blauesgruen/BG-Repository/releases/tag/v0.1.0
+```
+
+Use the file named `repository.bg-0.1.0.zip`, not GitHub's source-code ZIP.
+
 After installation, Kodi can receive add-on updates from:
 
 ```text

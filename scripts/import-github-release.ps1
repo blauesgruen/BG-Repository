@@ -17,6 +17,9 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $validPlatforms = @(
     'all',
     'linux',
+    'linux-aarch64',
+    'linux-armv7',
+    'linux-x86_64',
     'osx',
     'osx64',
     'osx-x86_64',

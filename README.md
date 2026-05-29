@@ -1,121 +1,23 @@
-# Kodi PVR Repository
+# BG-Repository
 
-Dieses Projekt ist eine Schablone fuer ein eigenes Kodi-Repository mit
-plattformabhaengigen PVR-Binary-Add-ons fuer Kodi Omega und spaeter Piers.
+BG-Repository is a Kodi add-on repository for selected add-ons.
 
-## Zielstruktur
-
-Kodi erwartet ein installierbares Repository-Add-on und pro Kodi-Version einen
-Feed mit `addons.xml`, `addons.xml.md5` und Add-on-Zips.
+Install the repository in Kodi from this ZIP:
 
 ```text
-repository.bg/
-  addon.xml
-  repository.bg-0.1.0.zip
-omega/
-  addons.xml
-  addons.xml.md5
-  pvr.meinaddon+windows-x86_64/
-    pvr.meinaddon-1.0.0.zip
-  pvr.meinaddon+android-aarch64/
-    pvr.meinaddon-1.0.0.zip
-piers/
-  addons.xml
-  addons.xml.md5
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.0.zip
 ```
 
-Fuer Binary/PVR-Add-ons ist die Plattformtrennung wichtig. Die offiziellen
-Kodi-Binary-Repositories verwenden Verzeichnisse nach dem Muster:
+After installation, Kodi can receive add-on updates from:
 
 ```text
-addon.id+platform/addon.id-version.zip
+https://blauesgruen.github.io/BG-Repository/
 ```
 
-Das `addon.xml` im Zip muss dieselbe Plattform in
-`<extension point="xbmc.addon.metadata"><platform>...</platform>` enthalten.
-Dadurch zeigt Kodi nur die Add-ons an, die zur laufenden Plattform passen.
-
-## Einrichten
-
-1. `repo.config.json` anpassen:
-   - `repository.id`
-   - `repository.name`
-   - `repository.providerName`
-   - `repository.baseUrl`
-2. PVR-Zips nach `omega/<addonid>+<platform>/` legen.
-3. Optional Piers-Zips nach `piers/<addonid>+<platform>/` legen.
-4. Alternativ aus einem GitHub-Release importieren:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\import-github-release.ps1 -Repository owner/repo -ReleaseTag v1.0.0-omega
-```
-
-5. Validieren:
-
-```powershell
-.\scripts\validate-repository.ps1
-```
-
-6. Repository-Dateien bauen:
-
-```powershell
-.\scripts\build-repository.ps1
-```
-
-Danach koennen `repository.*`, `omega` und spaeter `piers` auf einen HTTPS-Host
-gelegt werden, zum Beispiel GitHub Pages oder einen eigenen Webserver.
-
-## Automatisierung
-
-Der Workflow `.github/workflows/import-pvr-satip.yml` kann neue Releases aus
-`blauesgruen/pvr.satip` importieren, validieren, `addons.xml` neu bauen und die
-Aenderungen committen.
-
-Details stehen in:
+Currently included:
 
 ```text
-docs/automation.md
-docs/pvr-addon-chat-text.md
+pvr.satip for Kodi Omega
 ```
 
-## Plattformnamen
-
-Kodi kennt unter anderem:
-
-```text
-windows-i686
-windows-x86_64
-android-armv7
-android-aarch64
-osx-x86_64
-osx-arm64
-linux
-ios-armv7
-ios-aarch64
-tvos-aarch64
-```
-
-Fuer Linux liefert das offizielle Kodi-Repo Binary-PVR-Add-ons haeufig nicht als
-ZIP fuer jede Distribution aus. Je nach Zielsystem kann dort ein Distributions-
-Paket sinnvoller sein. Wenn du Linux-Zips anbietest, muss das Binary zur Kodi-
-ABI und zur Zielplattform passen.
-
-## Offizielle Anforderungen, die diese Schablone abbildet
-
-- `addon.xml` hat eindeutige lowercase IDs und semantische Versionen.
-- Das Repository-Add-on nutzt `xbmc.addon.repository` mit getrennten `dir`
-  Eintraegen fuer Omega und Piers.
-- Jeder Feed hat eine Master-Datei `addons.xml` und eine geaenderte
-  `addons.xml.md5`.
-- Online-Auslieferung ist ZIP-basiert.
-- HTTPS ist vorgesehen.
-- Die Plattformfilterung passiert ueber `<platform>` im Add-on-Metadatenblock.
-- Die Binary-PVR-Zips bleiben plattformspezifisch getrennt.
-
-## Quellen
-
-- Kodi Wiki: Add-on repositories
-- Kodi Wiki: Addon.xml
-- Kodi Wiki: Submitting Add-ons
-- Team Kodi: xbmc/repo-binary-addons, Branches Omega und Piers
-- Kodi Mirror: `/addons/omega/` als Referenz fuer `addon.id+platform`
+More add-ons may be added later.

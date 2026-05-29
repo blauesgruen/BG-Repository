@@ -1,68 +1,43 @@
 # Text fuer den PVR-Addon-Chat
 
-Wir bauen ein eigenes Kodi-Repository fuer `pvr.satip`. Damit Kodi spaeter nur
-die Add-ons anbietet, die zum System des Nutzers passen, muessen die Release-
-Assets bestimmte Regeln einhalten.
-
-Bitte beim Bauen der PVR-Zips beachten:
-
-1. Jedes Zielsystem braucht ein eigenes ZIP.
-
-Beispiele:
+Das BG-Repository ist online:
 
 ```text
-pvr.satip-0.1.1-windows-x64.zip
-pvr.satip-0.1.1-linux-x86_64.zip
-pvr.satip-0.1.1-21.3-Omega-Amlogic-ne.zip
-pvr.satip-0.1.1-21.3-Omega-Amlogic-ng.zip
+GitHub:
+https://github.com/blauesgruen/BG-Repository
+
+Kodi-/Pages-URL:
+https://blauesgruen.github.io/BG-Repository/
+
+Installierbares Repository-ZIP:
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.0.zip
 ```
 
-2. Im ZIP muss `pvr.satip/addon.xml` liegen.
+Das PVR-Repo soll nach neuen Release-Uploads das BG-Repository triggern.
 
-3. Die Version im `addon.xml` muss zur Release-Version passen.
+Verwendet wird:
 
-Beispiel:
-
-```xml
-<addon id="pvr.satip" version="0.1.1" ...>
+```text
+event_type: pvr-satip-release
+client_payload.release_tag: <release_tag>
 ```
 
-4. Im Metadata-Block muss ein korrekter Plattformwert stehen.
+Secret im PVR-Repo:
 
-Beispiel Windows:
-
-```xml
-<extension point="xbmc.addon.metadata">
-  <platform>windows-x86_64</platform>
-</extension>
+```text
+KODI_REPO_DISPATCH_TOKEN
 ```
 
-Beispiel Linux:
+Der Token muss `repository_dispatch` auf dieses Repository ausloesen duerfen:
 
-```xml
-<extension point="xbmc.addon.metadata">
-  <platform>linux</platform>
-</extension>
+```text
+blauesgruen/BG-Repository
 ```
 
-5. Der Plattformwert darf nicht leer sein.
-
-Aktuell sind die beiden Amlogic-Zips nicht automatisch importierbar, weil dort
-`<platform>` leer ist. Dadurch kann Kodi sie nicht sauber einem System zuordnen.
-
-6. Wenn Amlogic-ne und Amlogic-ng automatisch getrennt angeboten werden sollen,
-muss geklaert werden, welche Kodi-/CoreELEC-Plattformwerte dafuer korrekt sind.
-Solange beide denselben Add-on-ID-Wert `pvr.satip` haben und keinen eindeutigen
-Plattformwert besitzen, kann das Kodi-Repository sie nicht offiziell sauber
-filtern.
-
-7. Nach dem Erstellen und Hochladen aller Release-Assets soll das PVR-Repo das
-Kodi-Repository triggern.
-
-Beispiel-Schritt fuer GitHub Actions:
+Der Trigger-Schritt im PVR-Repo:
 
 ```yaml
-- name: Trigger Kodi repository import
+- name: Trigger BG-Repository import
   env:
     GH_TOKEN: ${{ secrets.KODI_REPO_DISPATCH_TOKEN }}
     RELEASE_TAG: ${{ github.event.release.tag_name }}
@@ -73,16 +48,47 @@ Beispiel-Schritt fuer GitHub Actions:
       --field client_payload[release_tag]="$RELEASE_TAG"
 ```
 
-Wenn das Repository spaeter unter einem anderen Owner liegt, muss
-`blauesgruen/BG-Repository` entsprechend ersetzt werden.
-
-Das Ergebnis soll sein:
+Die Workflow-Logik im PVR-Repo soll so bleiben:
 
 ```text
-PVR-Release wird gebaut
-Release-Assets werden hochgeladen
-Kodi-Repository wird automatisch getriggert
-Kodi-Repository importiert die neuen Zips
-addons.xml wird neu gebaut
-Kodi-Nutzer bekommen automatisch Updates
+Direkt gestartete Einzelworkflows:
+  bauen ihre Plattform
+  laden ihr ZIP ins Release hoch
+  triggern BG danach selbst
+
+Release All:
+  startet Linux, Windows und CoreELEC
+  verhindert die fruehen BG-Trigger der Einzelworkflows
+  wartet auf alle Plattform-Workflows
+  triggert BG danach genau einmal
+```
+
+So importiert BG nicht zu frueh, wenn noch Plattform-ZIPs fehlen.
+
+Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
+
+```text
+Windows:              windows-x86_64
+Linux:                linux
+CoreELEC Amlogic-ne:  linux-aarch64
+CoreELEC Amlogic-ng:  linux-armv7
+```
+
+Der Plattformwert darf nicht leer sein.
+
+Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
+
+```xml
+<addon id="pvr.satip" version="0.1.1" ...>
+```
+
+Danach macht BG automatisch:
+
+```text
+Release-Assets herunterladen
+gueltige Plattform-ZIPs importieren
+Repository validieren
+addons.xml neu bauen
+Aenderungen committen
+Kodi-Nutzern Updates anbieten
 ```

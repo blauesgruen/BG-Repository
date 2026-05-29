@@ -75,6 +75,25 @@ function Get-AddonXmlFromZip([string]$ZipPath) {
     }
 }
 
+function Copy-AddonAssetsFromZip([string]$ZipPath, [string]$TargetDirectory) {
+    $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
+    try {
+        $entries = $zip.Entries |
+            Where-Object { $_.FullName -match '^[^/\\]+/(icon\.png|resources/icon\.png)$' }
+
+        foreach ($entry in $entries) {
+            $relativePath = ($entry.FullName -replace '^[^/\\]+[/\\]', '').Replace('/', [System.IO.Path]::DirectorySeparatorChar)
+            $targetPath = Join-Path $TargetDirectory $relativePath
+            $targetParent = Split-Path -Parent $targetPath
+            New-Item -ItemType Directory -Force -Path $targetParent | Out-Null
+            [System.IO.Compression.ZipFileExtensions]::ExtractToFile($entry, $targetPath, $true)
+        }
+    }
+    finally {
+        $zip.Dispose()
+    }
+}
+
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
     throw "GitHub CLI 'gh' is required for private release imports."
 }
@@ -129,6 +148,7 @@ try {
                 $targetZip = Join-Path $targetDir "$id-$version.zip"
                 New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
                 Copy-Item -Force -Path $zipFile.FullName -Destination $targetZip
+                Copy-AddonAssetsFromZip $zipFile.FullName $targetDir
                 $reason = 'imported'
                 $imported = $true
             }

@@ -175,6 +175,13 @@ function New-RepositoryAddonXml($Config, [string]$RepositoryDir) {
     [void]$metadata.AppendChild((New-Element $doc 'platform' 'all'))
     [void]$metadata.AppendChild((New-Element $doc 'license' ([string]$repo.license)))
     [void]$metadata.AppendChild((New-Element $doc 'source' ([string]$repo.source)))
+
+    if (Test-Path (Join-Path $RepositoryDir 'icon.png')) {
+        $assets = $doc.CreateElement('assets')
+        [void]$assets.AppendChild((New-Element $doc 'icon' 'icon.png'))
+        [void]$metadata.AppendChild($assets)
+    }
+
     [void]$addon.AppendChild($metadata)
 
     New-Item -ItemType Directory -Force -Path $RepositoryDir | Out-Null
@@ -244,13 +251,6 @@ $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 
 $repositoryDir = Join-Path $projectRoot ([string]$config.repository.id)
-$repositoryAddonXml = Join-Path $repositoryDir 'addon.xml'
-$previousRepositoryAddonHash = if (Test-Path $repositoryAddonXml) {
-    (Get-FileHash -Algorithm SHA256 $repositoryAddonXml).Hash.ToLowerInvariant()
-}
-else {
-    $null
-}
 New-RepositoryAddonXml $config $repositoryDir
 
 foreach ($feed in $config.feeds) {
@@ -260,16 +260,10 @@ foreach ($feed in $config.feeds) {
 
 if (-not $SkipRepositoryZip) {
     $repositoryZip = Join-Path $repositoryDir "$($config.repository.id)-$($config.repository.version).zip"
-    $repositoryAddonHash = (Get-FileHash -Algorithm SHA256 $repositoryAddonXml).Hash.ToLowerInvariant()
-    if ((-not (Test-Path $repositoryZip)) -or ($previousRepositoryAddonHash -ne $repositoryAddonHash)) {
-        if (Test-Path $repositoryZip) {
-            Remove-Item -Force $repositoryZip
-        }
-        Compress-Archive -Path $repositoryDir -DestinationPath $repositoryZip -CompressionLevel Optimal
+    if (Test-Path $repositoryZip) {
+        Remove-Item -Force $repositoryZip
     }
-    elseif (Test-Path $repositoryZip) {
-        Write-Host "Repository add-on zip is already current."
-    }
+    Compress-Archive -Path $repositoryDir -DestinationPath $repositoryZip -CompressionLevel Optimal
 }
 
 Write-Host "Repository metadata generated."

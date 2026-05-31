@@ -29,6 +29,9 @@ It does this:
 6. commit and push changes only when files changed
 ```
 
+The install ZIP under `repository.bg/` is rebuilt on every repository build so
+changes to repository add-on assets such as `icon.png` are included immediately.
+
 The workflow supports:
 
 ```text

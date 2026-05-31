@@ -25,8 +25,5 @@
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <source>https://github.com/blauesgruen/BG-Repository</source>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
   </extension>
 </addon>

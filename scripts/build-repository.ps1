@@ -176,12 +176,6 @@ function New-RepositoryAddonXml($Config, [string]$RepositoryDir) {
     [void]$metadata.AppendChild((New-Element $doc 'license' ([string]$repo.license)))
     [void]$metadata.AppendChild((New-Element $doc 'source' ([string]$repo.source)))
 
-    if (Test-Path (Join-Path $RepositoryDir 'icon.png')) {
-        $assets = $doc.CreateElement('assets')
-        [void]$assets.AppendChild((New-Element $doc 'icon' 'icon.png'))
-        [void]$metadata.AppendChild($assets)
-    }
-
     [void]$addon.AppendChild($metadata)
 
     New-Item -ItemType Directory -Force -Path $RepositoryDir | Out-Null

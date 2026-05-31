@@ -9,7 +9,7 @@
       <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
       <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
-      <import addon="xbmc.python" version="3.0.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
@@ -30,7 +30,7 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1182823</size>
+      <size>1452433</size>
       <path>pvr.satip+linux-aarch64/pvr.satip-0.1.0.zip</path>
     </extension>
   </addon>
@@ -43,7 +43,7 @@
       <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
       <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
-      <import addon="xbmc.python" version="3.0.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
@@ -64,7 +64,7 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1152990</size>
+      <size>1422601</size>
       <path>pvr.satip+linux-armv7/pvr.satip-0.1.0.zip</path>
     </extension>
   </addon>
@@ -109,7 +109,7 @@
       <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
       <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
-      <import addon="xbmc.python" version="3.0.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
@@ -130,7 +130,7 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>984068</size>
+      <size>1253762</size>
       <path>pvr.satip+windows-x86_64/pvr.satip-0.1.0.zip</path>
     </extension>
   </addon>

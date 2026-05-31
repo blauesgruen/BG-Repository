@@ -68,21 +68,24 @@ So importiert BG nicht zu frueh, wenn noch Plattform-ZIPs fehlen.
 Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
 
 ```text
-Windows:              windows-x86_64
+Android 64-bit:       android-aarch64
+Android 32-bit:       android-armv7
 CoreELEC Amlogic-ne:  linux-aarch64
 CoreELEC Amlogic-ng:  linux-armv7
+Linux 64-bit:         linux-x86_64
+Windows 64-bit:       windows-x86_64
 ```
 
 Der Plattformwert darf nicht leer sein.
 
-BG-Repository erzeugt fuer CoreELEC Amlogic-ng zusaetzlich ein
-Kompatibilitaetspaket mit `<platform>linux</platform>` aus dem `linux-armv7`-ZIP.
-Das ist noetig, weil der CoreELEC/Kodi-Repository-Browser beim Anzeigen des
-Repos offenbar das breite `linux` matcht, nicht `linux-armv7`.
+Ein echtes Linux-x86_64-ZIP darf nicht als generisches
+`<platform>linux</platform>` gebaut werden. Es muss
+`<platform>linux-x86_64</platform>` verwenden. BG-Repository blockiert das
+breite `linux`, damit kein Paket dem falschen System angeboten wird.
 
-Ein echtes Linux-x86_64-ZIP darf deshalb nicht als generisches
-`<platform>linux</platform>` in denselben Feed importiert werden, sonst kann
-CoreELEC wieder das falsche Binary installieren.
+BG-Repository entfernt vor einem Import vorhandene Plattformordner des Addons.
+Dadurch bleiben keine alten Plattform-ZIPs im Feed liegen, wenn sie im aktuellen
+Release nicht mehr vorhanden sind.
 
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 

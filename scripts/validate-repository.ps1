@@ -114,8 +114,19 @@ foreach ($feed in $config.feeds) {
                 Add-Problem $problems "Platform '$($platformNode.InnerText.Trim())' does not match directory '$platformFromDir' in $($zipFile.FullName)"
             }
 
+            if ($platformFromDir -eq 'linux') {
+                Add-Problem $problems "Ambiguous platform 'linux' is not allowed in $($zipFile.FullName); use linux-x86_64 or an architecture-specific platform"
+            }
+
             if ($null -eq (@($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1)) {
                 Add-Problem $problems "Missing kodi.pvrclient extension in $($zipFile.FullName)"
+            }
+
+            if ($null -ne (@($addon.SelectNodes('extension[@point="xbmc.service"]')) | Select-Object -First 1)) {
+                $pythonImport = @($addon.SelectNodes('requires/import[@addon="xbmc.python"]')) | Select-Object -First 1
+                if ($null -eq $pythonImport) {
+                    Add-Problem $problems "xbmc.service requires xbmc.python import in $($zipFile.FullName)"
+                }
             }
 
             foreach ($metadataChild in @('summary', 'description', 'license', 'source')) {

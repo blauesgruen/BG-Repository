@@ -10,7 +10,7 @@ Kodi-/Pages-URL:
 https://blauesgruen.github.io/BG-Repository/
 
 Installierbares Repository-ZIP:
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.1.zip
 ```
 
 Das PVR-Repo soll nach neuen Release-Uploads das BG-Repository triggern.

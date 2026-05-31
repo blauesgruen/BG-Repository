@@ -2,7 +2,7 @@
   "repository": {
     "id": "repository.bg",
     "name": "BG-Repository",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "providerName": "blauesgruen",
     "baseUrl": "https://blauesgruen.github.io/BG-Repository",
     "summary": {

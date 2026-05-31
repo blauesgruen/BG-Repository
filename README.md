@@ -5,16 +5,16 @@ BG-Repository is a Kodi add-on repository for selected add-ons.
 Install the repository in Kodi from this ZIP:
 
 ```text
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.1.zip
 ```
 
 Alternatively, download the same install ZIP from the latest release:
 
 ```text
-https://github.com/blauesgruen/BG-Repository/releases/tag/v0.1.0
+https://github.com/blauesgruen/BG-Repository/releases/tag/v0.1.1
 ```
 
-Use the file named `repository.bg-0.1.0.zip`, not GitHub's source-code ZIP.
+Use the file named `repository.bg-0.1.1.zip`, not GitHub's source-code ZIP.
 
 After installation, Kodi can receive add-on updates from:
 

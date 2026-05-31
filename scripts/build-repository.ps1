@@ -61,6 +61,43 @@ function Write-GzipCopy([string]$SourcePath, [string]$DestinationPath) {
     }
 }
 
+function Compress-DirectoryWithUnixPaths([string]$SourceDirectory, [string]$DestinationPath) {
+    $sourceRoot = [System.IO.Path]::GetFullPath($SourceDirectory).TrimEnd(
+        [System.IO.Path]::DirectorySeparatorChar,
+        [System.IO.Path]::AltDirectorySeparatorChar
+    )
+    $rootName = [System.IO.Path]::GetFileName($sourceRoot)
+
+    if (Test-Path $DestinationPath) {
+        Remove-Item -Force $DestinationPath
+    }
+
+    $zip = [System.IO.Compression.ZipFile]::Open($DestinationPath, [System.IO.Compression.ZipArchiveMode]::Create)
+    try {
+        Get-ChildItem -LiteralPath $sourceRoot -Recurse -File |
+            Where-Object {
+                $fullName = [System.IO.Path]::GetFullPath($_.FullName)
+                $isDestination = $fullName -eq [System.IO.Path]::GetFullPath($DestinationPath)
+                $isRepositoryZip = ($_.DirectoryName -eq $sourceRoot) -and ($_.Name -like "$rootName-*.zip")
+                -not $isDestination -and -not $isRepositoryZip
+            } |
+            Sort-Object FullName |
+            ForEach-Object {
+                $relativePath = Get-RelativeUnixPath $sourceRoot $_.FullName
+                $entryName = "$rootName/$relativePath"
+                [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile(
+                    $zip,
+                    $_.FullName,
+                    $entryName,
+                    [System.IO.Compression.CompressionLevel]::Optimal
+                ) | Out-Null
+            }
+    }
+    finally {
+        $zip.Dispose()
+    }
+}
+
 function Get-RelativeUnixPath([string]$BasePath, [string]$TargetPath) {
     $baseFullPath = [System.IO.Path]::GetFullPath($BasePath)
     if (-not $baseFullPath.EndsWith([System.IO.Path]::DirectorySeparatorChar)) {
@@ -176,6 +213,12 @@ function New-RepositoryAddonXml($Config, [string]$RepositoryDir) {
     [void]$metadata.AppendChild((New-Element $doc 'license' ([string]$repo.license)))
     [void]$metadata.AppendChild((New-Element $doc 'source' ([string]$repo.source)))
 
+    if (Test-Path (Join-Path $RepositoryDir 'icon.png')) {
+        $assets = $doc.CreateElement('assets')
+        [void]$assets.AppendChild((New-Element $doc 'icon' 'icon.png'))
+        [void]$metadata.AppendChild($assets)
+    }
+
     [void]$addon.AppendChild($metadata)
 
     New-Item -ItemType Directory -Force -Path $RepositoryDir | Out-Null
@@ -254,10 +297,7 @@ foreach ($feed in $config.feeds) {
 
 if (-not $SkipRepositoryZip) {
     $repositoryZip = Join-Path $repositoryDir "$($config.repository.id)-$($config.repository.version).zip"
-    if (Test-Path $repositoryZip) {
-        Remove-Item -Force $repositoryZip
-    }
-    Compress-Archive -Path $repositoryDir -DestinationPath $repositoryZip -CompressionLevel Optimal
+    Compress-DirectoryWithUnixPaths $repositoryDir $repositoryZip
 }
 
 Write-Host "Repository metadata generated."

@@ -14,6 +14,74 @@
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
+    <extension point="kodi.pvrclient" library_android="libpvr.satip.so" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>android-aarch64</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>796295</size>
+      <path>pvr.satip+android-aarch64/pvr.satip-0.1.0.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip" version="0.1.0" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
+      <import addon="inputstream.adaptive" minversion="21.0.0" />
+      <import addon="inputstream.rtmp" minversion="21.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_android="libpvr.satip.so" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>android-armv7</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>796294</size>
+      <path>pvr.satip+android-armv7/pvr.satip-0.1.0.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip" version="0.1.0" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.9" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
+      <import addon="inputstream.adaptive" minversion="21.0.0" />
+      <import addon="inputstream.rtmp" minversion="21.0.0" />
+    </requires>
     <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.0" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
@@ -130,7 +198,7 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1253762</size>
+      <size>1253761</size>
       <path>pvr.satip+windows-x86_64/pvr.satip-0.1.0.zip</path>
     </extension>
   </addon>

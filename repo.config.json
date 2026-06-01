@@ -2,7 +2,7 @@
   "repository": {
     "id": "repository.bg",
     "name": "BG-Repository",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "providerName": "blauesgruen",
     "baseUrl": "https://blauesgruen.github.io/BG-Repository",
     "summary": {
@@ -63,13 +63,6 @@
   "hashes": "sha256",
   "feeds": [
     {
-      "name": "Omega",
-      "key": "omega",
-      "path": "omega",
-      "minversion": "21.0.0",
-      "maxversion": "21.9.9"
-    },
-    {
       "name": "Omega CoreELEC-ng",
       "key": "omega-coreelec-ng",
       "path": "omega/coreelec-ng",
@@ -122,13 +115,6 @@
       "expectedPlatform": "android-armv7",
       "minversion": "21.0.0",
       "maxversion": "21.9.9"
-    },
-    {
-      "name": "Piers",
-      "key": "piers",
-      "path": "piers",
-      "minversion": "22.0.0",
-      "maxversion": "22.9.9"
     }
   ]
 }

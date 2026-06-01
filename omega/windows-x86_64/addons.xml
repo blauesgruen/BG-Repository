@@ -30,7 +30,7 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1253761</size>
+      <size>1253762</size>
       <path>pvr.satip/pvr.satip-0.1.0.zip</path>
     </extension>
   </addon>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="repository.bg" version="0.2.0" name="BG-Repository" provider-name="blauesgruen">
-  <extension point="xbmc.addon.repository" name="BG-Repository">
+<addon id="repository.bg.windows-x86_64" version="0.2.0" name="BG-Repository Windows x86_64" provider-name="blauesgruen">
+  <extension point="xbmc.addon.repository" name="BG-Repository Windows x86_64">
     <dir minversion="21.0.0" maxversion="21.9.9">
-      <info compressed="false">https://blauesgruen.github.io/BG-Repository/omega/addons.xml</info>
-      <checksum>https://blauesgruen.github.io/BG-Repository/omega/addons.xml.md5</checksum>
-      <datadir>https://blauesgruen.github.io/BG-Repository/omega/</datadir>
-      <hashes>sha256</hashes>
-    </dir>
-    <dir minversion="22.0.0" maxversion="22.9.9">
-      <info compressed="false">https://blauesgruen.github.io/BG-Repository/piers/addons.xml</info>
-      <checksum>https://blauesgruen.github.io/BG-Repository/piers/addons.xml.md5</checksum>
-      <datadir>https://blauesgruen.github.io/BG-Repository/piers/</datadir>
+      <info compressed="false">https://blauesgruen.github.io/BG-Repository/omega/windows-x86_64/addons.xml</info>
+      <checksum>https://blauesgruen.github.io/BG-Repository/omega/windows-x86_64/addons.xml.md5</checksum>
+      <datadir>https://blauesgruen.github.io/BG-Repository/omega/windows-x86_64/</datadir>
       <hashes>sha256</hashes>
     </dir>
   </extension>

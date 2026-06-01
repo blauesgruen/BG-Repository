@@ -9,8 +9,24 @@ https://github.com/blauesgruen/BG-Repository
 Kodi-/Pages-URL:
 https://blauesgruen.github.io/BG-Repository/
 
-Installierbares Repository-ZIP:
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.2.zip
+Installierbare Repository-ZIPs:
+CoreELEC Amlogic-ng:
+https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.0.zip
+
+CoreELEC Amlogic-ne:
+https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.0.zip
+
+Linux x86_64:
+https://blauesgruen.github.io/BG-Repository/repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.0.zip
+
+Windows x86_64:
+https://blauesgruen.github.io/BG-Repository/repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.0.zip
+
+Android aarch64:
+https://blauesgruen.github.io/BG-Repository/repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.0.zip
+
+Android armv7:
+https://blauesgruen.github.io/BG-Repository/repository.bg.android-armv7/repository.bg.android-armv7-0.2.0.zip
 ```
 
 Das PVR-Repo soll nach neuen Release-Uploads das BG-Repository triggern.
@@ -57,7 +73,7 @@ Direkt gestartete Einzelworkflows:
   triggern BG danach selbst
 
 Release All:
-  startet Linux, Windows und CoreELEC
+  startet Linux, Windows, CoreELEC und Android
   verhindert die fruehen BG-Trigger der Einzelworkflows
   wartet auf alle Plattform-Workflows
   triggert BG danach genau einmal
@@ -65,27 +81,35 @@ Release All:
 
 So importiert BG nicht zu frueh, wenn noch Plattform-ZIPs fehlen.
 
+BG importiert anhand des Assetnamens in getrennte Kanaele:
+
+```text
+Amlogic-ng      -> omega/coreelec-ng/
+Amlogic-ne      -> omega/coreelec-ne/
+linux-x86_64    -> omega/linux-x86_64/
+windows-x64     -> omega/windows-x86_64/
+android-aarch64 -> omega/android-aarch64/
+android-armv7   -> omega/android-armv7/
+```
+
 Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
 
 ```text
-Android 64-bit:       android-aarch64
-Android 32-bit:       android-armv7
-CoreELEC Amlogic-ne:  linux-aarch64
-CoreELEC Amlogic-ng:  linux-armv7
-Linux 64-bit:         linux-x86_64
-Windows 64-bit:       windows-x86_64
+CoreELEC Amlogic-ng:  linux
+CoreELEC Amlogic-ne:  linux
+Linux x86_64:         linux
+Windows x86_64:       windows-x86_64
+Android aarch64:      android-aarch64
+Android armv7:        android-armv7
 ```
 
-Der Plattformwert darf nicht leer sein.
+Der Plattformwert darf nicht leer sein. Linux/CoreELEC verwenden bewusst
+`<platform>linux</platform>`. Die Architektur wird ueber den getrennten
+Repository-Kanal ausgewaehlt.
 
-Ein echtes Linux-x86_64-ZIP darf nicht als generisches
-`<platform>linux</platform>` gebaut werden. Es muss
-`<platform>linux-x86_64</platform>` verwenden. BG-Repository blockiert das
-breite `linux`, damit kein Paket dem falschen System angeboten wird.
-
-BG-Repository entfernt vor einem Import vorhandene Plattformordner des Addons.
-Dadurch bleiben keine alten Plattform-ZIPs im Feed liegen, wenn sie im aktuellen
-Release nicht mehr vorhanden sind.
+BG-Repository entfernt vor einem Import vorhandene `pvr.satip`-Ordner aus den
+Kanaelen. Dadurch bleiben keine alten Plattform-ZIPs im Feed liegen, wenn sie im
+aktuellen Release nicht mehr vorhanden sind.
 
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 
@@ -97,7 +121,8 @@ Danach macht BG automatisch:
 
 ```text
 Release-Assets herunterladen
-gueltige Plattform-ZIPs importieren
+Assetnamen den Kanaelen zuordnen
+gueltige Kanal-ZIPs importieren
 Repository validieren
 addons.xml neu bauen
 Aenderungen committen

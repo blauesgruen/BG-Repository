@@ -2,7 +2,7 @@
   "repository": {
     "id": "repository.bg",
     "name": "BG-Repository",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "providerName": "blauesgruen",
     "baseUrl": "https://blauesgruen.github.io/BG-Repository",
     "summary": {
@@ -16,16 +16,124 @@
     "license": "GPL-2.0-or-later",
     "source": "https://github.com/blauesgruen/BG-Repository"
   },
+  "repositoryAddons": [
+    {
+      "id": "repository.bg",
+      "name": "BG-Repository",
+      "feeds": [
+        "omega",
+        "piers"
+      ]
+    },
+    {
+      "id": "repository.bg.coreelec-ng",
+      "name": "BG-Repository CoreELEC-ng",
+      "feeds": [
+        "omega-coreelec-ng"
+      ]
+    },
+    {
+      "id": "repository.bg.coreelec-ne",
+      "name": "BG-Repository CoreELEC-ne",
+      "feeds": [
+        "omega-coreelec-ne"
+      ]
+    },
+    {
+      "id": "repository.bg.linux-x86_64",
+      "name": "BG-Repository Linux x86_64",
+      "feeds": [
+        "omega-linux-x86_64"
+      ]
+    },
+    {
+      "id": "repository.bg.windows-x86_64",
+      "name": "BG-Repository Windows x86_64",
+      "feeds": [
+        "omega-windows-x86_64"
+      ]
+    },
+    {
+      "id": "repository.bg.android-aarch64",
+      "name": "BG-Repository Android aarch64",
+      "feeds": [
+        "omega-android-aarch64"
+      ]
+    },
+    {
+      "id": "repository.bg.android-armv7",
+      "name": "BG-Repository Android armv7",
+      "feeds": [
+        "omega-android-armv7"
+      ]
+    }
+  ],
   "hashes": "sha256",
   "feeds": [
     {
       "name": "Omega",
+      "key": "omega",
       "path": "omega",
       "minversion": "21.0.0",
       "maxversion": "21.9.9"
     },
     {
+      "name": "Omega CoreELEC-ng",
+      "key": "omega-coreelec-ng",
+      "path": "omega/coreelec-ng",
+      "channel": "coreelec-ng",
+      "expectedPlatform": "linux",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
+      "name": "Omega CoreELEC-ne",
+      "key": "omega-coreelec-ne",
+      "path": "omega/coreelec-ne",
+      "channel": "coreelec-ne",
+      "expectedPlatform": "linux",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
+      "name": "Omega Linux x86_64",
+      "key": "omega-linux-x86_64",
+      "path": "omega/linux-x86_64",
+      "channel": "linux-x86_64",
+      "expectedPlatform": "linux",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
+      "name": "Omega Windows x86_64",
+      "key": "omega-windows-x86_64",
+      "path": "omega/windows-x86_64",
+      "channel": "windows-x86_64",
+      "expectedPlatform": "windows-x86_64",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
+      "name": "Omega Android aarch64",
+      "key": "omega-android-aarch64",
+      "path": "omega/android-aarch64",
+      "channel": "android-aarch64",
+      "expectedPlatform": "android-aarch64",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
+      "name": "Omega Android armv7",
+      "key": "omega-android-armv7",
+      "path": "omega/android-armv7",
+      "channel": "android-armv7",
+      "expectedPlatform": "android-armv7",
+      "minversion": "21.0.0",
+      "maxversion": "21.9.9"
+    },
+    {
       "name": "Piers",
+      "key": "piers",
       "path": "piers",
       "minversion": "22.0.0",
       "maxversion": "22.9.9"

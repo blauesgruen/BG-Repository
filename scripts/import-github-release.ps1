@@ -5,7 +5,9 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$ReleaseTag,
 
-    [string]$FeedPath = 'omega'
+    [string]$FeedPath = 'omega',
+
+    [string]$ConfigPath = (Join-Path $PSScriptRoot '..\repo.config.json')
 )
 
 Set-StrictMode -Version Latest
@@ -13,37 +15,6 @@ $ErrorActionPreference = 'Stop'
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-
-$validPlatforms = @(
-    'all',
-    'linux',
-    'linux-aarch64',
-    'linux-armv7',
-    'linux-x86_64',
-    'osx',
-    'osx64',
-    'osx-x86_64',
-    'osx32',
-    'osx-i686',
-    'ios',
-    'ios-armv7',
-    'ios-aarch64',
-    'windx',
-    'windows',
-    'windows-i686',
-    'windows-x86_64',
-    'windowsstore',
-    'android',
-    'android-armv7',
-    'android-aarch64',
-    'android-i686',
-    'tvos',
-    'tvos-aarch64'
-)
-
-$blockedPlatforms = @(
-    'linux'
-)
 
 function Get-AddonXmlFromZip([string]$ZipPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
@@ -94,21 +65,63 @@ function Copy-AddonAssetsFromZip([string]$ZipPath, [string]$TargetDirectory) {
     }
 }
 
+function Get-ReleaseVersion([string]$Tag) {
+    if ($Tag -match '(\d+\.\d+\.\d+)') {
+        return $Matches[1]
+    }
+
+    return ''
+}
+
+function Get-ChannelFromAssetName([string]$AssetName) {
+    if ($AssetName -match 'Amlogic-ng') {
+        return 'coreelec-ng'
+    }
+    if ($AssetName -match 'Amlogic-ne') {
+        return 'coreelec-ne'
+    }
+    if ($AssetName -match 'linux-x86_64') {
+        return 'linux-x86_64'
+    }
+    if ($AssetName -match 'windows-(x64|x86_64)') {
+        return 'windows-x86_64'
+    }
+    if ($AssetName -match 'android-aarch64') {
+        return 'android-aarch64'
+    }
+    if ($AssetName -match 'android-armv7') {
+        return 'android-armv7'
+    }
+
+    return ''
+}
+
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
     throw "GitHub CLI 'gh' is required for private release imports."
 }
 
 $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
+$config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
+$releaseVersion = Get-ReleaseVersion $ReleaseTag
+$channelFeeds = @{}
+foreach ($feed in $config.feeds) {
+    if (($feed.PSObject.Properties.Name -contains 'channel') -and ([string]$feed.path).StartsWith($FeedPath.TrimEnd('/'))) {
+        $channelFeeds[[string]$feed.channel] = $feed
+    }
+}
+
+if ($channelFeeds.Count -eq 0) {
+    throw "No channel feeds configured below '$FeedPath'."
+}
+
 $tempDir = Join-Path $env:TEMP ('kodi-release-import-' + [guid]::NewGuid().ToString('N'))
 $ownerRepoName = ($Repository -replace '[^a-zA-Z0-9._-]+', '_')
 $incomingDir = Join-Path $projectRoot "incoming\$ownerRepoName\$ReleaseTag"
-$feedDir = Join-Path $projectRoot $FeedPath
 $report = @()
 $cleanedAddonIds = @{}
 
 New-Item -ItemType Directory -Force -Path $tempDir | Out-Null
 New-Item -ItemType Directory -Force -Path $incomingDir | Out-Null
-New-Item -ItemType Directory -Force -Path $feedDir | Out-Null
 
 try {
     gh release download $ReleaseTag -R $Repository --dir $tempDir --pattern '*.zip'
@@ -126,32 +139,55 @@ try {
             $platform = if ($platformNode) { $platformNode.InnerText.Trim() } else { '' }
             $id = $addon.GetAttribute('id')
             $version = $addon.GetAttribute('version')
+            $channel = Get-ChannelFromAssetName $zipFile.Name
+            $feed = if ($channelFeeds.ContainsKey($channel)) { $channelFeeds[$channel] } else { $null }
+            $expectedPlatform = if ($null -ne $feed -and ($feed.PSObject.Properties.Name -contains 'expectedPlatform')) {
+                [string]$feed.expectedPlatform
+            }
+            else {
+                ''
+            }
             $reason = ''
             $imported = $false
 
             if ($addon.LocalName -ne 'addon') {
                 $reason = 'root element is not addon'
             }
-            elseif ([string]::IsNullOrWhiteSpace($id) -or [string]::IsNullOrWhiteSpace($version)) {
-                $reason = 'missing id or version'
+            elseif ($id -ne 'pvr.satip') {
+                $reason = "unexpected addon id '$id'"
+            }
+            elseif ([string]::IsNullOrWhiteSpace($version)) {
+                $reason = 'missing version'
+            }
+            elseif (-not [string]::IsNullOrWhiteSpace($releaseVersion) -and $version -ne $releaseVersion) {
+                $reason = "version '$version' does not match release tag '$ReleaseTag'"
             }
             elseif ([string]::IsNullOrWhiteSpace($platform)) {
                 $reason = 'missing platform'
             }
-            elseif ($blockedPlatforms -contains $platform) {
-                $reason = "ambiguous platform '$platform'"
+            elseif ([string]::IsNullOrWhiteSpace($channel)) {
+                $reason = 'no channel rule matched asset name'
             }
-            elseif ($validPlatforms -notcontains $platform) {
-                $reason = "unsupported platform '$platform'"
+            elseif ($null -eq $feed) {
+                $reason = "no feed configured for channel '$channel'"
+            }
+            elseif (-not [string]::IsNullOrWhiteSpace($expectedPlatform) -and $platform -ne $expectedPlatform) {
+                $reason = "platform '$platform' does not match channel '$channel' expected platform '$expectedPlatform'"
             }
             else {
                 if (-not $cleanedAddonIds.ContainsKey($id)) {
-                    Get-ChildItem -Path $feedDir -Directory -Filter "$id+*" |
-                        Remove-Item -Recurse -Force
+                    foreach ($configuredFeed in $channelFeeds.Values) {
+                        $configuredFeedDir = Join-Path $projectRoot ([string]$configuredFeed.path)
+                        if (Test-Path $configuredFeedDir) {
+                            Get-ChildItem -Path $configuredFeedDir -Directory -Filter $id |
+                                Remove-Item -Recurse -Force
+                        }
+                    }
                     $cleanedAddonIds[$id] = $true
                 }
 
-                $targetDir = Join-Path $feedDir "$id+$platform"
+                $feedDir = Join-Path $projectRoot ([string]$feed.path)
+                $targetDir = Join-Path $feedDir $id
                 $targetZip = Join-Path $targetDir "$id-$version.zip"
                 New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
                 Copy-Item -Force -Path $zipFile.FullName -Destination $targetZip
@@ -164,6 +200,7 @@ try {
                 asset = $zipFile.Name
                 id = $id
                 version = $version
+                channel = $channel
                 platform = $platform
                 imported = $imported
                 result = $reason
@@ -174,6 +211,7 @@ try {
                 asset = $zipFile.Name
                 id = ''
                 version = ''
+                channel = ''
                 platform = ''
                 imported = $false
                 result = $_.Exception.Message
@@ -189,3 +227,9 @@ $reportPath = Join-Path $incomingDir 'asset-report.json'
 $report | ConvertTo-Json | Set-Content -Encoding UTF8 -Path $reportPath
 $report | Format-Table -AutoSize
 Write-Host "Report written to $reportPath"
+
+$importedChannels = @($report | Where-Object { $_.imported } | ForEach-Object { $_.channel })
+$missingChannels = @($channelFeeds.Keys | Where-Object { $importedChannels -notcontains $_ } | Sort-Object)
+if ($missingChannels.Count -gt 0) {
+    throw "Missing imported channels: $($missingChannels -join ', ')"
+}

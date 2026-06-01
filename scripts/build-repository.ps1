@@ -153,26 +153,36 @@ function Add-OrReplaceTextChild(
     [void]$Parent.AppendChild((New-Element $Document $Name $Text))
 }
 
-function New-RepositoryAddonXml($Config, [string]$RepositoryDir) {
+function Get-ConfigKey($Object, [string]$Fallback) {
+    if ($Object.PSObject.Properties.Name -contains 'key') {
+        return [string]$Object.key
+    }
+
+    return $Fallback
+}
+
+function New-RepositoryAddonXml($Config, $RepositoryAddon, [object[]]$Feeds, [string]$RepositoryDir) {
     $repo = $Config.repository
     $baseUrl = [string]$repo.baseUrl
     $baseUrl = $baseUrl.TrimEnd('/')
+    $repoId = [string]$RepositoryAddon.id
+    $repoName = [string]$RepositoryAddon.name
 
     $doc = [System.Xml.XmlDocument]::new()
     [void]$doc.AppendChild($doc.CreateXmlDeclaration('1.0', 'UTF-8', $null))
 
     $addon = $doc.CreateElement('addon')
-    $addon.SetAttribute('id', [string]$repo.id)
+    $addon.SetAttribute('id', $repoId)
     $addon.SetAttribute('version', [string]$repo.version)
-    $addon.SetAttribute('name', [string]$repo.name)
+    $addon.SetAttribute('name', $repoName)
     $addon.SetAttribute('provider-name', [string]$repo.providerName)
     [void]$doc.AppendChild($addon)
 
     $repoExtension = $doc.CreateElement('extension')
     $repoExtension.SetAttribute('point', 'xbmc.addon.repository')
-    $repoExtension.SetAttribute('name', [string]$repo.name)
+    $repoExtension.SetAttribute('name', $repoName)
 
-    foreach ($feed in $Config.feeds) {
+    foreach ($feed in $Feeds) {
         $path = ([string]$feed.path).Trim('/')
         $dir = $doc.CreateElement('dir')
         if ($feed.PSObject.Properties.Name -contains 'minversion') {
@@ -206,7 +216,16 @@ function New-RepositoryAddonXml($Config, [string]$RepositoryDir) {
     [void]$metadata.AppendChild((New-Element $doc 'license' ([string]$repo.license)))
     [void]$metadata.AppendChild((New-Element $doc 'source' ([string]$repo.source)))
 
-    if (Test-Path (Join-Path $RepositoryDir 'icon.png')) {
+    $iconPath = Join-Path $RepositoryDir 'icon.png'
+    if (-not (Test-Path $iconPath)) {
+        $sharedIconPath = Join-Path (Join-Path (Split-Path -Parent $RepositoryDir) ([string]$Config.repository.id)) 'icon.png'
+        if (Test-Path $sharedIconPath) {
+            New-Item -ItemType Directory -Force -Path $RepositoryDir | Out-Null
+            Copy-Item -Force -Path $sharedIconPath -Destination $iconPath
+        }
+    }
+
+    if (Test-Path $iconPath) {
         $assets = $doc.CreateElement('assets')
         [void]$assets.AppendChild((New-Element $doc 'icon' 'icon.png'))
         [void]$metadata.AppendChild($assets)
@@ -280,17 +299,42 @@ function New-Feed($Feed, [string]$FeedDir) {
 $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 
-$repositoryDir = Join-Path $projectRoot ([string]$config.repository.id)
-New-RepositoryAddonXml $config $repositoryDir
+$feedsByKey = @{}
 
 foreach ($feed in $config.feeds) {
+    $feedKey = Get-ConfigKey $feed ([string]$feed.path)
+    $feedsByKey[$feedKey] = $feed
     $feedDir = Join-Path $projectRoot ([string]$feed.path)
     New-Feed $feed $feedDir
 }
 
-if (-not $SkipRepositoryZip) {
-    $repositoryZip = Join-Path $repositoryDir "$($config.repository.id)-$($config.repository.version).zip"
-    Compress-DirectoryWithUnixPaths $repositoryDir $repositoryZip
+$repositoryAddons = if ($config.PSObject.Properties.Name -contains 'repositoryAddons') {
+    @($config.repositoryAddons)
+}
+else {
+    @([pscustomobject]@{
+        id = [string]$config.repository.id
+        name = [string]$config.repository.name
+        feeds = @($config.feeds | ForEach-Object { Get-ConfigKey $_ ([string]$_.path) })
+    })
+}
+
+foreach ($repositoryAddon in $repositoryAddons) {
+    $repositoryDir = Join-Path $projectRoot ([string]$repositoryAddon.id)
+    $selectedFeeds = @()
+    foreach ($feedKey in @($repositoryAddon.feeds)) {
+        if (-not $feedsByKey.ContainsKey([string]$feedKey)) {
+            throw "Repository add-on $($repositoryAddon.id) references unknown feed '$feedKey'"
+        }
+        $selectedFeeds += $feedsByKey[[string]$feedKey]
+    }
+
+    New-RepositoryAddonXml $config $repositoryAddon $selectedFeeds $repositoryDir
+
+    if (-not $SkipRepositoryZip) {
+        $repositoryZip = Join-Path $repositoryDir "$($repositoryAddon.id)-$($config.repository.version).zip"
+        Compress-DirectoryWithUnixPaths $repositoryDir $repositoryZip
+    }
 }
 
 Write-Host "Repository metadata generated."

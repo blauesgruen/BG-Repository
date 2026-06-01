@@ -94,12 +94,11 @@ foreach ($feed in $config.feeds) {
             }
 
             $directoryName = $zipFile.Directory.Name
-            if ($directoryName -notmatch "^$([regex]::Escape($id))\+(.+)$") {
-                Add-Problem $problems "Directory should be '$id+platform': $($zipFile.Directory.FullName)"
+            if ($directoryName -ne $id) {
+                Add-Problem $problems "Directory should be '$id': $($zipFile.Directory.FullName)"
                 continue
             }
 
-            $platformFromDir = $Matches[1]
             $metadata = @($addon.SelectNodes('extension[@point="xbmc.addon.metadata"]')) | Select-Object -First 1
             if ($null -eq $metadata) {
                 Add-Problem $problems "Missing xbmc.addon.metadata extension in $($zipFile.FullName)"
@@ -110,12 +109,14 @@ foreach ($feed in $config.feeds) {
             if ($null -eq $platformNode) {
                 Add-Problem $problems "Missing platform tag in $($zipFile.FullName)"
             }
-            elseif ($platformNode.InnerText.Trim() -ne $platformFromDir) {
-                Add-Problem $problems "Platform '$($platformNode.InnerText.Trim())' does not match directory '$platformFromDir' in $($zipFile.FullName)"
-            }
-
-            if ($platformFromDir -eq 'linux') {
-                Add-Problem $problems "Ambiguous platform 'linux' is not allowed in $($zipFile.FullName); use linux-x86_64 or an architecture-specific platform"
+            else {
+                $platform = $platformNode.InnerText.Trim()
+                if ([string]::IsNullOrWhiteSpace($platform)) {
+                    Add-Problem $problems "Empty platform tag in $($zipFile.FullName)"
+                }
+                elseif (($feed.PSObject.Properties.Name -contains 'expectedPlatform') -and $platform -ne [string]$feed.expectedPlatform) {
+                    Add-Problem $problems "Platform '$platform' does not match feed '$($feed.path)' expected platform '$($feed.expectedPlatform)' in $($zipFile.FullName)"
+                }
             }
 
             if ($null -eq (@($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1)) {
@@ -135,9 +136,9 @@ foreach ($feed in $config.feeds) {
                 }
             }
 
-            $key = "$($feed.path)|$id|$platformFromDir"
+            $key = "$($feed.path)|$id|$version"
             if ($seen.ContainsKey($key)) {
-                Add-Problem $problems "Duplicate add-on/platform in feed $($feed.path): $id $platformFromDir"
+                Add-Problem $problems "Duplicate add-on/version in feed $($feed.path): $id $version"
             }
             else {
                 $seen[$key] = $true

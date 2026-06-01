@@ -2,24 +2,39 @@
 
 BG-Repository is a Kodi add-on repository for selected add-ons.
 
-Install the repository in Kodi from this ZIP:
+For SAT>IP, install the ZIP that matches your system:
 
 ```text
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.2.zip
+CoreELEC Amlogic-ng:
+https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.0.zip
+
+CoreELEC Amlogic-ne:
+https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.0.zip
+
+Linux x86_64:
+https://blauesgruen.github.io/BG-Repository/repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.0.zip
+
+Windows x86_64:
+https://blauesgruen.github.io/BG-Repository/repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.0.zip
+
+Android aarch64:
+https://blauesgruen.github.io/BG-Repository/repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.0.zip
+
+Android armv7:
+https://blauesgruen.github.io/BG-Repository/repository.bg.android-armv7/repository.bg.android-armv7-0.2.0.zip
 ```
 
-Alternatively, download the same install ZIP from the latest release:
+The general repository ZIP is available here for add-ons that are not tied to a
+specific platform:
 
 ```text
-https://github.com/blauesgruen/BG-Repository/releases/tag/v0.1.2
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.2.0.zip
 ```
 
-Use the file named `repository.bg-0.1.2.zip`, not GitHub's source-code ZIP.
-
-After installation, Kodi can receive add-on updates from:
+Releases are available here:
 
 ```text
-https://blauesgruen.github.io/BG-Repository/
+https://github.com/blauesgruen/BG-Repository/releases
 ```
 
 Currently included:

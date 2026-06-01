@@ -7,10 +7,15 @@ https://github.com/blauesgruen/BG-Repository
 https://blauesgruen.github.io/BG-Repository/
 ```
 
-The install ZIP is:
+Install ZIPs are generated per repository channel:
 
 ```text
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.2.zip
+repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.0.zip
+repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.0.zip
+repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.0.zip
+repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.0.zip
+repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.0.zip
+repository.bg.android-armv7/repository.bg.android-armv7-0.2.0.zip
 ```
 
 ## Import Workflow
@@ -23,14 +28,14 @@ It does this:
 ```text
 1. download ZIP assets from the pvr.satip release
 2. read each ZIP's pvr.satip/addon.xml
-3. import assets with a valid platform into omega/
+3. map each asset to its platform channel by asset filename
 4. validate the Kodi repository
 5. rebuild addons.xml
 6. commit and push changes only when files changed
 ```
 
-The install ZIP under `repository.bg/` is rebuilt on every repository build so
-changes to repository add-on assets such as `icon.png` are included immediately.
+Repository install ZIPs are rebuilt by `scripts/build-repository.ps1` so changes
+to repository add-on assets such as `icon.png` are included immediately.
 
 The workflow supports:
 
@@ -80,7 +85,7 @@ Direct single-platform workflows:
   trigger BG-Repository after upload
 
 Release All workflow:
-  start Linux, Windows and CoreELEC workflows
+  start Linux, Windows, CoreELEC and Android workflows
   suppress early BG triggers in those child workflows
   wait until all platform workflows finished successfully
   trigger BG-Repository once after all ZIPs are uploaded
@@ -88,28 +93,44 @@ Release All workflow:
 
 This avoids importing a release before all expected platform ZIPs are present.
 
-## Expected Platforms
+## Channels
+
+`pvr.satip` binary packages are not published together in one shared
+`omega/addons.xml`. Each target system has its own feed:
+
+```text
+omega/coreelec-ng/addons.xml
+omega/coreelec-ne/addons.xml
+omega/linux-x86_64/addons.xml
+omega/windows-x86_64/addons.xml
+omega/android-aarch64/addons.xml
+omega/android-armv7/addons.xml
+```
+
+Each feed contains at most one `pvr.satip` entry for a given version.
+
+## Expected Assets And Platforms
 
 The current platform values expected in `addon.xml` are:
 
 ```text
-Android 64-bit:       android-aarch64
-Android 32-bit:       android-armv7
-CoreELEC Amlogic-ne:  linux-aarch64
-CoreELEC Amlogic-ng:  linux-armv7
-Linux 64-bit:         linux-x86_64
-Windows 64-bit:       windows-x86_64
+Asset contains Amlogic-ng:     channel coreelec-ng,      platform linux
+Asset contains Amlogic-ne:     channel coreelec-ne,      platform linux
+Asset contains linux-x86_64:   channel linux-x86_64,    platform linux
+Asset contains windows-x64:    channel windows-x86_64,  platform windows-x86_64
+Asset contains android-aarch64: channel android-aarch64, platform android-aarch64
+Asset contains android-armv7:   channel android-armv7,   platform android-armv7
 ```
 
 The platform value must not be empty.
 
-Do not publish a generic Linux ZIP with `<platform>linux</platform>`.
-Use `linux-x86_64` for the Linux x86_64 build. BG-Repository blocks the broad
-`linux` platform so it cannot be offered to the wrong system.
+Linux and CoreELEC ZIPs intentionally use `<platform>linux</platform>`. The
+architecture is selected by the repository channel, not by a Linux architecture
+platform token in `addon.xml`.
 
-Before importing a release, BG-Repository removes existing platform folders for
-the imported add-on. This prevents stale platform packages from remaining in the
-feed when the current release no longer contains them.
+Before importing a release, BG-Repository removes existing `pvr.satip` folders
+from the channel feeds. This prevents stale packages from remaining in a channel
+when the current release no longer contains them.
 
 ## Manual Import
 

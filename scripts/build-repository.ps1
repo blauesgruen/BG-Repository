@@ -274,8 +274,9 @@ function New-Feed($Feed, [string]$FeedDir) {
     }
 
     $addonsPath = Join-Path $FeedDir 'addons.xml'
-    $previousMd5 = if (Test-Path $addonsPath) {
-        (Get-FileHash -Algorithm MD5 $addonsPath).Hash.ToLowerInvariant()
+    $md5Path = Join-Path $FeedDir 'addons.xml.md5'
+    $previousMd5 = if (Test-Path $md5Path) {
+        (Get-Content -Raw -Path $md5Path).Trim().ToLowerInvariant()
     }
     else {
         $null
@@ -284,7 +285,7 @@ function New-Feed($Feed, [string]$FeedDir) {
     Save-XmlDocument $outDoc $addonsPath
 
     $md5 = (Get-FileHash -Algorithm MD5 $addonsPath).Hash.ToLowerInvariant()
-    Write-Utf8NoBom (Join-Path $FeedDir 'addons.xml.md5') $md5
+    Write-Utf8NoBom $md5Path $md5
     $gzipPath = Join-Path $FeedDir 'addons.xml.gz'
     if (($previousMd5 -ne $md5) -or -not (Test-Path $gzipPath)) {
         Write-GzipCopy $addonsPath $gzipPath

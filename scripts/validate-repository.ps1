@@ -52,6 +52,18 @@ function Test-ZipEntry([string]$ZipPath, [string]$EntryPath) {
     }
 }
 
+function Get-PackageRuleFromTarget([string]$Target) {
+    switch ($Target) {
+        'coreelec-ng' { return [pscustomobject]@{ expectedId = 'pvr.satip.coreelec-ng'; expectedPlatform = 'linux' } }
+        'coreelec-ne' { return [pscustomobject]@{ expectedId = 'pvr.satip.coreelec-ne'; expectedPlatform = 'linux' } }
+        'linux-x86_64' { return [pscustomobject]@{ expectedId = 'pvr.satip.linux-x86_64'; expectedPlatform = 'linux' } }
+        'windows-x86_64' { return [pscustomobject]@{ expectedId = 'pvr.satip'; expectedPlatform = 'windows-x86_64' } }
+        'android-aarch64' { return [pscustomobject]@{ expectedId = 'pvr.satip'; expectedPlatform = 'android-aarch64' } }
+        'android-armv7' { return [pscustomobject]@{ expectedId = 'pvr.satip'; expectedPlatform = 'android-armv7' } }
+        default { return $null }
+    }
+}
+
 $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 $problems = [System.Collections.Generic.List[string]]::new()
@@ -73,11 +85,6 @@ foreach ($feed in $config.feeds) {
 
     foreach ($zipFile in $zipFiles) {
         try {
-            $isChannelFeed = $feed.PSObject.Properties.Name -contains 'channel'
-            if ($isChannelFeed -and -not (Test-ZipEntry $zipFile.FullName 'pvr.satip/addon.xml')) {
-                Add-Problem $problems "Channel ZIP must contain pvr.satip/addon.xml: $($zipFile.FullName)"
-            }
-
             $addonDoc = [System.Xml.XmlDocument]::new()
             $addonDoc.LoadXml((Get-AddonXmlFromZip $zipFile.FullName))
             $addon = $addonDoc.DocumentElement
@@ -103,8 +110,8 @@ foreach ($feed in $config.feeds) {
                 Add-Problem $problems "Invalid lowercase add-on id '$id' in $($zipFile.FullName)"
             }
 
-            if ($isChannelFeed -and $id -ne 'pvr.satip') {
-                Add-Problem $problems "Channel feed $($feed.path) may only contain pvr.satip, found '$id' in $($zipFile.FullName)"
+            if (-not (Test-ZipEntry $zipFile.FullName "$id/addon.xml")) {
+                Add-Problem $problems "ZIP root directory should match add-on id '$id': $($zipFile.FullName)"
             }
 
             $expectedFile = "$id-$version.zip"
@@ -112,11 +119,8 @@ foreach ($feed in $config.feeds) {
                 Add-Problem $problems "Zip file should be '$expectedFile': $($zipFile.FullName)"
             }
 
-            $directoryName = $zipFile.Directory.Name
-            if ($directoryName -ne $id) {
-                Add-Problem $problems "Directory should be '$id': $($zipFile.Directory.FullName)"
-                continue
-            }
+            $target = $zipFile.Directory.Name
+            $targetRule = Get-PackageRuleFromTarget $target
 
             $metadata = @($addon.SelectNodes('extension[@point="xbmc.addon.metadata"]')) | Select-Object -First 1
             if ($null -eq $metadata) {
@@ -125,6 +129,7 @@ foreach ($feed in $config.feeds) {
             }
 
             $platformNode = @($metadata.SelectNodes('platform')) | Select-Object -First 1
+            $platform = ''
             if ($null -eq $platformNode) {
                 Add-Problem $problems "Missing platform tag in $($zipFile.FullName)"
             }
@@ -133,9 +138,17 @@ foreach ($feed in $config.feeds) {
                 if ([string]::IsNullOrWhiteSpace($platform)) {
                     Add-Problem $problems "Empty platform tag in $($zipFile.FullName)"
                 }
-                elseif (($feed.PSObject.Properties.Name -contains 'expectedPlatform') -and $platform -ne [string]$feed.expectedPlatform) {
-                    Add-Problem $problems "Platform '$platform' does not match feed '$($feed.path)' expected platform '$($feed.expectedPlatform)' in $($zipFile.FullName)"
+                elseif ($null -ne $targetRule -and $platform -ne [string]$targetRule.expectedPlatform) {
+                    Add-Problem $problems "Platform '$platform' does not match target '$target' expected platform '$($targetRule.expectedPlatform)' in $($zipFile.FullName)"
                 }
+            }
+
+            if ($null -ne $targetRule -and $id -ne [string]$targetRule.expectedId) {
+                Add-Problem $problems "Add-on id '$id' does not match target '$target' expected id '$($targetRule.expectedId)' in $($zipFile.FullName)"
+            }
+
+            if ($id -like 'pvr.satip*' -and $null -eq $targetRule) {
+                Add-Problem $problems "pvr.satip package is stored in unknown target directory '$target': $($zipFile.FullName)"
             }
 
             if ($null -eq (@($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1)) {
@@ -155,9 +168,9 @@ foreach ($feed in $config.feeds) {
                 }
             }
 
-            $key = "$($feed.path)|$id|$version"
+            $key = "$($feed.path)|$id|$version|$platform"
             if ($seen.ContainsKey($key)) {
-                Add-Problem $problems "Duplicate add-on/version in feed $($feed.path): $id $version"
+                Add-Problem $problems "Duplicate add-on/version/platform in feed $($feed.path): $id $version $platform"
             }
             else {
                 $seen[$key] = $true

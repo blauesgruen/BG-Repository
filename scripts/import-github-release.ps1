@@ -24,11 +24,11 @@ function Get-AddonXmlFromZip([string]$ZipPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
     try {
         $entry = $zip.Entries |
-            Where-Object { $_.FullName -eq 'pvr.satip/addon.xml' } |
+            Where-Object { $_.FullName -match '^[^/\\]+/addon\.xml$' } |
             Select-Object -First 1
 
         if ($null -eq $entry) {
-            throw "No pvr.satip/addon.xml found in $ZipPath"
+            throw "No addon.xml found at the add-on root in $ZipPath"
         }
 
         $stream = $entry.Open()
@@ -77,27 +77,27 @@ function Get-ReleaseVersion([string]$Tag) {
     return ''
 }
 
-function Get-ChannelFromAssetName([string]$AssetName) {
-    if ($AssetName -match 'Amlogic-ng') {
-        return 'coreelec-ng'
+function Get-PackageRuleFromAssetName([string]$AssetName) {
+    if ($AssetName -match '(Amlogic-ng|coreelec-ng)') {
+        return [pscustomobject]@{ target = 'coreelec-ng'; expectedId = 'pvr.satip.coreelec-ng'; expectedPlatform = 'linux' }
     }
-    if ($AssetName -match 'Amlogic-ne') {
-        return 'coreelec-ne'
+    if ($AssetName -match '(Amlogic-ne|coreelec-ne)') {
+        return [pscustomobject]@{ target = 'coreelec-ne'; expectedId = 'pvr.satip.coreelec-ne'; expectedPlatform = 'linux' }
     }
     if ($AssetName -match 'linux-x86_64') {
-        return 'linux-x86_64'
+        return [pscustomobject]@{ target = 'linux-x86_64'; expectedId = 'pvr.satip.linux-x86_64'; expectedPlatform = 'linux' }
     }
     if ($AssetName -match 'windows-(x64|x86_64)') {
-        return 'windows-x86_64'
+        return [pscustomobject]@{ target = 'windows-x86_64'; expectedId = 'pvr.satip'; expectedPlatform = 'windows-x86_64' }
     }
     if ($AssetName -match 'android-aarch64') {
-        return 'android-aarch64'
+        return [pscustomobject]@{ target = 'android-aarch64'; expectedId = 'pvr.satip'; expectedPlatform = 'android-aarch64' }
     }
     if ($AssetName -match 'android-armv7') {
-        return 'android-armv7'
+        return [pscustomobject]@{ target = 'android-armv7'; expectedId = 'pvr.satip'; expectedPlatform = 'android-armv7' }
     }
 
-    return ''
+    return $null
 }
 
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
@@ -107,25 +107,17 @@ if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
 $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 $releaseVersion = Get-ReleaseVersion $ReleaseTag
-$channelFeeds = @{}
-foreach ($feed in $config.feeds) {
-    if (($feed.PSObject.Properties.Name -contains 'channel') -and ([string]$feed.path).StartsWith($FeedPath.TrimEnd('/'))) {
-        $channelFeeds[[string]$feed.channel] = $feed
-    }
-}
-
-if ($channelFeeds.Count -eq 0) {
-    throw "No channel feeds configured below '$FeedPath'."
-}
+$feedDir = Join-Path $projectRoot $FeedPath
 
 $tempDir = Join-Path $env:TEMP ('kodi-release-import-' + [guid]::NewGuid().ToString('N'))
 $ownerRepoName = ($Repository -replace '[^a-zA-Z0-9._-]+', '_')
 $incomingDir = Join-Path $projectRoot "incoming\$ownerRepoName\$ReleaseTag"
 $report = @()
-$cleanedAddonIds = @{}
+$cleanedFeed = $false
 
 New-Item -ItemType Directory -Force -Path $tempDir | Out-Null
 New-Item -ItemType Directory -Force -Path $incomingDir | Out-Null
+New-Item -ItemType Directory -Force -Path $feedDir | Out-Null
 
 try {
     gh release download $ReleaseTag -R $Repository --dir $tempDir --pattern '*.zip'
@@ -143,22 +135,21 @@ try {
             $platform = if ($platformNode) { $platformNode.InnerText.Trim() } else { '' }
             $id = $addon.GetAttribute('id')
             $version = $addon.GetAttribute('version')
-            $channel = Get-ChannelFromAssetName $zipFile.Name
-            $feed = if ($channelFeeds.ContainsKey($channel)) { $channelFeeds[$channel] } else { $null }
-            $expectedPlatform = if ($null -ne $feed -and ($feed.PSObject.Properties.Name -contains 'expectedPlatform')) {
-                [string]$feed.expectedPlatform
-            }
-            else {
-                ''
-            }
+            $rule = Get-PackageRuleFromAssetName $zipFile.Name
+            $target = if ($null -ne $rule) { [string]$rule.target } else { '' }
+            $expectedId = if ($null -ne $rule) { [string]$rule.expectedId } else { '' }
+            $expectedPlatform = if ($null -ne $rule) { [string]$rule.expectedPlatform } else { '' }
             $reason = ''
             $imported = $false
 
             if ($addon.LocalName -ne 'addon') {
                 $reason = 'root element is not addon'
             }
-            elseif ($id -ne 'pvr.satip') {
-                $reason = "unexpected addon id '$id'"
+            elseif ([string]::IsNullOrWhiteSpace($target)) {
+                $reason = 'no target rule matched asset name'
+            }
+            elseif ($id -ne $expectedId) {
+                $reason = "unexpected addon id '$id' for target '$target', expected '$expectedId'"
             }
             elseif ([string]::IsNullOrWhiteSpace($version)) {
                 $reason = 'missing version'
@@ -169,29 +160,23 @@ try {
             elseif ([string]::IsNullOrWhiteSpace($platform)) {
                 $reason = 'missing platform'
             }
-            elseif ([string]::IsNullOrWhiteSpace($channel)) {
-                $reason = 'no channel rule matched asset name'
-            }
-            elseif ($null -eq $feed) {
-                $reason = "no feed configured for channel '$channel'"
-            }
             elseif (-not [string]::IsNullOrWhiteSpace($expectedPlatform) -and $platform -ne $expectedPlatform) {
-                $reason = "platform '$platform' does not match channel '$channel' expected platform '$expectedPlatform'"
+                $reason = "platform '$platform' does not match target '$target' expected platform '$expectedPlatform'"
             }
             else {
-                if (-not $cleanedAddonIds.ContainsKey($id)) {
-                    foreach ($configuredFeed in $channelFeeds.Values) {
-                        $configuredFeedDir = Join-Path $projectRoot ([string]$configuredFeed.path)
-                        if (Test-Path $configuredFeedDir) {
-                            Get-ChildItem -Path $configuredFeedDir -Directory -Filter $id |
-                                Remove-Item -Recurse -Force
+                if (-not $cleanedFeed) {
+                    foreach ($oldTarget in @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'linux-x86_64', 'windows-x86_64')) {
+                        $oldTargetDir = Join-Path $feedDir $oldTarget
+                        if (Test-Path $oldTargetDir) {
+                            Remove-Item -Recurse -Force $oldTargetDir
                         }
                     }
-                    $cleanedAddonIds[$id] = $true
+                    Get-ChildItem -Path $feedDir -Directory -Filter 'pvr.satip+*' |
+                        Remove-Item -Recurse -Force
+                    $cleanedFeed = $true
                 }
 
-                $feedDir = Join-Path $projectRoot ([string]$feed.path)
-                $targetDir = Join-Path $feedDir $id
+                $targetDir = Join-Path $feedDir $target
                 $targetZip = Join-Path $targetDir "$id-$version.zip"
                 New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
                 Copy-Item -Force -Path $zipFile.FullName -Destination $targetZip
@@ -204,7 +189,7 @@ try {
                 asset = $zipFile.Name
                 id = $id
                 version = $version
-                channel = $channel
+                target = $target
                 platform = $platform
                 imported = $imported
                 result = $reason
@@ -215,7 +200,7 @@ try {
                 asset = $zipFile.Name
                 id = ''
                 version = ''
-                channel = ''
+                target = ''
                 platform = ''
                 imported = $false
                 result = $_.Exception.Message
@@ -232,8 +217,9 @@ $report | ConvertTo-Json | Set-Content -Encoding UTF8 -Path $reportPath
 $report | Format-Table -AutoSize
 Write-Host "Report written to $reportPath"
 
-$importedChannels = @($report | Where-Object { $_.imported } | ForEach-Object { $_.channel })
-$missingChannels = @($channelFeeds.Keys | Where-Object { $importedChannels -notcontains $_ } | Sort-Object)
-if ($missingChannels.Count -gt 0) {
-    throw "Missing imported channels: $($missingChannels -join ', ')"
+$expectedTargets = @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'linux-x86_64', 'windows-x86_64')
+$importedTargets = @($report | Where-Object { $_.imported } | ForEach-Object { $_.target })
+$missingTargets = @($expectedTargets | Where-Object { $importedTargets -notcontains $_ } | Sort-Object)
+if ($missingTargets.Count -gt 0) {
+    throw "Missing imported targets: $($missingTargets -join ', ')"
 }

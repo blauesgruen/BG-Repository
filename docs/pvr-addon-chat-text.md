@@ -9,24 +9,8 @@ https://github.com/blauesgruen/BG-Repository
 Kodi-/Pages-URL:
 https://blauesgruen.github.io/BG-Repository/
 
-Installierbare Repository-ZIPs:
-CoreELEC Amlogic-ng:
-https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.2.zip
-
-CoreELEC Amlogic-ne:
-https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.2.zip
-
-Linux x86_64:
-https://blauesgruen.github.io/BG-Repository/repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.2.zip
-
-Windows x86_64:
-https://blauesgruen.github.io/BG-Repository/repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.2.zip
-
-Android aarch64:
-https://blauesgruen.github.io/BG-Repository/repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.2.zip
-
-Android armv7:
-https://blauesgruen.github.io/BG-Repository/repository.bg.android-armv7/repository.bg.android-armv7-0.2.2.zip
+Installierbares Repository-ZIP:
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.3.0.zip
 ```
 
 Das PVR-Repo soll nach neuen Release-Uploads das BG-Repository triggern.
@@ -81,35 +65,35 @@ Release All:
 
 So importiert BG nicht zu frueh, wenn noch Plattform-ZIPs fehlen.
 
-BG importiert anhand des Assetnamens in getrennte Kanaele:
+BG importiert anhand des Assetnamens in ein gemeinsames `omega/addons.xml`:
 
 ```text
-Amlogic-ng      -> omega/coreelec-ng/
-Amlogic-ne      -> omega/coreelec-ne/
-linux-x86_64    -> omega/linux-x86_64/
-windows-x64     -> omega/windows-x86_64/
-android-aarch64 -> omega/android-aarch64/
-android-armv7   -> omega/android-armv7/
+pvr.satip.coreelec-ng      -> id pvr.satip.coreelec-ng
+pvr.satip.coreelec-ne      -> id pvr.satip.coreelec-ne
+pvr.satip.linux-x86_64     -> id pvr.satip.linux-x86_64
+windows-x64                -> id pvr.satip
+android-aarch64            -> id pvr.satip
+android-armv7              -> id pvr.satip
 ```
 
 Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
 
 ```text
-CoreELEC Amlogic-ng:  linux
-CoreELEC Amlogic-ne:  linux
-Linux x86_64:         linux
-Windows x86_64:       windows-x86_64
-Android aarch64:      android-aarch64
-Android armv7:        android-armv7
+pvr.satip.coreelec-ng:      linux
+pvr.satip.coreelec-ne:      linux
+pvr.satip.linux-x86_64:     linux
+pvr.satip Windows:          windows-x86_64
+pvr.satip Android aarch64:  android-aarch64
+pvr.satip Android armv7:    android-armv7
 ```
 
 Der Plattformwert darf nicht leer sein. Linux/CoreELEC verwenden bewusst
-`<platform>linux</platform>`. Die Architektur wird ueber den getrennten
-Repository-Kanal ausgewaehlt.
+`<platform>linux</platform>`. Die Architektur wird ueber Addon-ID und Namen
+sichtbar gemacht.
 
-BG-Repository entfernt vor einem Import vorhandene `pvr.satip`-Ordner aus den
-Kanaelen. Dadurch bleiben keine alten Plattform-ZIPs im Feed liegen, wenn sie im
-aktuellen Release nicht mehr vorhanden sind.
+BG-Repository entfernt vor einem Import vorhandene SAT>IP-Zielordner aus dem
+Omega-Feed. Dadurch bleiben keine alten Plattform-ZIPs im Feed liegen, wenn sie
+im aktuellen Release nicht mehr vorhanden sind.
 
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 
@@ -121,8 +105,8 @@ Danach macht BG automatisch:
 
 ```text
 Release-Assets herunterladen
-Assetnamen den Kanaelen zuordnen
-gueltige Kanal-ZIPs importieren
+Assetnamen den Zielordnern zuordnen
+gueltige ZIPs importieren
 Repository validieren
 addons.xml neu bauen
 Aenderungen committen

@@ -114,7 +114,7 @@ aktuellen Release nicht mehr vorhanden sind.
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 
 ```xml
-<addon id="pvr.satip" version="0.1.1" ...>
+<addon id="pvr.satip" version="0.1.0" ...>
 ```
 
 Danach macht BG automatisch:

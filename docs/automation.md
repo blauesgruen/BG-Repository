@@ -137,7 +137,7 @@ when the current release no longer contains them.
 Manual import is still possible:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\import-github-release.ps1 -Repository blauesgruen/pvr.satip -ReleaseTag v0.1.1-omega
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\import-github-release.ps1 -Repository blauesgruen/pvr.satip -ReleaseTag v0.1.0-omega
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\validate-repository.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-repository.ps1
 ```

@@ -7,7 +7,7 @@ param(
 
     [string]$FeedPath = 'omega',
 
-    [string]$ConfigPath = (Join-Path $PSScriptRoot '..\repo.config.json')
+    [string]$ConfigPath = ''
 )
 
 Set-StrictMode -Version Latest
@@ -15,6 +15,10 @@ $ErrorActionPreference = 'Stop'
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+if ([string]::IsNullOrWhiteSpace($ConfigPath)) {
+    $ConfigPath = Join-Path $PSScriptRoot '..\repo.config.json'
+}
 
 function Get-AddonXmlFromZip([string]$ZipPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)

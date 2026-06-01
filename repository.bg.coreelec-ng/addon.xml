@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="repository.bg.coreelec-ng" version="0.2.0" name="BG-Repository CoreELEC-ng" provider-name="blauesgruen">
+<addon id="repository.bg.coreelec-ng" version="0.2.1" name="BG-Repository CoreELEC-ng" provider-name="blauesgruen">
   <extension point="xbmc.addon.repository" name="BG-Repository CoreELEC-ng">
     <dir minversion="21.0.0" maxversion="21.9.9">
       <info compressed="false">https://blauesgruen.github.io/BG-Repository/omega/coreelec-ng/addons.xml</info>

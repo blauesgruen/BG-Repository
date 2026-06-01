@@ -10,12 +10,12 @@ https://blauesgruen.github.io/BG-Repository/
 Install ZIPs are generated per repository channel:
 
 ```text
-repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.0.zip
-repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.0.zip
-repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.0.zip
-repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.0.zip
-repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.0.zip
-repository.bg.android-armv7/repository.bg.android-armv7-0.2.0.zip
+repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.1.zip
+repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.1.zip
+repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.1.zip
+repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.1.zip
+repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.1.zip
+repository.bg.android-armv7/repository.bg.android-armv7-0.2.1.zip
 ```
 
 ## Import Workflow

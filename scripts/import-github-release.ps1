@@ -20,11 +20,11 @@ function Get-AddonXmlFromZip([string]$ZipPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
     try {
         $entry = $zip.Entries |
-            Where-Object { $_.FullName -match '^[^/\\]+/addon\.xml$' } |
+            Where-Object { $_.FullName -eq 'pvr.satip/addon.xml' } |
             Select-Object -First 1
 
         if ($null -eq $entry) {
-            throw "No addon.xml found at the add-on root"
+            throw "No pvr.satip/addon.xml found in $ZipPath"
         }
 
         $stream = $entry.Open()

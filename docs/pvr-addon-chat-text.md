@@ -11,22 +11,22 @@ https://blauesgruen.github.io/BG-Repository/
 
 Installierbare Repository-ZIPs:
 CoreELEC Amlogic-ng:
-https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ng/repository.bg.coreelec-ng-0.2.1.zip
 
 CoreELEC Amlogic-ne:
-https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg.coreelec-ne/repository.bg.coreelec-ne-0.2.1.zip
 
 Linux x86_64:
-https://blauesgruen.github.io/BG-Repository/repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg.linux-x86_64/repository.bg.linux-x86_64-0.2.1.zip
 
 Windows x86_64:
-https://blauesgruen.github.io/BG-Repository/repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg.windows-x86_64/repository.bg.windows-x86_64-0.2.1.zip
 
 Android aarch64:
-https://blauesgruen.github.io/BG-Repository/repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg.android-aarch64/repository.bg.android-aarch64-0.2.1.zip
 
 Android armv7:
-https://blauesgruen.github.io/BG-Repository/repository.bg.android-armv7/repository.bg.android-armv7-0.2.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg.android-armv7/repository.bg.android-armv7-0.2.1.zip
 ```
 
 Das PVR-Repo soll nach neuen Release-Uploads das BG-Repository triggern.

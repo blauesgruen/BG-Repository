@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="repository.bg.android-armv7" version="0.2.0" name="BG-Repository Android armv7" provider-name="blauesgruen">
+<addon id="repository.bg.android-armv7" version="0.2.1" name="BG-Repository Android armv7" provider-name="blauesgruen">
   <extension point="xbmc.addon.repository" name="BG-Repository Android armv7">
     <dir minversion="21.0.0" maxversion="21.9.9">
       <info compressed="false">https://blauesgruen.github.io/BG-Repository/omega/android-armv7/addons.xml</info>

@@ -2,7 +2,7 @@
   "repository": {
     "id": "repository.bg",
     "name": "BG-Repository",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "providerName": "blauesgruen",
     "baseUrl": "https://blauesgruen.github.io/BG-Repository",
     "summary": {
@@ -17,14 +17,6 @@
     "source": "https://github.com/blauesgruen/BG-Repository"
   },
   "repositoryAddons": [
-    {
-      "id": "repository.bg",
-      "name": "BG-Repository",
-      "feeds": [
-        "omega",
-        "piers"
-      ]
-    },
     {
       "id": "repository.bg.coreelec-ng",
       "name": "BG-Repository CoreELEC-ng",

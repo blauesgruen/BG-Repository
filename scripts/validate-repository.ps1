@@ -42,6 +42,16 @@ function Get-AddonXmlFromZip([string]$ZipPath) {
     }
 }
 
+function Test-ZipEntry([string]$ZipPath, [string]$EntryPath) {
+    $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
+    try {
+        return $null -ne ($zip.Entries | Where-Object { $_.FullName -eq $EntryPath } | Select-Object -First 1)
+    }
+    finally {
+        $zip.Dispose()
+    }
+}
+
 $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 $problems = [System.Collections.Generic.List[string]]::new()
@@ -63,6 +73,11 @@ foreach ($feed in $config.feeds) {
 
     foreach ($zipFile in $zipFiles) {
         try {
+            $isChannelFeed = $feed.PSObject.Properties.Name -contains 'channel'
+            if ($isChannelFeed -and -not (Test-ZipEntry $zipFile.FullName 'pvr.satip/addon.xml')) {
+                Add-Problem $problems "Channel ZIP must contain pvr.satip/addon.xml: $($zipFile.FullName)"
+            }
+
             $addonDoc = [System.Xml.XmlDocument]::new()
             $addonDoc.LoadXml((Get-AddonXmlFromZip $zipFile.FullName))
             $addon = $addonDoc.DocumentElement
@@ -86,6 +101,10 @@ foreach ($feed in $config.feeds) {
 
             if ($id -cnotmatch '^[a-z0-9._-]+$') {
                 Add-Problem $problems "Invalid lowercase add-on id '$id' in $($zipFile.FullName)"
+            }
+
+            if ($isChannelFeed -and $id -ne 'pvr.satip') {
+                Add-Problem $problems "Channel feed $($feed.path) may only contain pvr.satip, found '$id' in $($zipFile.FullName)"
             }
 
             $expectedFile = "$id-$version.zip"

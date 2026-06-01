@@ -168,13 +168,6 @@ function New-RepositoryAddonXml($Config, [string]$RepositoryDir) {
     $addon.SetAttribute('provider-name', [string]$repo.providerName)
     [void]$doc.AppendChild($addon)
 
-    $requires = $doc.CreateElement('requires')
-    $import = $doc.CreateElement('import')
-    $import.SetAttribute('addon', 'xbmc.addon')
-    $import.SetAttribute('version', '19.1.0')
-    [void]$requires.AppendChild($import)
-    [void]$addon.AppendChild($requires)
-
     $repoExtension = $doc.CreateElement('extension')
     $repoExtension.SetAttribute('point', 'xbmc.addon.repository')
     $repoExtension.SetAttribute('name', [string]$repo.name)

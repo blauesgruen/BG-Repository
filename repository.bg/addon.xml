@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="repository.bg" version="0.1.1" name="BG-Repository" provider-name="blauesgruen">
-  <requires>
-    <import addon="xbmc.addon" version="19.1.0" />
-  </requires>
+<addon id="repository.bg" version="0.1.2" name="BG-Repository" provider-name="blauesgruen">
   <extension point="xbmc.addon.repository" name="BG-Repository">
     <dir minversion="21.0.0" maxversion="21.9.9">
       <info compressed="false">https://blauesgruen.github.io/BG-Repository/omega/addons.xml</info>

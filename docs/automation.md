@@ -10,7 +10,7 @@ https://blauesgruen.github.io/BG-Repository/
 The install ZIP is:
 
 ```text
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.1.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.1.2.zip
 ```
 
 ## Import Workflow

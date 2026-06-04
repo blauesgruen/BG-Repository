@@ -100,6 +100,8 @@ The current platform values expected in `addon.xml` are:
 ```text
 Asset pvr.satip.coreelec-ng:      id pvr.satip.coreelec-ng,      platform linux
 Asset pvr.satip.coreelec-ne:      id pvr.satip.coreelec-ne,      platform linux
+Asset pvr.satip.libreelec-rpi4-aarch64:
+                                  id pvr.satip.libreelec-rpi4-aarch64, platform linux
 Asset pvr.satip.linux-x86_64:     id pvr.satip.linux-x86_64,     platform linux
 Asset contains windows-x64:       id pvr.satip,                  platform windows-x86_64
 Asset contains android-aarch64:   id pvr.satip,                  platform android-aarch64

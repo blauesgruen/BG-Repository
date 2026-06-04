@@ -87,6 +87,9 @@ function Get-PackageRuleFromAssetName([string]$AssetName) {
     if ($AssetName -match 'linux-x86_64') {
         return [pscustomobject]@{ target = 'linux-x86_64'; expectedId = 'pvr.satip.linux-x86_64'; expectedPlatform = 'linux' }
     }
+    if ($AssetName -match 'libreelec-rpi4-aarch64') {
+        return [pscustomobject]@{ target = 'libreelec-rpi4-aarch64'; expectedId = 'pvr.satip.libreelec-rpi4-aarch64'; expectedPlatform = 'linux' }
+    }
     if ($AssetName -match 'windows-(x64|x86_64)') {
         return [pscustomobject]@{ target = 'windows-x86_64'; expectedId = 'pvr.satip'; expectedPlatform = 'windows-x86_64' }
     }
@@ -165,7 +168,7 @@ try {
             }
             else {
                 if (-not $cleanedFeed) {
-                    foreach ($oldTarget in @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'linux-x86_64', 'windows-x86_64')) {
+                    foreach ($oldTarget in @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'libreelec-rpi4-aarch64', 'linux-x86_64', 'windows-x86_64')) {
                         $oldTargetDir = Join-Path $feedDir $oldTarget
                         if (Test-Path $oldTargetDir) {
                             Remove-Item -Recurse -Force $oldTargetDir
@@ -217,7 +220,7 @@ $report | ConvertTo-Json | Set-Content -Encoding UTF8 -Path $reportPath
 $report | Format-Table -AutoSize
 Write-Host "Report written to $reportPath"
 
-$expectedTargets = @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'linux-x86_64', 'windows-x86_64')
+$expectedTargets = @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'libreelec-rpi4-aarch64', 'linux-x86_64', 'windows-x86_64')
 $importedTargets = @($report | Where-Object { $_.imported } | ForEach-Object { $_.target })
 $missingTargets = @($expectedTargets | Where-Object { $importedTargets -notcontains $_ } | Sort-Object)
 if ($missingTargets.Count -gt 0) {

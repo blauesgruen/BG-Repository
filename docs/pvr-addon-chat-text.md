@@ -70,6 +70,7 @@ BG importiert anhand des Assetnamens in ein gemeinsames `omega/addons.xml`:
 ```text
 pvr.satip.coreelec-ng      -> id pvr.satip.coreelec-ng
 pvr.satip.coreelec-ne      -> id pvr.satip.coreelec-ne
+pvr.satip.libreelec-rpi4-aarch64 -> id pvr.satip.libreelec-rpi4-aarch64
 pvr.satip.linux-x86_64     -> id pvr.satip.linux-x86_64
 windows-x64                -> id pvr.satip
 android-aarch64            -> id pvr.satip
@@ -81,6 +82,7 @@ Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
 ```text
 pvr.satip.coreelec-ng:      linux
 pvr.satip.coreelec-ne:      linux
+pvr.satip.libreelec-rpi4-aarch64: linux
 pvr.satip.linux-x86_64:     linux
 pvr.satip Windows:          windows-x86_64
 pvr.satip Android aarch64:  android-aarch64

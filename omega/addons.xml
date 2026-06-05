@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <addons>
-  <addon id="pvr.satip" version="0.1.1" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.2" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -30,11 +30,11 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>5879178</size>
-      <path>android-aarch64/pvr.satip-0.1.1.zip</path>
+      <size>5879416</size>
+      <path>android-aarch64/pvr.satip-0.1.2.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip" version="0.1.1" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.2" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -64,11 +64,11 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>6581693</size>
-      <path>android-armv7/pvr.satip-0.1.1.zip</path>
+      <size>6581932</size>
+      <path>android-armv7/pvr.satip-0.1.2.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.coreelec-ne" version="0.1.1" name="SAT&gt;IP Client - CoreELEC-ne" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.coreelec-ne" version="0.1.2" name="SAT&gt;IP Client - CoreELEC-ne" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -82,7 +82,7 @@
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.1" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.2" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -98,11 +98,11 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1456344</size>
-      <path>coreelec-ne/pvr.satip.coreelec-ne-0.1.1.zip</path>
+      <size>1456905</size>
+      <path>coreelec-ne/pvr.satip.coreelec-ne-0.1.2.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.coreelec-ng" version="0.1.1" name="SAT&gt;IP Client - CoreELEC-ng" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.coreelec-ng" version="0.1.2" name="SAT&gt;IP Client - CoreELEC-ng" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -116,7 +116,7 @@
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.1" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.2" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -132,11 +132,11 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1426804</size>
-      <path>coreelec-ng/pvr.satip.coreelec-ng-0.1.1.zip</path>
+      <size>1427056</size>
+      <path>coreelec-ng/pvr.satip.coreelec-ng-0.1.2.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.1" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.2" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -150,7 +150,7 @@
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.1" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.2" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -166,11 +166,11 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1401684</size>
-      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.1.zip</path>
+      <size>1402559</size>
+      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.2.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.linux-x86_64" version="0.1.1" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.linux-x86_64" version="0.1.2" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -184,7 +184,7 @@
       <import addon="inputstream.adaptive" minversion="21.0.0" />
       <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.1" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.2" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -200,11 +200,11 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1544842</size>
-      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.1.zip</path>
+      <size>1546108</size>
+      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.2.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip" version="0.1.1" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.2" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -234,8 +234,8 @@
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1237431</size>
-      <path>windows-x86_64/pvr.satip-0.1.1.zip</path>
+      <size>1239509</size>
+      <path>windows-x86_64/pvr.satip-0.1.2.zip</path>
     </extension>
   </addon>
 </addons>

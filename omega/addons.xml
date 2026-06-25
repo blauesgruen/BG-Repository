@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <addons>
-  <addon id="pvr.satip" version="0.1.6" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.7" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -11,8 +11,6 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
     <extension point="kodi.pvrclient" library_android="libpvr.satip.so" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
@@ -28,13 +26,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>5987237</size>
-      <path>android-aarch64/pvr.satip-0.1.6.zip</path>
+      <size>5989172</size>
+      <path>android-aarch64/pvr.satip-0.1.7.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip" version="0.1.6" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.7" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -45,8 +45,6 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
     <extension point="kodi.pvrclient" library_android="libpvr.satip.so" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
@@ -62,13 +60,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>6679101</size>
-      <path>android-armv7/pvr.satip-0.1.6.zip</path>
+      <size>6681036</size>
+      <path>android-armv7/pvr.satip-0.1.7.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.coreelec-ne" version="0.1.6" name="SAT&gt;IP Client - CoreELEC-ne" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.coreelec-ne" version="0.1.7" name="SAT&gt;IP Client - CoreELEC-ne" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -79,10 +79,8 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.6" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.7" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -96,13 +94,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1403817</size>
-      <path>coreelec-ne/pvr.satip.coreelec-ne-0.1.6.zip</path>
+      <size>1347286</size>
+      <path>coreelec-ne/pvr.satip.coreelec-ne-0.1.7.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.coreelec-ng" version="0.1.6" name="SAT&gt;IP Client - CoreELEC-ng" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.coreelec-ng" version="0.1.7" name="SAT&gt;IP Client - CoreELEC-ng" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -113,10 +113,8 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.6" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.7" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -130,13 +128,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1369016</size>
-      <path>coreelec-ng/pvr.satip.coreelec-ng-0.1.6.zip</path>
+      <size>1315425</size>
+      <path>coreelec-ng/pvr.satip.coreelec-ng-0.1.7.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.6" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.7" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -147,10 +147,8 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.6" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.7" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -164,13 +162,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1348873</size>
-      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.6.zip</path>
+      <size>1293463</size>
+      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.7.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.linux-x86_64" version="0.1.6" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.linux-x86_64" version="0.1.7" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -181,10 +181,8 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.6" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.7" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -198,13 +196,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1487695</size>
-      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.6.zip</path>
+      <size>1419922</size>
+      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.7.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip" version="0.1.6" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.7" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -215,8 +215,6 @@
       <import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0" />
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
-      <import addon="inputstream.adaptive" minversion="21.0.0" />
-      <import addon="inputstream.rtmp" minversion="21.0.0" />
     </requires>
     <extension point="kodi.pvrclient" library_windows="pvr.satip.dll" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
@@ -232,10 +230,12 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.7 fixes SAT&gt;IP EPG scan scope handling and improves EPG text import. Manual channel EPG scans stay targeted, automatic/full scans keep covering all required muxes, DVB text is normalized before XMLTV export, segmented extended-event text is joined without corrupting words or markup, and structured fields such as genre, year, cast, director, writer, presenter, editorial and production credits are extracted without sender-specific hardcoding.</news>
+      <news lang="de_DE">v0.1.7 behebt die SAT&gt;IP-EPG-Scan-Auswahl und verbessert den EPG-Textimport. Manuelle Sender-EPG-Scans bleiben gezielt, automatische/vollstaendige Scans decken weiter alle benoetigten Muxe ab, DVB-Text wird vor dem XMLTV-Export normalisiert, segmentierte Extended-Event-Texte werden ohne kaputte Woerter oder Markup zusammengesetzt, und strukturierte Felder wie Genre, Jahr, Darsteller, Regie, Drehbuch, Moderation, Redaktion und Produktion werden ohne Sender-Hardcoding extrahiert.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1197364</size>
-      <path>windows-x86_64/pvr.satip-0.1.6.zip</path>
+      <size>1169298</size>
+      <path>windows-x86_64/pvr.satip-0.1.7.zip</path>
     </extension>
   </addon>
 </addons>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <addons>
-  <addon id="pvr.satip" version="0.1.8" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.9" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -26,15 +26,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>5989428</size>
-      <path>android-aarch64/pvr.satip-0.1.8.zip</path>
+      <size>5989259</size>
+      <path>android-aarch64/pvr.satip-0.1.9.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip" version="0.1.8" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.9" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -60,15 +60,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>6681292</size>
-      <path>android-armv7/pvr.satip-0.1.8.zip</path>
+      <size>6681123</size>
+      <path>android-armv7/pvr.satip-0.1.9.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.coreelec-ne" version="0.1.8" name="SAT&gt;IP Client - CoreELEC-ne" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.coreelec-ne" version="0.1.9" name="SAT&gt;IP Client - CoreELEC-ne" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -80,7 +80,7 @@
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.8" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.9" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -94,15 +94,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1346640</size>
-      <path>coreelec-ne/pvr.satip.coreelec-ne-0.1.8.zip</path>
+      <size>1346471</size>
+      <path>coreelec-ne/pvr.satip.coreelec-ne-0.1.9.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.coreelec-ng" version="0.1.8" name="SAT&gt;IP Client - CoreELEC-ng" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.coreelec-ng" version="0.1.9" name="SAT&gt;IP Client - CoreELEC-ng" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -114,7 +114,7 @@
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.8" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.9" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -128,15 +128,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1315047</size>
-      <path>coreelec-ng/pvr.satip.coreelec-ng-0.1.8.zip</path>
+      <size>1314875</size>
+      <path>coreelec-ng/pvr.satip.coreelec-ng-0.1.9.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.8" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.9" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -148,7 +148,7 @@
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.8" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.9" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -162,15 +162,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1292714</size>
-      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.8.zip</path>
+      <size>1292574</size>
+      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.9.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip.linux-x86_64" version="0.1.8" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip.linux-x86_64" version="0.1.9" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -182,7 +182,7 @@
       <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
       <import addon="inputstream.ffmpegdirect" minversion="21.0.0" />
     </requires>
-    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.8" />
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.9" />
     <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
     <extension point="xbmc.addon.metadata">
       <platform>linux</platform>
@@ -196,15 +196,15 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1420182</size>
-      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.8.zip</path>
+      <size>1420501</size>
+      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.9.zip</path>
     </extension>
   </addon>
-  <addon id="pvr.satip" version="0.1.8" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+  <addon id="pvr.satip" version="0.1.9" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
     <requires>
       <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2" />
       <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -230,12 +230,12 @@
       <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
       <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
       <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
-      <news lang="en_GB">v0.1.8 keeps SAT&gt;IP live playback protected during EPG reloads by aborting an EPG scan after five minutes of live-TV pause instead of waiting indefinitely. The abort is shown in the existing extended-progress text, not as a confirmation dialog. The local Windows/MSVC build was also cleaned up by removing narrowing warnings in EPG/XML parsing and time-window handling.</news>
-      <news lang="de_DE">v0.1.8 schuetzt SAT&gt;IP-Live-TV waehrend EPG-Reloads weiter, bricht einen EPG-Scan nach fuenf Minuten Live-TV-Pause aber ab, statt unbegrenzt zu warten. Der Abbruch erscheint im bestehenden Extended-Progress-Text, nicht als Bestaetigungsdialog. Ausserdem wurde der lokale Windows/MSVC-Build durch bereinigte Narrowing-Warnungen im EPG-/XML-Parsing und bei Zeitfenstern aufgeraeumt.</news>
+      <news lang="en_GB">v0.1.9 republishes cached EPG data after Kodi PVR manager refresh cycles without starting another SAT&gt;IP mux scan. Regular Kodi EPG pulls and manual channel scans keep their existing scan behavior.</news>
+      <news lang="de_DE">v0.1.9 veroeffentlicht zwischengespeicherte EPG-Daten nach Kodi-PVR-Manager-Aktualisierungen erneut, ohne einen weiteren SAT&gt;IP-Muxscan zu starten. Regulaere Kodi-EPG-Abfragen und manuelle Senderscans behalten ihr bisheriges Scanverhalten.</news>
       <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
       <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
-      <size>1167991</size>
-      <path>windows-x86_64/pvr.satip-0.1.8.zip</path>
+      <size>1167939</size>
+      <path>windows-x86_64/pvr.satip-0.1.9.zip</path>
     </extension>
   </addon>
 </addons>

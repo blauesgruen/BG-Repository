@@ -6,6 +6,14 @@ on:
       release_tag:
         description: pvr.satip release tag to import, for example v0.1.1-omega
         required: true
+      feed:
+        description: Kodi feed to update
+        required: true
+        default: omega
+        type: choice
+        options:
+          - omega
+          - piers
   repository_dispatch:
     types:
       - pvr-satip-release
@@ -21,7 +29,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Resolve release tag
+      - name: Resolve import inputs
         shell: pwsh
         run: |
           $releaseTag = '${{ github.event.client_payload.release_tag }}'
@@ -31,7 +39,20 @@ jobs:
           if ([string]::IsNullOrWhiteSpace($releaseTag)) {
             throw 'No release tag was provided.'
           }
+
+          $feed = '${{ github.event.client_payload.feed }}'
+          if ([string]::IsNullOrWhiteSpace($feed)) {
+            $feed = '${{ inputs.feed }}'
+          }
+          if ([string]::IsNullOrWhiteSpace($feed)) {
+            $feed = 'omega'
+          }
+          if ($feed -notin @('omega', 'piers')) {
+            throw "Unsupported feed '$feed'."
+          }
+
           "RELEASE_TAG=$releaseTag" | Out-File -FilePath $env:GITHUB_ENV -Append
+          "FEED=$feed" | Out-File -FilePath $env:GITHUB_ENV -Append
 
       - name: Import pvr.satip assets
         shell: pwsh
@@ -41,7 +62,7 @@ jobs:
           if ([string]::IsNullOrWhiteSpace($env:GH_TOKEN)) {
             throw 'Missing repository secret PVR_RELEASE_TOKEN. It must be able to read blauesgruen/pvr.satip releases.'
           }
-          .\scripts\import-github-release.ps1 -Repository blauesgruen/pvr.satip -ReleaseTag $env:RELEASE_TAG -FeedPath omega
+          .\scripts\import-github-release.ps1 -Repository blauesgruen/pvr.satip -ReleaseTag $env:RELEASE_TAG -FeedPath $env:FEED
 
       - name: Validate repository
         shell: pwsh
@@ -49,21 +70,20 @@ jobs:
 
       - name: Build repository metadata
         shell: pwsh
-        run: .\scripts\build-repository.ps1 -SkipRepositoryZip
+        run: .\scripts\build-repository.ps1
 
       - name: Commit updated repository files
         shell: pwsh
         run: |
-          # Rebase to avoid non-fast-forward push failures in concurrent updates.
           git fetch origin
           git pull --rebase --autostash origin $env:GITHUB_REF_NAME
           $repoConfig = Get-Content -Raw repo.config.json | ConvertFrom-Json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add omega $repoConfig.repository.id
+          git add omega piers $repoConfig.repository.id
           if (git diff --cached --quiet) {
             Write-Host 'No repository changes to commit.'
             exit 0
           }
-          git commit -m "Update pvr.satip $env:RELEASE_TAG"
+          git commit -m "Update pvr.satip $env:RELEASE_TAG ($env:FEED)"
           git push

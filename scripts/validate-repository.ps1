@@ -56,6 +56,7 @@ function Get-PackageRuleFromTarget([string]$Target) {
     switch ($Target) {
         'coreelec-ng' { return [pscustomobject]@{ expectedId = 'pvr.satip.coreelec-ng'; expectedPlatform = 'linux' } }
         'coreelec-ne' { return [pscustomobject]@{ expectedId = 'pvr.satip.coreelec-ne'; expectedPlatform = 'linux' } }
+        'coreelec-no' { return [pscustomobject]@{ expectedId = 'pvr.satip.coreelec-no'; expectedPlatform = 'linux' } }
         'linux-x86_64' { return [pscustomobject]@{ expectedId = 'pvr.satip.linux-x86_64'; expectedPlatform = 'linux' } }
         'libreelec-rpi4-aarch64' { return [pscustomobject]@{ expectedId = 'pvr.satip.libreelec-rpi4-aarch64'; expectedPlatform = 'linux' } }
         'windows-x86_64' { return [pscustomobject]@{ expectedId = 'pvr.satip'; expectedPlatform = 'windows-x86_64' } }

@@ -5,7 +5,7 @@ BG-Repository is a Kodi add-on repository for selected add-ons.
 Install the repository in Kodi from this ZIP:
 
 ```text
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.3.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.4.0.zip
 ```
 
 Releases are available here:
@@ -17,7 +17,7 @@ https://github.com/blauesgruen/BG-Repository/releases
 Currently included:
 
 ```text
-pvr.satip for Kodi Omega
+pvr.satip for Kodi Omega and Piers
 ```
 
 More add-ons may be added later.

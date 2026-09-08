@@ -10,16 +10,18 @@ Kodi-/Pages-URL:
 https://blauesgruen.github.io/BG-Repository/
 
 Installierbares Repository-ZIP:
-https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.3.0.zip
+https://blauesgruen.github.io/BG-Repository/repository.bg/repository.bg-0.4.0.zip
 ```
 
-Das PVR-Repo soll nach neuen Release-Uploads das BG-Repository triggern.
+Das PVR-Repo triggert nach einem vollstaendigen Release den Import in den zur
+Kodi-Generation passenden Feed.
 
 Verwendet wird:
 
 ```text
 event_type: pvr-satip-release
 client_payload.release_tag: <release_tag>
+client_payload.feed: omega|piers
 ```
 
 Secret im PVR-Repo:
@@ -34,68 +36,57 @@ Der Token muss `repository_dispatch` auf dieses Repository ausloesen duerfen:
 blauesgruen/BG-Repository
 ```
 
-Der Trigger-Schritt im PVR-Repo:
-
-```yaml
-- name: Trigger BG-Repository import
-  env:
-    GH_TOKEN: ${{ secrets.KODI_REPO_DISPATCH_TOKEN }}
-    RELEASE_TAG: ${{ github.event.release.tag_name }}
-  run: |
-    gh api repos/blauesgruen/BG-Repository/dispatches \
-      --method POST \
-      --field event_type=pvr-satip-release \
-      --field client_payload[release_tag]="$RELEASE_TAG"
-```
-
-Die Workflow-Logik im PVR-Repo soll so bleiben:
+`Release All` verwendet fuer Omega und Piers dieselben Plattform-Workflows:
 
 ```text
-Direkt gestartete Einzelworkflows:
-  bauen ihre Plattform
-  laden ihr ZIP ins Release hoch
-  triggern BG danach selbst
-
-Release All:
-  startet Linux, Windows, CoreELEC und Android
-  verhindert die fruehen BG-Trigger der Einzelworkflows
-  wartet auf alle Plattform-Workflows
-  triggert BG danach genau einmal
+Linux
+Windows
+CoreELEC
+LibreELEC
+Android
 ```
 
-So importiert BG nicht zu frueh, wenn noch Plattform-ZIPs fehlen.
+Die Generation waehlt dabei ein festes Build-Profil. Nach erfolgreichem
+Abschluss aller Plattformen wird BG genau einmal mit Release-Tag und Feed
+getriggert.
 
-BG importiert anhand des Assetnamens in ein gemeinsames `omega/addons.xml`:
+BG importiert in getrennte Feeds:
 
 ```text
-pvr.satip.coreelec-ng      -> id pvr.satip.coreelec-ng
-pvr.satip.coreelec-ne      -> id pvr.satip.coreelec-ne
+omega -> Kodi 21.x
+piers -> Kodi 22.x
+```
+
+Gemeinsame Ziele:
+
+```text
 pvr.satip.libreelec-rpi4-aarch64 -> id pvr.satip.libreelec-rpi4-aarch64
-pvr.satip.linux-x86_64     -> id pvr.satip.linux-x86_64
-windows-x64                -> id pvr.satip
-android-aarch64            -> id pvr.satip
-android-armv7              -> id pvr.satip
+pvr.satip.linux-x86_64            -> id pvr.satip.linux-x86_64
+windows-x64                       -> id pvr.satip
+android-aarch64                   -> id pvr.satip
+android-armv7                     -> id pvr.satip
+```
+
+CoreELEC unterscheidet sich je Generation:
+
+```text
+Omega: pvr.satip.coreelec-ne, pvr.satip.coreelec-ng
+Piers: pvr.satip.coreelec-no
 ```
 
 Die ZIPs muessen diese Plattformwerte im `addon.xml` haben:
 
 ```text
-pvr.satip.coreelec-ng:      linux
-pvr.satip.coreelec-ne:      linux
-pvr.satip.libreelec-rpi4-aarch64: linux
-pvr.satip.linux-x86_64:     linux
-pvr.satip Windows:          windows-x86_64
-pvr.satip Android aarch64:  android-aarch64
-pvr.satip Android armv7:    android-armv7
+CoreELEC:                 linux
+LibreELEC RPi4 aarch64:   linux
+Linux x86_64:             linux
+Windows:                  windows-x86_64
+Android aarch64:          android-aarch64
+Android armv7:            android-armv7
 ```
 
-Der Plattformwert darf nicht leer sein. Linux/CoreELEC verwenden bewusst
-`<platform>linux</platform>`. Die Architektur wird ueber Addon-ID und Namen
-sichtbar gemacht.
-
-BG-Repository entfernt vor einem Import vorhandene SAT>IP-Zielordner aus dem
-Omega-Feed. Dadurch bleiben keine alten Plattform-ZIPs im Feed liegen, wenn sie
-im aktuellen Release nicht mehr vorhanden sind.
+Vor einem Import entfernt BG vorhandene SAT>IP-Zielordner nur aus dem
+gewaehlten Feed. Omega- und Piers-Pakete ueberschreiben sich dadurch nicht.
 
 Die Version im ZIP muss zur Release-Version passen, zum Beispiel:
 
@@ -108,9 +99,9 @@ Danach macht BG automatisch:
 ```text
 Release-Assets herunterladen
 Assetnamen den Zielordnern zuordnen
+vollstaendige Zielmenge fuer den Feed pruefen
 gueltige ZIPs importieren
 Repository validieren
-addons.xml neu bauen
+Feed- und Repository-Metadaten neu bauen
 Aenderungen committen
-Kodi-Nutzern Updates anbieten
 ```

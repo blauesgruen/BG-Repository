@@ -78,6 +78,9 @@ function Get-ReleaseVersion([string]$Tag) {
 }
 
 function Get-PackageRuleFromAssetName([string]$AssetName) {
+    if ($AssetName -match '(Amlogic-no|coreelec-no)') {
+        return [pscustomobject]@{ target = 'coreelec-no'; expectedId = 'pvr.satip.coreelec-no'; expectedPlatform = 'linux' }
+    }
     if ($AssetName -match '(Amlogic-ng|coreelec-ng)') {
         return [pscustomobject]@{ target = 'coreelec-ng'; expectedId = 'pvr.satip.coreelec-ng'; expectedPlatform = 'linux' }
     }
@@ -103,6 +106,22 @@ function Get-PackageRuleFromAssetName([string]$AssetName) {
     return $null
 }
 
+function Get-ExpectedTargets([string]$Feed) {
+    $common = @(
+        'android-aarch64',
+        'android-armv7',
+        'libreelec-rpi4-aarch64',
+        'linux-x86_64',
+        'windows-x86_64'
+    )
+
+    switch ($Feed) {
+        'omega' { return @('coreelec-ne', 'coreelec-ng') + $common }
+        'piers' { return @('coreelec-no') + $common }
+        default { throw "Unsupported feed '$Feed'." }
+    }
+}
+
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
     throw "GitHub CLI 'gh' is required for private release imports."
 }
@@ -111,6 +130,7 @@ $projectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $config = Get-Content -Raw -Path $ConfigPath | ConvertFrom-Json
 $releaseVersion = Get-ReleaseVersion $ReleaseTag
 $feedDir = Join-Path $projectRoot $FeedPath
+$expectedTargets = Get-ExpectedTargets $FeedPath
 
 $tempDir = Join-Path $env:TEMP ('kodi-release-import-' + [guid]::NewGuid().ToString('N'))
 $ownerRepoName = ($Repository -replace '[^a-zA-Z0-9._-]+', '_')
@@ -151,6 +171,9 @@ try {
             elseif ([string]::IsNullOrWhiteSpace($target)) {
                 $reason = 'no target rule matched asset name'
             }
+            elseif ($expectedTargets -notcontains $target) {
+                $reason = "target '$target' does not belong to feed '$FeedPath'"
+            }
             elseif ($id -ne $expectedId) {
                 $reason = "unexpected addon id '$id' for target '$target', expected '$expectedId'"
             }
@@ -168,7 +191,7 @@ try {
             }
             else {
                 if (-not $cleanedFeed) {
-                    foreach ($oldTarget in @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'libreelec-rpi4-aarch64', 'linux-x86_64', 'windows-x86_64')) {
+                    foreach ($oldTarget in @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'coreelec-no', 'libreelec-rpi4-aarch64', 'linux-x86_64', 'windows-x86_64')) {
                         $oldTargetDir = Join-Path $feedDir $oldTarget
                         if (Test-Path $oldTargetDir) {
                             Remove-Item -Recurse -Force $oldTargetDir
@@ -220,9 +243,8 @@ $report | ConvertTo-Json | Set-Content -Encoding UTF8 -Path $reportPath
 $report | Format-Table -AutoSize
 Write-Host "Report written to $reportPath"
 
-$expectedTargets = @('android-aarch64', 'android-armv7', 'coreelec-ne', 'coreelec-ng', 'libreelec-rpi4-aarch64', 'linux-x86_64', 'windows-x86_64')
 $importedTargets = @($report | Where-Object { $_.imported } | ForEach-Object { $_.target })
 $missingTargets = @($expectedTargets | Where-Object { $importedTargets -notcontains $_ } | Sort-Object)
 if ($missingTargets.Count -gt 0) {
-    throw "Missing imported targets: $($missingTargets -join ', ')"
+    throw "Missing imported targets for feed '$FeedPath': $($missingTargets -join ', ')"
 }

@@ -6,6 +6,7 @@ on:
       - 'repo.config.json'
       - 'scripts/build-repository.ps1'
       - 'scripts/validate-repository-addon.ps1'
+      - 'scripts/validate-repository.ps1'
       - '.github/workflows/build-repository.yml'
       - 'repository.bg/icon.png'
   workflow_dispatch:
@@ -50,7 +51,7 @@ jobs:
           git commit -m 'Build Omega and Piers repository metadata'
           git push
 
-      - name: Publish repository install ZIP in GitHub Releases
+      - name: Publish generation-specific repository install ZIPs
         if: ${{ github.ref_name == 'main' }}
         shell: pwsh
         env:
@@ -58,16 +59,27 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           $config = Get-Content -Raw repo.config.json | ConvertFrom-Json
-          $version = [string]$config.repository.version
           $repoId = [string]$config.repository.id
-          $tag = "v$version"
-          $package = "$repoId/$repoId-$version.zip"
-          if (-not (Test-Path $package)) { throw "Missing release asset $package" }
-          gh release view $tag *> $null
-          if ($LASTEXITCODE -eq 0) {
-            Write-Host "Release $tag already exists; leaving its assets unchanged."
-          }
-          else {
-            gh release create $tag $package --target $env:GITHUB_REF_NAME --title "BG-Repository $version" --notes 'Kodi repository install package with separate Omega and Piers feeds.'
-            if ($LASTEXITCODE -ne 0) { throw "Failed to publish repository release $tag" }
+          foreach ($feed in $config.feeds) {
+            $version = if ($feed.PSObject.Properties.Name -contains 'repositoryVersion') {
+              [string]$feed.repositoryVersion
+            }
+            else {
+              [string]$config.repository.version
+            }
+            $tag = "v$version"
+            $package = "$($feed.path)/$repoId/$repoId-$version.zip"
+            if (-not (Test-Path $package)) { throw "Missing release asset $package" }
+            gh release view $tag *> $null
+            if ($LASTEXITCODE -eq 0) {
+              $assetNames = @(gh release view $tag --json assets --jq '.assets[].name')
+              if ($LASTEXITCODE -ne 0 -or $assetNames -notcontains "$repoId-$version.zip") {
+                throw "Release $tag does not contain $repoId-$version.zip"
+              }
+              Write-Host "Existing $tag release asset verified."
+            }
+            else {
+              gh release create $tag $package --target $env:GITHUB_REF_NAME --title "BG-Repository $version ($($feed.name))" --notes "Kodi repository install package for $($feed.name)."
+              if ($LASTEXITCODE -ne 0) { throw "Failed to publish repository release $tag" }
+            }
           }

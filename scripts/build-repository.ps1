@@ -161,7 +161,7 @@ function Get-ConfigKey($Object, [string]$Fallback) {
     return $Fallback
 }
 
-function New-RepositoryAddonXml($Config, $RepositoryAddon, [object[]]$Feeds, [string]$RepositoryDir) {
+function New-RepositoryAddonXml($Config, $RepositoryAddon, [object[]]$Feeds, [string]$RepositoryDir, [string]$Version) {
     $repo = $Config.repository
     $baseUrl = [string]$repo.baseUrl
     $baseUrl = $baseUrl.TrimEnd('/')
@@ -173,7 +173,7 @@ function New-RepositoryAddonXml($Config, $RepositoryAddon, [object[]]$Feeds, [st
 
     $addon = $doc.CreateElement('addon')
     $addon.SetAttribute('id', $repoId)
-    $addon.SetAttribute('version', [string]$repo.version)
+    $addon.SetAttribute('version', $Version)
     $addon.SetAttribute('name', $repoName)
     $addon.SetAttribute('provider-name', [string]$repo.providerName)
     [void]$doc.AppendChild($addon)
@@ -306,7 +306,6 @@ foreach ($feed in $config.feeds) {
     $feedKey = Get-ConfigKey $feed ([string]$feed.path)
     $feedsByKey[$feedKey] = $feed
     $feedDir = Join-Path $projectRoot ([string]$feed.path)
-    New-Feed $feed $feedDir
 }
 
 $repositoryAddons = if ($config.PSObject.Properties.Name -contains 'repositoryAddons') {
@@ -330,12 +329,59 @@ foreach ($repositoryAddon in $repositoryAddons) {
         $selectedFeeds += $feedsByKey[[string]$feedKey]
     }
 
-    New-RepositoryAddonXml $config $repositoryAddon $selectedFeeds $repositoryDir
+    New-RepositoryAddonXml $config $repositoryAddon $selectedFeeds $repositoryDir ([string]$config.repository.version)
 
     if (-not $SkipRepositoryZip) {
         $repositoryZip = Join-Path $repositoryDir "$($repositoryAddon.id)-$($config.repository.version).zip"
         Compress-DirectoryWithUnixPaths $repositoryDir $repositoryZip
     }
+}
+
+# Generate one repository package per feed, retaining the same repository ID.
+# Build packages before indexes: the ZIP contains addon.xml and icon, not itself.
+foreach ($repositoryAddon in $repositoryAddons) {
+    $repoId = [string]$repositoryAddon.id
+    $sourceIcon = Join-Path (Join-Path $projectRoot $repoId) 'icon.png'
+    $selectedFeeds = @()
+    foreach ($selectedFeedKey in @($repositoryAddon.feeds)) {
+        if (-not $feedsByKey.ContainsKey([string]$selectedFeedKey)) {
+            throw "Repository add-on $repoId references unknown feed '$selectedFeedKey'"
+        }
+        $selectedFeeds += $feedsByKey[[string]$selectedFeedKey]
+    }
+
+    foreach ($feed in $selectedFeeds) {
+        $feedVersion = if ($feed.PSObject.Properties.Name -contains 'repositoryVersion') {
+            [string]$feed.repositoryVersion
+        }
+        else {
+            [string]$config.repository.version
+        }
+        if ([string]::IsNullOrWhiteSpace($feedVersion)) {
+            throw "Missing repository version for feed $($feed.path)"
+        }
+        $feedDir = Join-Path $projectRoot ([string]$feed.path)
+        $feedRepoDir = Join-Path $feedDir $repoId
+        New-Item -ItemType Directory -Force -Path $feedRepoDir | Out-Null
+        if (Test-Path $sourceIcon) {
+            Copy-Item -Force -Path $sourceIcon -Destination (Join-Path $feedRepoDir 'icon.png')
+        }
+        New-RepositoryAddonXml $config $repositoryAddon $selectedFeeds $feedRepoDir $feedVersion
+        if (-not $SkipRepositoryZip) {
+            # Remove stale copies of this repository package only in this feed.
+            Get-ChildItem -LiteralPath $feedRepoDir -File |
+                Where-Object { $_.Name -like "$repoId-*.zip" -or $_.Name -like "$repoId-*.zip.sha256" } |
+                Remove-Item -Force
+            $feedRepositoryZip = Join-Path $feedRepoDir "$repoId-$feedVersion.zip"
+            Compress-DirectoryWithUnixPaths $feedRepoDir $feedRepositoryZip
+        }
+    }
+}
+
+# Include the generation-specific repository packages in the corresponding index.
+foreach ($feed in $config.feeds) {
+    $feedDir = Join-Path $projectRoot ([string]$feed.path)
+    New-Feed $feed $feedDir
 }
 
 Write-Host "Repository metadata generated."

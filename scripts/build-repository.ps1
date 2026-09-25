@@ -245,8 +245,8 @@ function New-Feed($Feed, [string]$FeedDir) {
     $addonsRoot = $outDoc.CreateElement('addons')
     [void]$outDoc.AppendChild($addonsRoot)
 
+    # Include repository add-on ZIPs so Kodi can discover repository.bg updates.
     $zipFiles = Get-ChildItem -Path $FeedDir -Recurse -Filter '*.zip' -File |
-        Where-Object { $_.Directory.Name -notmatch '^repository\.' } |
         Sort-Object FullName
 
     foreach ($zipFile in $zipFiles) {

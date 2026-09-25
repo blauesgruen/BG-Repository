@@ -21,6 +21,12 @@ on:
 permissions:
   contents: write
 
+# Serialize writers on the same branch so Omega and Piers imports cannot overwrite
+# each other's generated repository index or installation ZIP.
+concurrency:
+  group: bg-repository-writer-${{ github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   import:
     runs-on: windows-latest
@@ -64,7 +70,7 @@ jobs:
           }
           .\scripts\import-github-release.ps1 -Repository blauesgruen/pvr.satip -ReleaseTag $env:RELEASE_TAG -FeedPath $env:FEED
 
-      - name: Validate repository
+      - name: Validate repository packages
         shell: pwsh
         run: .\scripts\validate-repository.ps1
 
@@ -72,15 +78,19 @@ jobs:
         shell: pwsh
         run: .\scripts\build-repository.ps1
 
+      - name: Validate repository add-on and feed indexes
+        shell: pwsh
+        run: .\scripts\validate-repository-addon.ps1
+
       - name: Commit updated repository files
         shell: pwsh
         run: |
           git fetch origin
           git pull --rebase --autostash origin $env:GITHUB_REF_NAME
-          $repoConfig = Get-Content -Raw repo.config.json | ConvertFrom-Json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add $env:FEED $repoConfig.repository.id
+          # Building the repository generates metadata for BOTH feeds.
+          git add -- omega piers repository.bg
           if (git diff --cached --quiet) {
             Write-Host 'No repository changes to commit.'
             exit 0

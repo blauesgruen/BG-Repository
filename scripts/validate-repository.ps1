@@ -153,7 +153,8 @@ foreach ($feed in $config.feeds) {
                 Add-Problem $problems "pvr.satip package is stored in unknown target directory '$target': $($zipFile.FullName)"
             }
 
-            if ($null -eq (@($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1)) {
+            $isRepositoryAddon = ($id -eq [string]$config.repository.id) -and ($null -ne (@($addon.SelectNodes('extension[@point="xbmc.addon.repository"]')) | Select-Object -First 1))
+            if (-not $isRepositoryAddon -and $null -eq (@($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1)) {
                 Add-Problem $problems "Missing kodi.pvrclient extension in $($zipFile.FullName)"
             }
 

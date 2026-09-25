@@ -23,14 +23,16 @@
       "key": "omega",
       "path": "omega",
       "minversion": "21.0.0",
-      "maxversion": "21.9.9"
+      "maxversion": "21.9.9",
+      "repositoryVersion": "0.3.1"
     },
     {
       "name": "Piers",
       "key": "piers",
       "path": "piers",
       "minversion": "21.90.0",
-      "maxversion": "22.89.999"
+      "maxversion": "22.89.999",
+      "repositoryVersion": "0.4.0"
     }
   ]
 }

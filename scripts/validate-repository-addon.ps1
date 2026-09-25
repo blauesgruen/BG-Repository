@@ -111,6 +111,36 @@ for ($i = 0; $i -lt $feeds.Count; $i++) {
         $inputStream.Dispose()
     }
 
+    # Kodi discovers the repository update only when it is in its own feed.
+    $feedVersion = if ($feed.PSObject.Properties.Name -contains 'repositoryVersion') {
+        [string]$feed.repositoryVersion
+    }
+    else {
+        $version
+    }
+    $ownEntries = @($index.SelectNodes("/addons/addon[@id='$repoId']"))
+    if ($ownEntries.Count -ne 1) {
+        throw "$path must list exactly one $repoId update, found $($ownEntries.Count)"
+    }
+    $own = $ownEntries[0]
+    Assert-Equal $own.GetAttribute('version') $feedVersion "$path repository update version"
+    $expectedRelativeZip = "$repoId/$repoId-$feedVersion.zip"
+    $ownPath = $own.SelectSingleNode('extension[@point="xbmc.addon.metadata"]/path')
+    if ($null -eq $ownPath) { throw "$path repository update has no ZIP path" }
+    Assert-Equal $ownPath.InnerText $expectedRelativeZip "$path repository update ZIP"
+    $feedAddonPath = Join-Path (Join-Path $feedDir $repoId) 'addon.xml'
+    if (-not (Test-Path $feedAddonPath)) { throw "$path repository addon.xml is missing" }
+    [xml]$feedAddon = Get-Content -Raw -Path $feedAddonPath
+    Assert-Equal $feedAddon.DocumentElement.GetAttribute('id') $repoId "$path repository ID"
+    Assert-Equal $feedAddon.DocumentElement.GetAttribute('version') $feedVersion "$path repository addon.xml version"
+    $feedZip = [System.IO.Compression.ZipFile]::OpenRead((Join-Path $feedDir ($expectedRelativeZip.Replace('/', [System.IO.Path]::DirectorySeparatorChar))))
+    try {
+        Assert-SameBytes (Read-ZipEntry $feedZip "$repoId/addon.xml") ([System.IO.File]::ReadAllBytes($feedAddonPath)) "$path repository ZIP addon.xml"
+    }
+    finally {
+        $feedZip.Dispose()
+    }
+
     foreach ($entry in @($index.SelectNodes('/addons/addon'))) {
         $relativeZip = $entry.SelectSingleNode('extension[@point="xbmc.addon.metadata"]/path')
         if ($null -eq $relativeZip -or [string]::IsNullOrWhiteSpace($relativeZip.InnerText)) {
@@ -118,6 +148,11 @@ for ($i = 0; $i -lt $feeds.Count; $i++) {
         }
         $packagePath = Join-Path $feedDir ($relativeZip.InnerText.Replace('/', [System.IO.Path]::DirectorySeparatorChar))
         if (-not (Test-Path $packagePath)) { throw "$path references missing package $($relativeZip.InnerText)" }
+        $packageHashPath = "$packagePath.sha256"
+        if (-not (Test-Path $packageHashPath)) { throw "$path package checksum is missing: $($relativeZip.InnerText)" }
+        $actualHash = (Get-Content -Raw -Path $packageHashPath).Trim().ToLowerInvariant()
+        $expectedHash = (Get-FileHash -Algorithm SHA256 $packagePath).Hash.ToLowerInvariant()
+        Assert-Equal $actualHash $expectedHash "$path package checksum: $($relativeZip.InnerText)"
     }
 }
 

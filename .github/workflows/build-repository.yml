@@ -1,0 +1,73 @@
+name: Build and verify repository add-on
+
+on:
+  push:
+    paths:
+      - 'repo.config.json'
+      - 'scripts/build-repository.ps1'
+      - 'scripts/validate-repository-addon.ps1'
+      - '.github/workflows/build-repository.yml'
+      - 'repository.bg/icon.png'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# The release import workflow uses the same group on the same branch.
+concurrency:
+  group: bg-repository-writer-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate existing add-on packages
+        shell: pwsh
+        run: .\scripts\validate-repository.ps1
+
+      - name: Build both feeds and installation ZIP
+        shell: pwsh
+        run: .\scripts\build-repository.ps1
+
+      - name: Validate repository add-on, ZIP and feed indexes
+        shell: pwsh
+        run: .\scripts\validate-repository-addon.ps1
+
+      - name: Commit generated files
+        shell: pwsh
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- omega piers repository.bg
+          if (git diff --cached --quiet) {
+            Write-Host 'Generated repository files are already up to date.'
+            exit 0
+          }
+          git commit -m 'Build Omega and Piers repository metadata'
+          git push
+
+      - name: Publish repository install ZIP in GitHub Releases
+        if: ${{ github.ref_name == 'main' }}
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          $config = Get-Content -Raw repo.config.json | ConvertFrom-Json
+          $version = [string]$config.repository.version
+          $repoId = [string]$config.repository.id
+          $tag = "v$version"
+          $package = "$repoId/$repoId-$version.zip"
+          if (-not (Test-Path $package)) { throw "Missing release asset $package" }
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "Release $tag already exists; leaving its assets unchanged."
+          }
+          else {
+            gh release create $tag $package --target $env:GITHUB_REF_NAME --title "BG-Repository $version" --notes 'Kodi repository install package with separate Omega and Piers feeds.'
+            if ($LASTEXITCODE -ne 0) { throw "Failed to publish repository release $tag" }
+          }

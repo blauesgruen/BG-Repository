@@ -29,8 +29,8 @@
       "name": "Piers",
       "key": "piers",
       "path": "piers",
-      "minversion": "22.0.0",
-      "maxversion": "22.9.9"
+      "minversion": "21.90.0",
+      "maxversion": "22.89.999"
     }
   ]
 }

@@ -1,5 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <addons>
+  <addon id="pvr.satip" version="0.1.15" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.3" version="2.0.4" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.11" version="1.1.11" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="22.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_android="libpvr.satip.so" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>android-aarch64</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.15 aborts an already-running SAT&gt;IP mux scan immediately when Kodi's "Clear data" PVR/EPG reset happens, instead of letting it finish and silently refill the just-cleared EPG a minute or more later.</news>
+      <news lang="de_DE">v0.1.15 bricht einen bereits laufenden SAT&gt;IP-Muxscan sofort ab, wenn Kodis „Daten loeschen" (PVR/EPG-Reset) ausgeloest wird, statt ihn zu Ende laufen zu lassen und das gerade geleerte EPG eine Minute oder mehr spaeter still wieder zu befuellen.</news>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>5221029</size>
+      <path>android-aarch64/pvr.satip-0.1.15.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip" version="0.1.15" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.3" version="2.0.4" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.11" version="1.1.11" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="22.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_android="libpvr.satip.so" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>android-armv7</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.15 aborts an already-running SAT&gt;IP mux scan immediately when Kodi's "Clear data" PVR/EPG reset happens, instead of letting it finish and silently refill the just-cleared EPG a minute or more later.</news>
+      <news lang="de_DE">v0.1.15 bricht einen bereits laufenden SAT&gt;IP-Muxscan sofort ab, wenn Kodis „Daten loeschen" (PVR/EPG-Reset) ausgeloest wird, statt ihn zu Ende laufen zu lassen und das gerade geleerte EPG eine Minute oder mehr spaeter still wieder zu befuellen.</news>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>5168319</size>
+      <path>android-armv7/pvr.satip-0.1.15.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip.coreelec-no" version="0.1.15" name="SAT&gt;IP Client - CoreELEC-no" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.3" version="2.0.4" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.11" version="1.1.11" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="22.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.15" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>linux</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>resources/icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.15 aborts an already-running SAT&gt;IP mux scan immediately when Kodi's "Clear data" PVR/EPG reset happens, instead of letting it finish and silently refill the just-cleared EPG a minute or more later.</news>
+      <news lang="de_DE">v0.1.15 bricht einen bereits laufenden SAT&gt;IP-Muxscan sofort ab, wenn Kodis „Daten loeschen" (PVR/EPG-Reset) ausgeloest wird, statt ihn zu Ende laufen zu lassen und das gerade geleerte EPG eine Minute oder mehr spaeter still wieder zu befuellen.</news>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>1391059</size>
+      <path>coreelec-no/pvr.satip.coreelec-no-0.1.15.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip.libreelec-rpi4-aarch64" version="0.1.15" name="SAT&gt;IP Client - LibreELEC RPi4 aarch64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.3" version="2.0.4" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.11" version="1.1.11" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="22.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.15" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>linux</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.15 aborts an already-running SAT&gt;IP mux scan immediately when Kodi's "Clear data" PVR/EPG reset happens, instead of letting it finish and silently refill the just-cleared EPG a minute or more later.</news>
+      <news lang="de_DE">v0.1.15 bricht einen bereits laufenden SAT&gt;IP-Muxscan sofort ab, wenn Kodis „Daten loeschen" (PVR/EPG-Reset) ausgeloest wird, statt ihn zu Ende laufen zu lassen und das gerade geleerte EPG eine Minute oder mehr spaeter still wieder zu befuellen.</news>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>1335158</size>
+      <path>libreelec-rpi4-aarch64/pvr.satip.libreelec-rpi4-aarch64-0.1.15.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip.linux-x86_64" version="0.1.15" name="SAT&gt;IP Client - Linux x86_64" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.3" version="2.0.4" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.11" version="1.1.11" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="22.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_linux="pvr.satip.so.0.1.15" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>linux</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.15 aborts an already-running SAT&gt;IP mux scan immediately when Kodi's "Clear data" PVR/EPG reset happens, instead of letting it finish and silently refill the just-cleared EPG a minute or more later.</news>
+      <news lang="de_DE">v0.1.15 bricht einen bereits laufenden SAT&gt;IP-Muxscan sofort ab, wenn Kodis „Daten loeschen" (PVR/EPG-Reset) ausgeloest wird, statt ihn zu Ende laufen zu lassen und das gerade geleerte EPG eine Minute oder mehr spaeter still wieder zu befuellen.</news>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>1479126</size>
+      <path>linux-x86_64/pvr.satip.linux-x86_64-0.1.15.zip</path>
+    </extension>
+  </addon>
   <addon id="repository.bg" version="0.4.0" name="BG-Repository" provider-name="blauesgruen">
     <extension point="xbmc.addon.repository" name="BG-Repository">
       <dir minversion="21.0.0" maxversion="21.9.9">
@@ -28,6 +198,40 @@
       </assets>
       <size>342900</size>
       <path>repository.bg/repository.bg-0.4.0.zip</path>
+    </extension>
+  </addon>
+  <addon id="pvr.satip" version="0.1.15" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">
+    <requires>
+      <import addon="kodi.binary.global.main" minversion="2.0.3" version="2.0.4" />
+      <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+      <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1" />
+      <import addon="kodi.binary.global.filesystem" minversion="1.1.11" version="1.1.11" />
+      <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+      <import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0" />
+      <import addon="xbmc.python" version="3.0.0" minversion="3.0.0" />
+      <import addon="inputstream.ffmpegdirect" minversion="22.0.0" />
+    </requires>
+    <extension point="kodi.pvrclient" library_windows="pvr.satip.dll" />
+    <extension point="xbmc.service" library="resources/lib/satip_setup_service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+      <platform>windows-x86_64</platform>
+      <license>GPL-2.0-or-later</license>
+      <source>https://github.com/blauesgruen/pvr.satip</source>
+      <forum>https://forum.kodi.tv/forumdisplay.php?fid=215</forum>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary lang="en_GB">Kodi PVR addon for SAT&gt;IP support.</summary>
+      <summary lang="de_DE">Kodi-PVR-Addon fuer SAT&gt;IP-Unterstuetzung.</summary>
+      <description lang="en_GB">SAT&gt;IP PVR client for Kodi with automatic server discovery, channel import, logos and EPG support for FRITZ!Box and other SAT&gt;IP servers.</description>
+      <description lang="de_DE">SAT&gt;IP-PVR-Client fuer Kodi mit automatischer Servererkennung, Senderimport, Logos und EPG-Unterstuetzung fuer FRITZ!Box und andere SAT&gt;IP-Server.</description>
+      <news lang="en_GB">v0.1.15 aborts an already-running SAT&gt;IP mux scan immediately when Kodi's "Clear data" PVR/EPG reset happens, instead of letting it finish and silently refill the just-cleared EPG a minute or more later.</news>
+      <news lang="de_DE">v0.1.15 bricht einen bereits laufenden SAT&gt;IP-Muxscan sofort ab, wenn Kodis „Daten loeschen" (PVR/EPG-Reset) ausgeloest wird, statt ihn zu Ende laufen zu lassen und das gerade geleerte EPG eine Minute oder mehr spaeter still wieder zu befuellen.</news>
+      <disclaimer lang="en_GB">This addon is under active development. Playback quality depends on server compatibility, network stability and source data quality.</disclaimer>
+      <disclaimer lang="de_DE">Dieses Addon wird aktiv weiterentwickelt. Die Wiedergabequalitaet haengt von Server-Kompatibilitaet, Netzwerkstabilitaet und Quelldatenqualitaet ab.</disclaimer>
+      <size>1172217</size>
+      <path>windows-x86_64/pvr.satip-0.1.15.zip</path>
     </extension>
   </addon>
 </addons>

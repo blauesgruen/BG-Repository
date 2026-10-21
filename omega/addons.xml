@@ -230,8 +230,34 @@
       <assets>
         <icon>icon.png</icon>
       </assets>
-      <size>342901</size>
+      <size>342899</size>
       <path>repository.bg/repository.bg-0.3.1.zip</path>
+    </extension>
+  </addon>
+  <addon id="script.skinhelper.ping" name="Skinhelper PING" version="4.1.2" provider-name="PvD, blauesgruen + KI, rewrite from _Andy_">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Skinhelper add-on that shows network device status</summary>
+      <summary lang="de_DE">Zeigt den Status Ihrer Netzwerkgeräte an</summary>
+      <description lang="en_GB">Skin helper add-on for Kodi 19 and later, including Kodi 22 Piers. It pings up to ten configured devices and exposes their state as skin properties in Window(10000). Configure devices manually or discover devices on the local IPv4 network with the network scan. A skin integration is required to display the properties. An optional background service refreshes states every 10 seconds. Wake-on-LAN is supported. See the README for details.</description>
+      <description lang="de_DE">Skinhelper-Addon für Kodi 19 und neuer, einschließlich Kodi 22 Piers. Es pingt bis zu zehn konfigurierte Geräte an und stellt ihren Status als Skin-Eigenschaften in Window(10000) bereit. Geräte können manuell eingetragen oder über die Suche im lokalen IPv4-Netz ermittelt werden. Zur Anzeige ist eine Skin-Integration erforderlich. Ein optionaler Hintergrunddienst aktualisiert den Status alle 10 Sekunden. Wake-on-LAN wird unterstützt. Details stehen in der README.</description>
+      <platform>all</platform>
+      <license>GPL-3.0-or-later</license>
+      <source>https://github.com/blauesgruen/script.skinhelper.ping</source>
+      <forum>https://www.kodinerds.net/thread/55406-release-skinhelper-ping/?postID=360349&amp;highlight=skinhelper%2Bping#post360349</forum>
+      <news>v4.1.2: Add a confirmed per-device removal action in settings.</news>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <size>1522418</size>
+      <path>script.skinhelper.ping-4.1.2.zip</path>
     </extension>
   </addon>
   <addon id="pvr.satip" version="0.1.9" name="SAT&gt;IP Client" provider-name="blauesgruen (based on work by nightik and Ross Nicholson)">

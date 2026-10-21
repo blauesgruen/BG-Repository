@@ -21,6 +21,7 @@ Currently included:
 
 ```text
 pvr.satip for Kodi Omega and Piers
+script.skinhelper.ping for Kodi Omega and Piers
 ```
 
 More add-ons may be added later.

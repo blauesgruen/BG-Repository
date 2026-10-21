@@ -154,8 +154,16 @@ foreach ($feed in $config.feeds) {
             }
 
             $isRepositoryAddon = ($id -eq [string]$config.repository.id) -and ($null -ne (@($addon.SelectNodes('extension[@point="xbmc.addon.repository"]')) | Select-Object -First 1))
-            if (-not $isRepositoryAddon -and $null -eq (@($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1)) {
-                Add-Problem $problems "Missing kodi.pvrclient extension in $($zipFile.FullName)"
+            if (-not $isRepositoryAddon) {
+                $pvrClient = @($addon.SelectNodes('extension[@point="kodi.pvrclient"]')) | Select-Object -First 1
+                $addonExtensions = @($addon.SelectNodes('extension[not(@point="xbmc.addon.metadata")]'))
+
+                if ($id -like 'pvr.*' -and $null -eq $pvrClient) {
+                    Add-Problem $problems "PVR add-on is missing kodi.pvrclient extension in $($zipFile.FullName)"
+                }
+                elseif ($addonExtensions.Count -eq 0) {
+                    Add-Problem $problems "Missing Kodi add-on extension in $($zipFile.FullName)"
+                }
             }
 
             if ($null -ne (@($addon.SelectNodes('extension[@point="xbmc.service"]')) | Select-Object -First 1)) {

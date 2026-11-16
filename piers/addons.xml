@@ -284,4 +284,28 @@
       <path>service.soloist.native/service.soloist.native-0.3.16.zip</path>
     </extension>
   </addon>
+  <addon id="service.soloist.native" name="Kodi Soloist Native" version="0.3.20" provider-name="blauesgruen">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.script" library="menu.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="de_DE">Spotify-Soloist-Dienst für Kodi auf CoreELEC 22</summary>
+      <summary lang="en_GB">Spotify Soloist service for Kodi on CoreELEC 22</summary>
+      <description lang="de_DE">Verwaltet den offiziellen Spotify-Soloist-Prozess und übergibt dessen Wiedergabe mit Titel-/Interpretmetadaten an Kodi. Die aktuelle Integration ist noch nicht auf dem Zielgerät abgenommen; keine Supportfreigabe.</description>
+      <description lang="en_GB">Manages the official Spotify Soloist process and passes playback with title and artist metadata to Kodi. This integration has not yet passed target-device acceptance; not a support release.</description>
+      <platform>linux</platform>
+      <license>GPL-2.0-only</license>
+      <source>https://github.com/blauesgruen/service.soloist</source>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.png</fanart>
+      </assets>
+      <size>2751514</size>
+      <path>service.soloist.native/service.soloist.native-0.3.20.zip</path>
+    </extension>
+  </addon>
 </addons>

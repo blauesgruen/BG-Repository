@@ -268,7 +268,7 @@
 
 
 
-<addon id="service.soloist.native" name="Kodi Soloist Native" version="0.3.35" provider-name="blauesgruen">
+<addon id="service.soloist.native" name="Kodi Soloist Native" version="0.3.36" provider-name="blauesgruen">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -288,8 +288,8 @@
         <icon>icon.png</icon>
         <fanart>fanart.png</fanart>
       </assets>
-      <size>2766297</size>
-      <path>service.soloist.native/service.soloist.native-0.3.35.zip</path>
+      <size>2766507</size>
+      <path>service.soloist.native/service.soloist.native-0.3.36.zip</path>
     </extension>
   </addon>
 </addons>

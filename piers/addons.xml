@@ -268,7 +268,7 @@
 
 
 
-<addon id="service.soloist.native" name="Kodi Soloist Native" version="0.3.53" provider-name="blauesgruen">
+<addon id="service.soloist.native" name="Kodi Soloist Native" version="0.3.54" provider-name="blauesgruen">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="inputstream.ffmpegdirect" version="22.0.0" />
@@ -292,8 +292,8 @@
       <icon>icon.png</icon>
       <fanart>fanart.png</fanart>
     </assets>
-    <size>2795943</size>
-    <path>service.soloist.native/service.soloist.native-0.3.53.zip</path>
+    <size>2797820</size>
+    <path>service.soloist.native/service.soloist.native-0.3.54.zip</path>
   </extension>
 </addon>
 </addons>

@@ -268,7 +268,7 @@
 
 
 
-<addon id="service.soloist.native" name="Soloist for Spotify" version="0.3.63" provider-name="blauesgruen">
+<addon id="service.soloist.native" name="Soloist for Spotify" version="0.3.64" provider-name="blauesgruen">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="inputstream.ffmpegdirect" version="22.0.0" />
@@ -292,8 +292,8 @@
       <icon>icon.png</icon>
       <fanart>fanart.png</fanart>
     </assets>
-    <size>2808443</size>
-    <path>service.soloist.native/service.soloist.native-0.3.63.zip</path>
+    <size>2809752</size>
+    <path>service.soloist.native/service.soloist.native-0.3.64.zip</path>
   </extension>
 </addon>
 </addons>

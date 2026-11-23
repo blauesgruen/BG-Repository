@@ -268,7 +268,7 @@
 
 
 
-<addon id="service.soloist.native" name="Soloist for Spotify" version="0.3.72" provider-name="blauesgruen">
+<addon id="service.soloist.native" name="Soloist for Spotify" version="0.3.73" provider-name="blauesgruen">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="inputstream.ffmpegdirect" version="22.0.0" />
@@ -283,8 +283,8 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="de_DE">Spotify Connect für Kodi mit dem offiziellen Spotify Soloist (CoreELEC 22)</summary>
     <summary lang="en_GB">Spotify Connect for Kodi using the official Spotify Soloist (CoreELEC 22)</summary>
-    <description lang="de_DE">Macht Kodi zum Spotify-Connect-Gerät: in der Spotify-App auswählen, die Wiedergabe läuft über Kodi. Verwaltet den offiziellen Spotify-Soloist-Prozess und übergibt dessen Wiedergabe mit Titel-/Interpretmetadaten an Kodi. Die aktuelle Integration ist noch nicht auf dem Zielgerät abgenommen; keine Supportfreigabe.</description>
-    <description lang="en_GB">Turns Kodi into a Spotify Connect device: pick it in the Spotify app and playback runs through Kodi. Manages the official Spotify Soloist process and passes playback with title and artist metadata to Kodi. This integration has not yet passed target-device acceptance; not a support release.</description>
+    <description lang="de_DE">Macht Kodi zum Spotify-Connect-Gerät: in der Spotify-App auswählen, die Wiedergabe läuft über Kodi. Verwaltet den offiziellen Spotify-Soloist-Prozess und übergibt dessen Wiedergabe mit Titel-/Interpretmetadaten an Kodi. Die Bedienung über die Spotify-App funktioniert am besten; Steuerung in Kodi (Playlist, Vor/Zurück) ist möglich, reagiert aber langsamer und mit Einschränkungen. Die aktuelle Integration ist noch nicht auf dem Zielgerät abgenommen; keine Supportfreigabe.</description>
+    <description lang="en_GB">Turns Kodi into a Spotify Connect device: pick it in the Spotify app and playback runs through Kodi. Manages the official Spotify Soloist process and passes playback with title and artist metadata to Kodi. Control works best from the Spotify app; control in Kodi (playlist, next/previous) is possible but slower and limited. This integration has not yet passed target-device acceptance; not a support release.</description>
     <platform>linux</platform>
     <license>GPL-2.0-only</license>
     <source>https://github.com/blauesgruen/service.soloist</source>
@@ -292,8 +292,8 @@
       <icon>icon.png</icon>
       <fanart>fanart.png</fanart>
     </assets>
-    <size>2813242</size>
-    <path>service.soloist.native/service.soloist.native-0.3.72.zip</path>
+    <size>2813478</size>
+    <path>service.soloist.native/service.soloist.native-0.3.73.zip</path>
   </extension>
 </addon>
 </addons>

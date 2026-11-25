@@ -268,7 +268,7 @@
 
 
 
-<addon id="service.soloist.native" name="Soloist for Spotify" version="0.3.90" provider-name="blauesgruen">
+<addon id="service.soloist.native" name="Soloist for Spotify" version="0.3.91" provider-name="blauesgruen">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="inputstream.ffmpegdirect" version="22.0.0" />
@@ -286,7 +286,8 @@
     <description lang="de_DE">Macht Kodi zum Spotify-Connect-Gerät: in der Spotify-App auswählen, die Musik läuft über Kodi mit Titel, Interpret, Album und Cover.[CR][CR][B]Voraussetzungen[/B][CR]• Linux mit Kodi 22 (CoreELEC, LibreELEC oder andere)[CR]• ARM 64 Bit, ARM 32 Bit oder x86-64[CR]• PulseAudio (bei CoreELEC/LibreELEC vorhanden)[CR]• Soloist-API-Schlüssel von Spotify (developer.spotify.com, Premium-Konto nötig)[CR]• Internet für den einmaligen Download von Soloist[CR][CR]Getestet auf CoreELEC 22 (Odroid N2+) und LibreELEC 13 (Odroid C2). Soloist wird automatisch geladen und aktuell gehalten. Bedienung am besten über die Spotify-App; in Kodi möglich, aber langsamer. Entwicklungsstand, keine Supportfreigabe.</description>
     <description lang="en_GB">Turns Kodi into a Spotify Connect device: pick it in the Spotify app and music plays through Kodi with title, artist, album and cover.[CR][CR][B]Requirements[/B][CR]• Linux with Kodi 22 (CoreELEC, LibreELEC or other)[CR]• ARM 64-bit, ARM 32-bit or x86-64[CR]• PulseAudio (included in CoreELEC/LibreELEC)[CR]• Soloist API key from Spotify (developer.spotify.com, Premium account required)[CR]• Internet for the one-time Soloist download[CR][CR]Tested on CoreELEC 22 (Odroid N2+) and LibreELEC 13 (Odroid C2). Soloist is downloaded and kept current automatically. Best controlled from the Spotify app; control in Kodi works but is slower. Development version, not a support release.</description>
     <platform>linux</platform>
-    <news>v0.3.90: Diagnose: Quellqualität je Titel (Codec, Format, Bitrate) im Log.
+    <news>v0.3.91: 24 Bit: Spotify Lossless kommt bis 24 Bit / 44,1 kHz bei Kodi an (Aufnahme per parec, 16-Bit-Weg als Rückfall); Quellqualität für Skins (Soloist.Quality).
+v0.3.90: Diagnose: Quellqualität je Titel (Codec, Format, Bitrate) im Log.
 v0.3.89: Lautstärke wieder direkt über Spotify (Kopplung an Kodi entfernt, sie reagierte verzögert); Einstellungen wirken ohne Neustart.
 v0.3.88: Lautstärke-Ausgleich startet neutral (kein lauter Stoß nach Neustart) und folgt Soloist durchgehend.
 v0.3.87: Lautstärke aus der Spotify-App wirkt wieder (über Kodi); Soloists Absenkung wird verlustfrei ausgeglichen.
@@ -305,8 +306,8 @@ v0.3.78: Passendes Soloist-Paket je System (ARM64, ARM32, x86-64).</news>
       <icon>icon.png</icon>
       <fanart>fanart.png</fanart>
     </assets>
-    <size>2825085</size>
-    <path>service.soloist.native/service.soloist.native-0.3.90.zip</path>
+    <size>2829793</size>
+    <path>service.soloist.native/service.soloist.native-0.3.91.zip</path>
   </extension>
 </addon>
 </addons>
